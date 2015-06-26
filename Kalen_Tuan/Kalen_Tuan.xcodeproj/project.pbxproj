@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		850637251B3CFD0300B1529A /* TRCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 850637241B3CFD0300B1529A /* TRCategoryView.m */; };
+		850637281B3D2B7200B1529A /* TRCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850637271B3D2B7200B1529A /* TRCategoryViewController.m */; };
+		853924C91B3B9D020050A61B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924C81B3B9D020050A61B /* main.m */; };
+		853924CC1B3B9D020050A61B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924CB1B3B9D020050A61B /* AppDelegate.m */; };
+		853924CF1B3B9D020050A61B /* Kalen_Tuan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 853924CD1B3B9D020050A61B /* Kalen_Tuan.xcdatamodeld */; };
+		853924D21B3B9D020050A61B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924D11B3B9D020050A61B /* ViewController.m */; };
+		853924D51B3B9D020050A61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853924D31B3B9D020050A61B /* Main.storyboard */; };
+		853924D71B3B9D020050A61B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853924D61B3B9D020050A61B /* Images.xcassets */; };
+		853924DA1B3B9D020050A61B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 853924D81B3B9D020050A61B /* LaunchScreen.xib */; };
+		853924E61B3B9D020050A61B /* Kalen_TuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924E51B3B9D020050A61B /* Kalen_TuanTests.m */; };
+		853924F51B3B9D1C0050A61B /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924F11B3B9D1C0050A61B /* DPAPI.m */; };
+		853924F61B3B9D1C0050A61B /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924F41B3B9D1C0050A61B /* DPRequest.m */; };
+		853924F91B3BA6AA0050A61B /* TRDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 853924F81B3BA6AA0050A61B /* TRDeal.m */; };
+		853924FE1B3BAF0E0050A61B /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 853924FA1B3BAF0E0050A61B /* categories.plist */; };
+		853924FF1B3BAF0E0050A61B /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 853924FB1B3BAF0E0050A61B /* cities.plist */; };
+		853925001B3BAF0E0050A61B /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 853924FC1B3BAF0E0050A61B /* cityGroups.plist */; };
+		853925011B3BAF0E0050A61B /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 853924FD1B3BAF0E0050A61B /* sorts.plist */; };
+		853925051B3BAFE70050A61B /* TRMeataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 853925041B3BAFE70050A61B /* TRMeataTool.m */; };
+		853925081B3BD7560050A61B /* TRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 853925071B3BD7560050A61B /* TRCategory.m */; };
+		8539250B1B3BD9FC0050A61B /* TRCities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8539250A1B3BD9FC0050A61B /* TRCities.m */; };
+		8539250E1B3BDC2A0050A61B /* TRSorts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8539250D1B3BDC2A0050A61B /* TRSorts.m */; };
+		853925111B3BDC7C0050A61B /* TRCityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 853925101B3BDC7C0050A61B /* TRCityGroup.m */; };
+		853925181B3BE9450050A61B /* TRDealsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853925171B3BE9450050A61B /* TRDealsCollectionViewController.m */; };
+		8539251B1B3BE9820050A61B /* TRMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8539251A1B3BE9820050A61B /* TRMainNavController.m */; };
+		8539251E1B3BF6500050A61B /* TRNavLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8539251D1B3BF6500050A61B /* TRNavLeftView.m */; };
+		853925201B3BF6AD0050A61B /* TRNavLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8539251F1B3BF6AD0050A61B /* TRNavLeftView.xib */; };
+		8570146F1B3D5F7300F33735 /* TRCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8570146E1B3D5F7300F33735 /* TRCategoryView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		853924E01B3B9D020050A61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 853924BB1B3B9D020050A61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 853924C21B3B9D020050A61B;
+			remoteInfo = Kalen_Tuan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		850637231B3CFD0300B1529A /* TRCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategoryView.h; sourceTree = "<group>"; };
+		850637241B3CFD0300B1529A /* TRCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategoryView.m; sourceTree = "<group>"; };
+		850637261B3D2B7200B1529A /* TRCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategoryViewController.h; sourceTree = "<group>"; };
+		850637271B3D2B7200B1529A /* TRCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategoryViewController.m; sourceTree = "<group>"; };
+		853924C31B3B9D020050A61B /* Kalen_Tuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kalen_Tuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		853924C71B3B9D020050A61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853924C81B3B9D020050A61B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		853924CA1B3B9D020050A61B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		853924CB1B3B9D020050A61B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		853924CE1B3B9D020050A61B /* Kalen_Tuan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kalen_Tuan.xcdatamodel; sourceTree = "<group>"; };
+		853924D01B3B9D020050A61B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		853924D11B3B9D020050A61B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		853924D41B3B9D020050A61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		853924D61B3B9D020050A61B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		853924D91B3B9D020050A61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		853924DF1B3B9D020050A61B /* Kalen_TuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kalen_TuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		853924E41B3B9D020050A61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853924E51B3B9D020050A61B /* Kalen_TuanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kalen_TuanTests.m; sourceTree = "<group>"; };
+		853924F01B3B9D1C0050A61B /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		853924F11B3B9D1C0050A61B /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		853924F21B3B9D1C0050A61B /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		853924F31B3B9D1C0050A61B /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		853924F41B3B9D1C0050A61B /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		853924F71B3BA6AA0050A61B /* TRDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TRDeal.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		853924F81B3BA6AA0050A61B /* TRDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TRDeal.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		853924FA1B3BAF0E0050A61B /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		853924FB1B3BAF0E0050A61B /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		853924FC1B3BAF0E0050A61B /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		853924FD1B3BAF0E0050A61B /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		853925031B3BAFE70050A61B /* TRMeataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMeataTool.h; sourceTree = "<group>"; };
+		853925041B3BAFE70050A61B /* TRMeataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMeataTool.m; sourceTree = "<group>"; };
+		853925061B3BD7560050A61B /* TRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategory.h; sourceTree = "<group>"; };
+		853925071B3BD7560050A61B /* TRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategory.m; sourceTree = "<group>"; };
+		853925091B3BD9FC0050A61B /* TRCities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCities.h; sourceTree = "<group>"; };
+		8539250A1B3BD9FC0050A61B /* TRCities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCities.m; sourceTree = "<group>"; };
+		8539250C1B3BDC2A0050A61B /* TRSorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSorts.h; sourceTree = "<group>"; };
+		8539250D1B3BDC2A0050A61B /* TRSorts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSorts.m; sourceTree = "<group>"; };
+		8539250F1B3BDC7C0050A61B /* TRCityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCityGroup.h; sourceTree = "<group>"; };
+		853925101B3BDC7C0050A61B /* TRCityGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCityGroup.m; sourceTree = "<group>"; };
+		853925161B3BE9450050A61B /* TRDealsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRDealsCollectionViewController.h; sourceTree = "<group>"; };
+		853925171B3BE9450050A61B /* TRDealsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRDealsCollectionViewController.m; sourceTree = "<group>"; };
+		853925191B3BE9820050A61B /* TRMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMainNavController.h; sourceTree = "<group>"; };
+		8539251A1B3BE9820050A61B /* TRMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMainNavController.m; sourceTree = "<group>"; };
+		8539251C1B3BF6500050A61B /* TRNavLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRNavLeftView.h; sourceTree = "<group>"; };
+		8539251D1B3BF6500050A61B /* TRNavLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRNavLeftView.m; sourceTree = "<group>"; };
+		8539251F1B3BF6AD0050A61B /* TRNavLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRNavLeftView.xib; sourceTree = "<group>"; };
+		8570146E1B3D5F7300F33735 /* TRCategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRCategoryView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		853924C01B3B9D020050A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853924DC1B3B9D020050A61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8531DD811B3CE9330078EB5E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				850637261B3D2B7200B1529A /* TRCategoryViewController.h */,
+				850637271B3D2B7200B1529A /* TRCategoryViewController.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		853924BA1B3B9D020050A61B = {
+			isa = PBXGroup;
+			children = (
+				853924C51B3B9D020050A61B /* Kalen_Tuan */,
+				853924E21B3B9D020050A61B /* Kalen_TuanTests */,
+				853924C41B3B9D020050A61B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		853924C41B3B9D020050A61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				853924C31B3B9D020050A61B /* Kalen_Tuan.app */,
+				853924DF1B3B9D020050A61B /* Kalen_TuanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		853924C51B3B9D020050A61B /* Kalen_Tuan */ = {
+			isa = PBXGroup;
+			children = (
+				853925151B3BE7390050A61B /* Tools */,
+				853925141B3BE36A0050A61B /* Controller */,
+				853925131B3BE3500050A61B /* View */,
+				853925121B3BE33E0050A61B /* Model */,
+				853925021B3BAF140050A61B /* Plist */,
+				853924EF1B3B9D1C0050A61B /* DPSDK */,
+				853924D61B3B9D020050A61B /* Images.xcassets */,
+				853924CD1B3B9D020050A61B /* Kalen_Tuan.xcdatamodeld */,
+				853924C61B3B9D020050A61B /* Supporting Files */,
+			);
+			path = Kalen_Tuan;
+			sourceTree = "<group>";
+		};
+		853924C61B3B9D020050A61B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				853924CA1B3B9D020050A61B /* AppDelegate.h */,
+				853924CB1B3B9D020050A61B /* AppDelegate.m */,
+				853924C71B3B9D020050A61B /* Info.plist */,
+				853924C81B3B9D020050A61B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		853924E21B3B9D020050A61B /* Kalen_TuanTests */ = {
+			isa = PBXGroup;
+			children = (
+				853924E51B3B9D020050A61B /* Kalen_TuanTests.m */,
+				853924E31B3B9D020050A61B /* Supporting Files */,
+			);
+			path = Kalen_TuanTests;
+			sourceTree = "<group>";
+		};
+		853924E31B3B9D020050A61B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				853924E41B3B9D020050A61B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		853924EF1B3B9D1C0050A61B /* DPSDK */ = {
+			isa = PBXGroup;
+			children = (
+				853924F01B3B9D1C0050A61B /* DPAPI.h */,
+				853924F11B3B9D1C0050A61B /* DPAPI.m */,
+				853924F21B3B9D1C0050A61B /* DPConstants.h */,
+				853924F31B3B9D1C0050A61B /* DPRequest.h */,
+				853924F41B3B9D1C0050A61B /* DPRequest.m */,
+			);
+			path = DPSDK;
+			sourceTree = "<group>";
+		};
+		853925021B3BAF140050A61B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				853924FA1B3BAF0E0050A61B /* categories.plist */,
+				853924FB1B3BAF0E0050A61B /* cities.plist */,
+				853924FC1B3BAF0E0050A61B /* cityGroups.plist */,
+				853924FD1B3BAF0E0050A61B /* sorts.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		853925121B3BE33E0050A61B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				853924F71B3BA6AA0050A61B /* TRDeal.h */,
+				853924F81B3BA6AA0050A61B /* TRDeal.m */,
+				853925061B3BD7560050A61B /* TRCategory.h */,
+				853925071B3BD7560050A61B /* TRCategory.m */,
+				853925091B3BD9FC0050A61B /* TRCities.h */,
+				8539250A1B3BD9FC0050A61B /* TRCities.m */,
+				8539250C1B3BDC2A0050A61B /* TRSorts.h */,
+				8539250D1B3BDC2A0050A61B /* TRSorts.m */,
+				8539250F1B3BDC7C0050A61B /* TRCityGroup.h */,
+				853925101B3BDC7C0050A61B /* TRCityGroup.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		853925131B3BE3500050A61B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				853924D31B3B9D020050A61B /* Main.storyboard */,
+				853924D81B3B9D020050A61B /* LaunchScreen.xib */,
+				850637231B3CFD0300B1529A /* TRCategoryView.h */,
+				850637241B3CFD0300B1529A /* TRCategoryView.m */,
+				8570146E1B3D5F7300F33735 /* TRCategoryView.xib */,
+				8539251C1B3BF6500050A61B /* TRNavLeftView.h */,
+				8539251D1B3BF6500050A61B /* TRNavLeftView.m */,
+				8539251F1B3BF6AD0050A61B /* TRNavLeftView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		853925141B3BE36A0050A61B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				857014711B3D869900F33735 /* Test */,
+				857014701B3D619800F33735 /* mainController */,
+				8531DD811B3CE9330078EB5E /* Category */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		853925151B3BE7390050A61B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				853925031B3BAFE70050A61B /* TRMeataTool.h */,
+				853925041B3BAFE70050A61B /* TRMeataTool.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		857014701B3D619800F33735 /* mainController */ = {
+			isa = PBXGroup;
+			children = (
+				853925161B3BE9450050A61B /* TRDealsCollectionViewController.h */,
+				853925171B3BE9450050A61B /* TRDealsCollectionViewController.m */,
+				853925191B3BE9820050A61B /* TRMainNavController.h */,
+				8539251A1B3BE9820050A61B /* TRMainNavController.m */,
+			);
+			name = mainController;
+			sourceTree = "<group>";
+		};
+		857014711B3D869900F33735 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				853924D01B3B9D020050A61B /* ViewController.h */,
+				853924D11B3B9D020050A61B /* ViewController.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		853924C21B3B9D020050A61B /* Kalen_Tuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853924E91B3B9D020050A61B /* Build configuration list for PBXNativeTarget "Kalen_Tuan" */;
+			buildPhases = (
+				853924BF1B3B9D020050A61B /* Sources */,
+				853924C01B3B9D020050A61B /* Frameworks */,
+				853924C11B3B9D020050A61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kalen_Tuan;
+			productName = Kalen_Tuan;
+			productReference = 853924C31B3B9D020050A61B /* Kalen_Tuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		853924DE1B3B9D020050A61B /* Kalen_TuanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853924EC1B3B9D020050A61B /* Build configuration list for PBXNativeTarget "Kalen_TuanTests" */;
+			buildPhases = (
+				853924DB1B3B9D020050A61B /* Sources */,
+				853924DC1B3B9D020050A61B /* Frameworks */,
+				853924DD1B3B9D020050A61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				853924E11B3B9D020050A61B /* PBXTargetDependency */,
+			);
+			name = Kalen_TuanTests;
+			productName = Kalen_TuanTests;
+			productReference = 853924DF1B3B9D020050A61B /* Kalen_TuanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		853924BB1B3B9D020050A61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					853924C21B3B9D020050A61B = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					853924DE1B3B9D020050A61B = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 853924C21B3B9D020050A61B;
+					};
+				};
+			};
+			buildConfigurationList = 853924BE1B3B9D020050A61B /* Build configuration list for PBXProject "Kalen_Tuan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 853924BA1B3B9D020050A61B;
+			productRefGroup = 853924C41B3B9D020050A61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				853924C21B3B9D020050A61B /* Kalen_Tuan */,
+				853924DE1B3B9D020050A61B /* Kalen_TuanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		853924C11B3B9D020050A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853924FE1B3BAF0E0050A61B /* categories.plist in Resources */,
+				853924D51B3B9D020050A61B /* Main.storyboard in Resources */,
+				853925011B3BAF0E0050A61B /* sorts.plist in Resources */,
+				853925201B3BF6AD0050A61B /* TRNavLeftView.xib in Resources */,
+				853924DA1B3B9D020050A61B /* LaunchScreen.xib in Resources */,
+				853924FF1B3BAF0E0050A61B /* cities.plist in Resources */,
+				853924D71B3B9D020050A61B /* Images.xcassets in Resources */,
+				8570146F1B3D5F7300F33735 /* TRCategoryView.xib in Resources */,
+				853925001B3BAF0E0050A61B /* cityGroups.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853924DD1B3B9D020050A61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		853924BF1B3B9D020050A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853924F51B3B9D1C0050A61B /* DPAPI.m in Sources */,
+				853924F61B3B9D1C0050A61B /* DPRequest.m in Sources */,
+				8539251B1B3BE9820050A61B /* TRMainNavController.m in Sources */,
+				850637281B3D2B7200B1529A /* TRCategoryViewController.m in Sources */,
+				853924CC1B3B9D020050A61B /* AppDelegate.m in Sources */,
+				853924F91B3BA6AA0050A61B /* TRDeal.m in Sources */,
+				850637251B3CFD0300B1529A /* TRCategoryView.m in Sources */,
+				853925111B3BDC7C0050A61B /* TRCityGroup.m in Sources */,
+				853925081B3BD7560050A61B /* TRCategory.m in Sources */,
+				853925051B3BAFE70050A61B /* TRMeataTool.m in Sources */,
+				8539250B1B3BD9FC0050A61B /* TRCities.m in Sources */,
+				853924C91B3B9D020050A61B /* main.m in Sources */,
+				853924D21B3B9D020050A61B /* ViewController.m in Sources */,
+				8539250E1B3BDC2A0050A61B /* TRSorts.m in Sources */,
+				8539251E1B3BF6500050A61B /* TRNavLeftView.m in Sources */,
+				853925181B3BE9450050A61B /* TRDealsCollectionViewController.m in Sources */,
+				853924CF1B3B9D020050A61B /* Kalen_Tuan.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853924DB1B3B9D020050A61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853924E61B3B9D020050A61B /* Kalen_TuanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		853924E11B3B9D020050A61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 853924C21B3B9D020050A61B /* Kalen_Tuan */;
+			targetProxy = 853924E01B3B9D020050A61B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		853924D31B3B9D020050A61B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				853924D41B3B9D020050A61B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		853924D81B3B9D020050A61B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				853924D91B3B9D020050A61B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		853924E71B3B9D020050A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		853924E81B3B9D020050A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		853924EA1B3B9D020050A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kalen_Tuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		853924EB1B3B9D020050A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kalen_Tuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		853924ED1B3B9D020050A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Kalen_TuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kalen_Tuan.app/Kalen_Tuan";
+			};
+			name = Debug;
+		};
+		853924EE1B3B9D020050A61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Kalen_TuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kalen_Tuan.app/Kalen_Tuan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		853924BE1B3B9D020050A61B /* Build configuration list for PBXProject "Kalen_Tuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853924E71B3B9D020050A61B /* Debug */,
+				853924E81B3B9D020050A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853924E91B3B9D020050A61B /* Build configuration list for PBXNativeTarget "Kalen_Tuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853924EA1B3B9D020050A61B /* Debug */,
+				853924EB1B3B9D020050A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853924EC1B3B9D020050A61B /* Build configuration list for PBXNativeTarget "Kalen_TuanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853924ED1B3B9D020050A61B /* Debug */,
+				853924EE1B3B9D020050A61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		853924CD1B3B9D020050A61B /* Kalen_Tuan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				853924CE1B3B9D020050A61B /* Kalen_Tuan.xcdatamodel */,
+			);
+			currentVersion = 853924CE1B3B9D020050A61B /* Kalen_Tuan.xcdatamodel */;
+			path = Kalen_Tuan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 853924BB1B3B9D020050A61B /* Project object */;
+}

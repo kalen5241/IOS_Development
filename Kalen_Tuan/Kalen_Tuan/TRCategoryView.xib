@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Uh3-af-WAA">
+                    <rect key="frame" x="150" y="0.0" width="150" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="yX0-LQ-kQ2"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="sSU-Wy-ZbR"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tkr-da-pQH">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Rgk-sf-3EZ"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="aHE-er-fSq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Uh3-af-WAA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dhn-4n-3MH"/>
+                <constraint firstAttribute="bottom" secondItem="tkr-da-pQH" secondAttribute="bottom" id="HeN-C7-New"/>
+                <constraint firstItem="tkr-da-pQH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JhG-An-3c5"/>
+                <constraint firstItem="Uh3-af-WAA" firstAttribute="leading" secondItem="tkr-da-pQH" secondAttribute="trailing" id="JnU-A2-Qwq"/>
+                <constraint firstAttribute="bottom" secondItem="Uh3-af-WAA" secondAttribute="bottom" id="MQ0-7Q-Zm8"/>
+                <constraint firstItem="tkr-da-pQH" firstAttribute="width" secondItem="Uh3-af-WAA" secondAttribute="width" id="UlV-h2-krv"/>
+                <constraint firstItem="Uh3-af-WAA" firstAttribute="leading" secondItem="tkr-da-pQH" secondAttribute="trailing" id="a94-bg-vKt"/>
+                <constraint firstAttribute="trailing" secondItem="Uh3-af-WAA" secondAttribute="trailing" id="imY-NU-IFG"/>
+                <constraint firstItem="tkr-da-pQH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wsP-k3-2fE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainTableView" destination="tkr-da-pQH" id="QNq-ZT-WdJ"/>
+                <outlet property="secondTableView" destination="Uh3-af-WAA" id="c0l-vm-QIo"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="221"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
