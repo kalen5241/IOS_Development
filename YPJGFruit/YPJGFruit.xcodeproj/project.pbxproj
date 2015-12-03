@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A36B18DEE10B3A8B9ED5E12 /* libPods-YPJGFruit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E51A8EAA268AE3F9FA0D8552 /* libPods-YPJGFruit.a */; };
+		F40E7D8B1B80AC470059D5C3 /* KalenTabBarC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7D871B80AC470059D5C3 /* KalenTabBarC.m */; };
+		F40E7D8C1B80AC470059D5C3 /* TabBarBgvView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7D891B80AC470059D5C3 /* TabBarBgvView.m */; };
+		F40E7D8D1B80AC470059D5C3 /* TabBarBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40E7D8A1B80AC470059D5C3 /* TabBarBgView.xib */; };
+		F40E7D931B80B05F0059D5C3 /* TRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7D901B80B05F0059D5C3 /* TRMessage.m */; };
+		F40E7D941B80B05F0059D5C3 /* TRMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7D921B80B05F0059D5C3 /* TRMessageCell.m */; };
+		F40E7DBB1B80C26E0059D5C3 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7DB91B80C26E0059D5C3 /* MessageVC.m */; };
+		F40E7DBC1B80C26E0059D5C3 /* MessageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40E7DBA1B80C26E0059D5C3 /* MessageVC.xib */; };
+		F40E7DBF1B80CD730059D5C3 /* MVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40E7DBE1B80CD730059D5C3 /* MVC.m */; };
+		F42116BF1BFF072300436A70 /* ProductListInType.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116BE1BFF072300436A70 /* ProductListInType.m */; };
+		F42116C21BFF090D00436A70 /* FruitInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116C11BFF090D00436A70 /* FruitInfoModel.m */; };
+		F42116C51BFF0A4F00436A70 /* ProductListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116C41BFF0A4F00436A70 /* ProductListResponse.m */; };
+		F45BF18A1BF83C4C00D28ADE /* YPDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF1891BF83C4C00D28ADE /* YPDataRequest.m */; };
+		F45BF18D1BF842B700D28ADE /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF18B1BF842B700D28ADE /* AFAppDotNetAPIClient.m */; };
+		F45BF1901BF84C4200D28ADE /* YPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF18F1BF84C4200D28ADE /* YPResponse.m */; };
+		F45BF1961BF8543800D28ADE /* YPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF1951BF8543800D28ADE /* YPModel.m */; };
+		F49B61421B59D40E00EB3A5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61411B59D40E00EB3A5B /* main.m */; };
+		F49B61451B59D40E00EB3A5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61441B59D40E00EB3A5B /* AppDelegate.m */; };
+		F49B61481B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */; };
+		F49B614B1B59D40E00EB3A5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B614A1B59D40E00EB3A5B /* ViewController.m */; };
+		F49B614E1B59D40E00EB3A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49B614C1B59D40E00EB3A5B /* Main.storyboard */; };
+		F49B61501B59D40E00EB3A5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49B614F1B59D40E00EB3A5B /* Images.xcassets */; };
+		F49B61531B59D40E00EB3A5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49B61511B59D40E00EB3A5B /* LaunchScreen.xib */; };
+		F49B615F1B59D40E00EB3A5B /* YPJGFruitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B615E1B59D40E00EB3A5B /* YPJGFruitTests.m */; };
+		F49B616F1B59D66F00EB3A5B /* FruitSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B616E1B59D66F00EB3A5B /* FruitSelectionVC.m */; };
+		F49B61721B59DD5F00EB3A5B /* FruitSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49B61711B59DD5F00EB3A5B /* FruitSelectView.xib */; };
+		F49B61751B59E80700EB3A5B /* FruitSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61741B59E80700EB3A5B /* FruitSelectView.m */; };
+		F49B61F31B5A430A00EB3A5B /* FruitCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61F11B5A430A00EB3A5B /* FruitCategoryCell.m */; };
+		F49B61F41B5A430A00EB3A5B /* FruitCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49B61F21B5A430A00EB3A5B /* FruitCategoryCell.xib */; };
+		F49B61F81B5A5D3100EB3A5B /* FruitProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61F61B5A5D3100EB3A5B /* FruitProductCell.m */; };
+		F49B61F91B5A5D3100EB3A5B /* FruitProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49B61F71B5A5D3100EB3A5B /* FruitProductCell.xib */; };
+		F49B61FD1B5A834F00EB3A5B /* 平谷水蜜桃1nomal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49B61FB1B5A834F00EB3A5B /* 平谷水蜜桃1nomal.jpg */; };
+		F49B61FE1B5A834F00EB3A5B /* 葡萄1nomal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49B61FC1B5A834F00EB3A5B /* 葡萄1nomal.jpg */; };
+		F49B62011B5A940500EB3A5B /* AllProduct.plist in Resources */ = {isa = PBXBuildFile; fileRef = F49B62001B5A940500EB3A5B /* AllProduct.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F49B61591B59D40E00EB3A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49B61341B59D40E00EB3A5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49B613B1B59D40E00EB3A5B;
+			remoteInfo = YPJGFruit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		858F67375FE1B3D35190A4BC /* Pods-YPJGFruit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPJGFruit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPJGFruit/Pods-YPJGFruit.release.xcconfig"; sourceTree = "<group>"; };
+		961C16A3B3BA4477C3038497 /* Pods-YPJGFruit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPJGFruit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPJGFruit/Pods-YPJGFruit.debug.xcconfig"; sourceTree = "<group>"; };
+		E51A8EAA268AE3F9FA0D8552 /* libPods-YPJGFruit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPJGFruit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40E7D861B80AC470059D5C3 /* KalenTabBarC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalenTabBarC.h; sourceTree = "<group>"; };
+		F40E7D871B80AC470059D5C3 /* KalenTabBarC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalenTabBarC.m; sourceTree = "<group>"; };
+		F40E7D881B80AC470059D5C3 /* TabBarBgvView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarBgvView.h; sourceTree = "<group>"; };
+		F40E7D891B80AC470059D5C3 /* TabBarBgvView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarBgvView.m; sourceTree = "<group>"; };
+		F40E7D8A1B80AC470059D5C3 /* TabBarBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarBgView.xib; sourceTree = "<group>"; };
+		F40E7D8F1B80B05F0059D5C3 /* TRMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMessage.h; sourceTree = "<group>"; };
+		F40E7D901B80B05F0059D5C3 /* TRMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMessage.m; sourceTree = "<group>"; };
+		F40E7D911B80B05F0059D5C3 /* TRMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMessageCell.h; sourceTree = "<group>"; };
+		F40E7D921B80B05F0059D5C3 /* TRMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMessageCell.m; sourceTree = "<group>"; };
+		F40E7DB81B80C26E0059D5C3 /* MessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVC.h; sourceTree = "<group>"; };
+		F40E7DB91B80C26E0059D5C3 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
+		F40E7DBA1B80C26E0059D5C3 /* MessageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageVC.xib; sourceTree = "<group>"; };
+		F40E7DBD1B80CD730059D5C3 /* MVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVC.h; sourceTree = "<group>"; };
+		F40E7DBE1B80CD730059D5C3 /* MVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVC.m; sourceTree = "<group>"; };
+		F42116BD1BFF072300436A70 /* ProductListInType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListInType.h; sourceTree = "<group>"; };
+		F42116BE1BFF072300436A70 /* ProductListInType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListInType.m; sourceTree = "<group>"; };
+		F42116C01BFF090D00436A70 /* FruitInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitInfoModel.h; sourceTree = "<group>"; };
+		F42116C11BFF090D00436A70 /* FruitInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitInfoModel.m; sourceTree = "<group>"; };
+		F42116C31BFF0A4F00436A70 /* ProductListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListResponse.h; sourceTree = "<group>"; };
+		F42116C41BFF0A4F00436A70 /* ProductListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListResponse.m; sourceTree = "<group>"; };
+		F45BF1881BF83C4C00D28ADE /* YPDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDataRequest.h; sourceTree = "<group>"; };
+		F45BF1891BF83C4C00D28ADE /* YPDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDataRequest.m; sourceTree = "<group>"; };
+		F45BF18B1BF842B700D28ADE /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		F45BF18C1BF842B700D28ADE /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		F45BF18E1BF84C4200D28ADE /* YPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPResponse.h; sourceTree = "<group>"; };
+		F45BF18F1BF84C4200D28ADE /* YPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPResponse.m; sourceTree = "<group>"; };
+		F45BF1941BF8543800D28ADE /* YPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPModel.h; sourceTree = "<group>"; };
+		F45BF1951BF8543800D28ADE /* YPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPModel.m; sourceTree = "<group>"; };
+		F49B613C1B59D40E00EB3A5B /* YPJGFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPJGFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49B61401B59D40E00EB3A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49B61411B59D40E00EB3A5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F49B61431B59D40E00EB3A5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F49B61441B59D40E00EB3A5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YPJGFruit.xcdatamodel; sourceTree = "<group>"; };
+		F49B61491B59D40E00EB3A5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F49B614A1B59D40E00EB3A5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F49B614D1B59D40E00EB3A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F49B614F1B59D40E00EB3A5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F49B61521B59D40E00EB3A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F49B61581B59D40E00EB3A5B /* YPJGFruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPJGFruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49B615D1B59D40E00EB3A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49B615E1B59D40E00EB3A5B /* YPJGFruitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPJGFruitTests.m; sourceTree = "<group>"; };
+		F49B61691B59D49700EB3A5B /* BasicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicHeader.h; sourceTree = "<group>"; };
+		F49B616D1B59D66F00EB3A5B /* FruitSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitSelectionVC.h; sourceTree = "<group>"; };
+		F49B616E1B59D66F00EB3A5B /* FruitSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitSelectionVC.m; sourceTree = "<group>"; };
+		F49B61711B59DD5F00EB3A5B /* FruitSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FruitSelectView.xib; sourceTree = "<group>"; };
+		F49B61731B59E80700EB3A5B /* FruitSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitSelectView.h; sourceTree = "<group>"; };
+		F49B61741B59E80700EB3A5B /* FruitSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitSelectView.m; sourceTree = "<group>"; };
+		F49B61F01B5A430A00EB3A5B /* FruitCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitCategoryCell.h; sourceTree = "<group>"; };
+		F49B61F11B5A430A00EB3A5B /* FruitCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitCategoryCell.m; sourceTree = "<group>"; };
+		F49B61F21B5A430A00EB3A5B /* FruitCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FruitCategoryCell.xib; sourceTree = "<group>"; };
+		F49B61F51B5A5D3100EB3A5B /* FruitProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitProductCell.h; sourceTree = "<group>"; };
+		F49B61F61B5A5D3100EB3A5B /* FruitProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitProductCell.m; sourceTree = "<group>"; };
+		F49B61F71B5A5D3100EB3A5B /* FruitProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FruitProductCell.xib; sourceTree = "<group>"; };
+		F49B61FB1B5A834F00EB3A5B /* 平谷水蜜桃1nomal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "平谷水蜜桃1nomal.jpg"; sourceTree = "<group>"; };
+		F49B61FC1B5A834F00EB3A5B /* 葡萄1nomal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "葡萄1nomal.jpg"; sourceTree = "<group>"; };
+		F49B62001B5A940500EB3A5B /* AllProduct.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllProduct.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49B61391B59D40E00EB3A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A36B18DEE10B3A8B9ED5E12 /* libPods-YPJGFruit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49B61551B59D40E00EB3A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843C325957C2DF7C91D8E382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51A8EAA268AE3F9FA0D8552 /* libPods-YPJGFruit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1E0C2B1694A90E30D396A1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				961C16A3B3BA4477C3038497 /* Pods-YPJGFruit.debug.xcconfig */,
+				858F67375FE1B3D35190A4BC /* Pods-YPJGFruit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F40E7D8E1B80B0510059D5C3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F40E7DB81B80C26E0059D5C3 /* MessageVC.h */,
+				F40E7DB91B80C26E0059D5C3 /* MessageVC.m */,
+				F40E7DBA1B80C26E0059D5C3 /* MessageVC.xib */,
+				F40E7D8F1B80B05F0059D5C3 /* TRMessage.h */,
+				F40E7D901B80B05F0059D5C3 /* TRMessage.m */,
+				F40E7D911B80B05F0059D5C3 /* TRMessageCell.h */,
+				F40E7D921B80B05F0059D5C3 /* TRMessageCell.m */,
+				F40E7DBD1B80CD730059D5C3 /* MVC.h */,
+				F40E7DBE1B80CD730059D5C3 /* MVC.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		F40E7D951B80B06F0059D5C3 /* FruitSelection */ = {
+			isa = PBXGroup;
+			children = (
+				F49B616D1B59D66F00EB3A5B /* FruitSelectionVC.h */,
+				F49B616E1B59D66F00EB3A5B /* FruitSelectionVC.m */,
+				F49B61711B59DD5F00EB3A5B /* FruitSelectView.xib */,
+				F49B61741B59E80700EB3A5B /* FruitSelectView.m */,
+				F49B61731B59E80700EB3A5B /* FruitSelectView.h */,
+				F49B61F01B5A430A00EB3A5B /* FruitCategoryCell.h */,
+				F49B61F11B5A430A00EB3A5B /* FruitCategoryCell.m */,
+				F49B61F21B5A430A00EB3A5B /* FruitCategoryCell.xib */,
+				F49B61F51B5A5D3100EB3A5B /* FruitProductCell.h */,
+				F49B61F61B5A5D3100EB3A5B /* FruitProductCell.m */,
+				F49B61F71B5A5D3100EB3A5B /* FruitProductCell.xib */,
+			);
+			name = FruitSelection;
+			sourceTree = "<group>";
+		};
+		F40E7D961B80B0880059D5C3 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				F40E7D861B80AC470059D5C3 /* KalenTabBarC.h */,
+				F40E7D871B80AC470059D5C3 /* KalenTabBarC.m */,
+				F40E7D881B80AC470059D5C3 /* TabBarBgvView.h */,
+				F40E7D891B80AC470059D5C3 /* TabBarBgvView.m */,
+				F40E7D8A1B80AC470059D5C3 /* TabBarBgView.xib */,
+			);
+			name = BaseVC;
+			sourceTree = "<group>";
+		};
+		F45BF1871BF83B5200D28ADE /* YPDataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F45BF18C1BF842B700D28ADE /* AFAppDotNetAPIClient.h */,
+				F45BF18B1BF842B700D28ADE /* AFAppDotNetAPIClient.m */,
+				F45BF1881BF83C4C00D28ADE /* YPDataRequest.h */,
+				F45BF1891BF83C4C00D28ADE /* YPDataRequest.m */,
+				F45BF18E1BF84C4200D28ADE /* YPResponse.h */,
+				F45BF18F1BF84C4200D28ADE /* YPResponse.m */,
+				F45BF1941BF8543800D28ADE /* YPModel.h */,
+				F45BF1951BF8543800D28ADE /* YPModel.m */,
+				F42116BD1BFF072300436A70 /* ProductListInType.h */,
+				F42116BE1BFF072300436A70 /* ProductListInType.m */,
+				F42116C31BFF0A4F00436A70 /* ProductListResponse.h */,
+				F42116C41BFF0A4F00436A70 /* ProductListResponse.m */,
+				F42116C01BFF090D00436A70 /* FruitInfoModel.h */,
+				F42116C11BFF090D00436A70 /* FruitInfoModel.m */,
+			);
+			path = YPDataRequest;
+			sourceTree = "<group>";
+		};
+		F49B61331B59D40E00EB3A5B = {
+			isa = PBXGroup;
+			children = (
+				F49B613E1B59D40E00EB3A5B /* YPJGFruit */,
+				F49B615B1B59D40E00EB3A5B /* YPJGFruitTests */,
+				F49B613D1B59D40E00EB3A5B /* Products */,
+				E1E0C2B1694A90E30D396A1E /* Pods */,
+				843C325957C2DF7C91D8E382 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F49B613D1B59D40E00EB3A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49B613C1B59D40E00EB3A5B /* YPJGFruit.app */,
+				F49B61581B59D40E00EB3A5B /* YPJGFruitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49B613E1B59D40E00EB3A5B /* YPJGFruit */ = {
+			isa = PBXGroup;
+			children = (
+				F49B61681B59D42600EB3A5B /* YPJGFruitShop */,
+				F49B614C1B59D40E00EB3A5B /* Main.storyboard */,
+				F49B614F1B59D40E00EB3A5B /* Images.xcassets */,
+				F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */,
+				F49B613F1B59D40E00EB3A5B /* Supporting Files */,
+			);
+			path = YPJGFruit;
+			sourceTree = "<group>";
+		};
+		F49B613F1B59D40E00EB3A5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49B61511B59D40E00EB3A5B /* LaunchScreen.xib */,
+				F49B61431B59D40E00EB3A5B /* AppDelegate.h */,
+				F49B61441B59D40E00EB3A5B /* AppDelegate.m */,
+				F49B61491B59D40E00EB3A5B /* ViewController.h */,
+				F49B614A1B59D40E00EB3A5B /* ViewController.m */,
+				F49B61401B59D40E00EB3A5B /* Info.plist */,
+				F49B61411B59D40E00EB3A5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49B615B1B59D40E00EB3A5B /* YPJGFruitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49B615E1B59D40E00EB3A5B /* YPJGFruitTests.m */,
+				F49B615C1B59D40E00EB3A5B /* Supporting Files */,
+			);
+			path = YPJGFruitTests;
+			sourceTree = "<group>";
+		};
+		F49B615C1B59D40E00EB3A5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49B615D1B59D40E00EB3A5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49B61681B59D42600EB3A5B /* YPJGFruitShop */ = {
+			isa = PBXGroup;
+			children = (
+				F45BF1871BF83B5200D28ADE /* YPDataRequest */,
+				F49B61FF1B5A93F500EB3A5B /* Plist */,
+				F49B61FA1B5A82F600EB3A5B /* Images */,
+				F49B61701B59D69A00EB3A5B /* Header */,
+				F49B616C1B59D52D00EB3A5B /* Model */,
+				F49B616B1B59D51F00EB3A5B /* View */,
+				F49B616A1B59D50D00EB3A5B /* VC */,
+			);
+			name = YPJGFruitShop;
+			sourceTree = "<group>";
+		};
+		F49B616A1B59D50D00EB3A5B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F40E7D961B80B0880059D5C3 /* BaseVC */,
+				F40E7D951B80B06F0059D5C3 /* FruitSelection */,
+				F40E7D8E1B80B0510059D5C3 /* Chat */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		F49B616B1B59D51F00EB3A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F49B616C1B59D52D00EB3A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F49B61701B59D69A00EB3A5B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F49B61691B59D49700EB3A5B /* BasicHeader.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		F49B61FA1B5A82F600EB3A5B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F49B61FB1B5A834F00EB3A5B /* 平谷水蜜桃1nomal.jpg */,
+				F49B61FC1B5A834F00EB3A5B /* 葡萄1nomal.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F49B61FF1B5A93F500EB3A5B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				F49B62001B5A940500EB3A5B /* AllProduct.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49B613B1B59D40E00EB3A5B /* YPJGFruit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49B61621B59D40E00EB3A5B /* Build configuration list for PBXNativeTarget "YPJGFruit" */;
+			buildPhases = (
+				F8A9F1A7E5B9627E7F40A4A7 /* Check Pods Manifest.lock */,
+				F49B61381B59D40E00EB3A5B /* Sources */,
+				F49B61391B59D40E00EB3A5B /* Frameworks */,
+				F49B613A1B59D40E00EB3A5B /* Resources */,
+				DFD3ECCB9B13DE82D50C14AC /* Embed Pods Frameworks */,
+				A5100A8D4D5571D4A3D710A2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPJGFruit;
+			productName = YPJGFruit;
+			productReference = F49B613C1B59D40E00EB3A5B /* YPJGFruit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F49B61571B59D40E00EB3A5B /* YPJGFruitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49B61651B59D40E00EB3A5B /* Build configuration list for PBXNativeTarget "YPJGFruitTests" */;
+			buildPhases = (
+				F49B61541B59D40E00EB3A5B /* Sources */,
+				F49B61551B59D40E00EB3A5B /* Frameworks */,
+				F49B61561B59D40E00EB3A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49B615A1B59D40E00EB3A5B /* PBXTargetDependency */,
+			);
+			name = YPJGFruitTests;
+			productName = YPJGFruitTests;
+			productReference = F49B61581B59D40E00EB3A5B /* YPJGFruitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49B61341B59D40E00EB3A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = kalen;
+				TargetAttributes = {
+					F49B613B1B59D40E00EB3A5B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					F49B61571B59D40E00EB3A5B = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = F49B613B1B59D40E00EB3A5B;
+					};
+				};
+			};
+			buildConfigurationList = F49B61371B59D40E00EB3A5B /* Build configuration list for PBXProject "YPJGFruit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49B61331B59D40E00EB3A5B;
+			productRefGroup = F49B613D1B59D40E00EB3A5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49B613B1B59D40E00EB3A5B /* YPJGFruit */,
+				F49B61571B59D40E00EB3A5B /* YPJGFruitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49B613A1B59D40E00EB3A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40E7DBC1B80C26E0059D5C3 /* MessageVC.xib in Resources */,
+				F49B61FE1B5A834F00EB3A5B /* 葡萄1nomal.jpg in Resources */,
+				F49B62011B5A940500EB3A5B /* AllProduct.plist in Resources */,
+				F49B61FD1B5A834F00EB3A5B /* 平谷水蜜桃1nomal.jpg in Resources */,
+				F49B61F91B5A5D3100EB3A5B /* FruitProductCell.xib in Resources */,
+				F49B614E1B59D40E00EB3A5B /* Main.storyboard in Resources */,
+				F40E7D8D1B80AC470059D5C3 /* TabBarBgView.xib in Resources */,
+				F49B61F41B5A430A00EB3A5B /* FruitCategoryCell.xib in Resources */,
+				F49B61721B59DD5F00EB3A5B /* FruitSelectView.xib in Resources */,
+				F49B61531B59D40E00EB3A5B /* LaunchScreen.xib in Resources */,
+				F49B61501B59D40E00EB3A5B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49B61561B59D40E00EB3A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5100A8D4D5571D4A3D710A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPJGFruit/Pods-YPJGFruit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD3ECCB9B13DE82D50C14AC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPJGFruit/Pods-YPJGFruit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A9F1A7E5B9627E7F40A4A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49B61381B59D40E00EB3A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45BF18D1BF842B700D28ADE /* AFAppDotNetAPIClient.m in Sources */,
+				F49B61F81B5A5D3100EB3A5B /* FruitProductCell.m in Sources */,
+				F49B61481B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld in Sources */,
+				F40E7DBB1B80C26E0059D5C3 /* MessageVC.m in Sources */,
+				F40E7D8B1B80AC470059D5C3 /* KalenTabBarC.m in Sources */,
+				F49B61451B59D40E00EB3A5B /* AppDelegate.m in Sources */,
+				F42116C51BFF0A4F00436A70 /* ProductListResponse.m in Sources */,
+				F42116C21BFF090D00436A70 /* FruitInfoModel.m in Sources */,
+				F45BF18A1BF83C4C00D28ADE /* YPDataRequest.m in Sources */,
+				F49B614B1B59D40E00EB3A5B /* ViewController.m in Sources */,
+				F49B61751B59E80700EB3A5B /* FruitSelectView.m in Sources */,
+				F40E7D8C1B80AC470059D5C3 /* TabBarBgvView.m in Sources */,
+				F42116BF1BFF072300436A70 /* ProductListInType.m in Sources */,
+				F40E7D931B80B05F0059D5C3 /* TRMessage.m in Sources */,
+				F49B61F31B5A430A00EB3A5B /* FruitCategoryCell.m in Sources */,
+				F40E7DBF1B80CD730059D5C3 /* MVC.m in Sources */,
+				F40E7D941B80B05F0059D5C3 /* TRMessageCell.m in Sources */,
+				F45BF1961BF8543800D28ADE /* YPModel.m in Sources */,
+				F49B616F1B59D66F00EB3A5B /* FruitSelectionVC.m in Sources */,
+				F45BF1901BF84C4200D28ADE /* YPResponse.m in Sources */,
+				F49B61421B59D40E00EB3A5B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49B61541B59D40E00EB3A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49B615F1B59D40E00EB3A5B /* YPJGFruitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F49B615A1B59D40E00EB3A5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49B613B1B59D40E00EB3A5B /* YPJGFruit */;
+			targetProxy = F49B61591B59D40E00EB3A5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F49B614C1B59D40E00EB3A5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49B614D1B59D40E00EB3A5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F49B61511B59D40E00EB3A5B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F49B61521B59D40E00EB3A5B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F49B61601B59D40E00EB3A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F49B61611B59D40E00EB3A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F49B61631B59D40E00EB3A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961C16A3B3BA4477C3038497 /* Pods-YPJGFruit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YPJGFruit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F49B61641B59D40E00EB3A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858F67375FE1B3D35190A4BC /* Pods-YPJGFruit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YPJGFruit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F49B61661B59D40E00EB3A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YPJGFruitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YPJGFruit.app/YPJGFruit";
+			};
+			name = Debug;
+		};
+		F49B61671B59D40E00EB3A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YPJGFruitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YPJGFruit.app/YPJGFruit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49B61371B59D40E00EB3A5B /* Build configuration list for PBXProject "YPJGFruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B61601B59D40E00EB3A5B /* Debug */,
+				F49B61611B59D40E00EB3A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49B61621B59D40E00EB3A5B /* Build configuration list for PBXNativeTarget "YPJGFruit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B61631B59D40E00EB3A5B /* Debug */,
+				F49B61641B59D40E00EB3A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49B61651B59D40E00EB3A5B /* Build configuration list for PBXNativeTarget "YPJGFruitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B61661B59D40E00EB3A5B /* Debug */,
+				F49B61671B59D40E00EB3A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */,
+			);
+			currentVersion = F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */;
+			path = YPJGFruit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F49B61341B59D40E00EB3A5B /* Project object */;
+}

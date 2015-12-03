@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "237e5645-803e-bb46-910f-57ed1aeb139a++6292",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "237e5645-803e-bb46-910f-57ed1aeb139a++6292" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "237e5645-803e-bb46-910f-57ed1aeb139a++6292" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0535F564-ED1E-4F02-B29E-0416804BA357",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "237e5645-803e-bb46-910f-57ed1aeb139a++6292" : "Kalen_iOS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YPJGFruit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/YPJGFruit\/YPJGFruit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/182.92.193.234\/svn\/kalen_cloud_svn1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "237e5645-803e-bb46-910f-57ed1aeb139a++6292"
+    }
+  ]
+}

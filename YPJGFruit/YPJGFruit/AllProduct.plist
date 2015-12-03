@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FruitCategory</key>
+		<string>特价水果</string>
+		<key>FruitProduct</key>
+		<array>
+			<dict>
+				<key>Discount</key>
+				<string>7折</string>
+				<key>OriginalPrice</key>
+				<string>56</string>
+				<key>ProductID</key>
+				<string>q</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>皇冠梨1.jpg</string>
+				<key>CurrentPrice</key>
+				<string>39</string>
+				<key>Description</key>
+				<string> 精选皇冠梨 生鲜 河北 皇冠梨 6个/盒 1.5kg以上</string>
+			</dict>
+			<dict>
+				<key>Discount</key>
+				<string>6折</string>
+				<key>OriginalPrice</key>
+				<string>67</string>
+				<key>ProductID</key>
+				<string>w</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>苹果4.jpg</string>
+				<key>CurrentPrice</key>
+				<string>40</string>
+				<key>Description</key>
+				<string>栖霞红富士苹 生鲜 山东 红富士苹果 6个/盒 约1.25kg果</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>FruitCategory</key>
+		<string>进口水果</string>
+		<key>FruitProduct</key>
+		<array>
+			<dict>
+				<key>ProductID</key>
+				<string>a</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>葡萄1nomal.jpg</string>
+				<key>CurrentPrice</key>
+				<string>50</string>
+				<key>Description</key>
+				<string>马陆夏黑葡萄 2.2-2.5斤 毁包赔 无籽黑提 新鲜水果1L</string>
+			</dict>
+			<dict>
+				<key>ProductID</key>
+				<string>s</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>平谷水蜜桃1nomal.jpg</string>
+				<key>CurrentPrice</key>
+				<string>34</string>
+				<key>Description</key>
+				<string>北京平谷大桃子 水蜜桃9号 久保 24号桃精选礼品盒顺丰航空</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>FruitCategory</key>
+		<string>国产水果</string>
+		<key>FruitProduct</key>
+		<array>
+			<dict>
+				<key>Discount</key>
+				<string>7折</string>
+				<key>OriginalPrice</key>
+				<string>56</string>
+				<key>ProductID</key>
+				<string>q</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>皇冠梨1.jpg</string>
+				<key>CurrentPrice</key>
+				<string>39</string>
+				<key>Description</key>
+				<string> 精选皇冠梨 生鲜 河北 皇冠梨 6个/盒 1.5kg以上</string>
+			</dict>
+			<dict>
+				<key>Discount</key>
+				<string>6折</string>
+				<key>OriginalPrice</key>
+				<string>67</string>
+				<key>ProductID</key>
+				<string>w</string>
+				<key>Quantity</key>
+				<string>0</string>
+				<key>ImageName</key>
+				<string>苹果4.jpg</string>
+				<key>CurrentPrice</key>
+				<string>40</string>
+				<key>Description</key>
+				<string>栖霞红富士苹 生鲜 山东 红富士苹果 6个/盒 约1.25kg果</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
