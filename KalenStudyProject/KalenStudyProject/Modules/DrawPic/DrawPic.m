@@ -9,6 +9,7 @@
 #import "DrawPic.h"
 #import "DisplayView.h"
 
+
 @interface DrawPic ()
 
 @end
@@ -18,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DisplayView *d = [[DisplayView alloc]initWithFrame:CGRectMake(64, 64, 200, 200)];
+    DisplayView *d = [[DisplayView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)];
     
-    d.backgroundColor = [UIColor whiteColor];
+    d.backgroundColor = [UIColor yellowColor];
     
     [self.view addSubview:d];
 }

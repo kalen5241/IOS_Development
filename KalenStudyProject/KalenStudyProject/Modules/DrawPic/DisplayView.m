@@ -7,62 +7,84 @@
 //
 
 #import "DisplayView.h"
+#import "Constants.h"
 
-@implementation DisplayView
+#define SHANGKUANG 30
+#define QUXIAN 270
 
+@interface DisplayView ()
+@end
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+@implementation DisplayView 
+
+-(NSArray *)arr {
+    if (!_arr) {
+        _arr = @[@(0.1),@(0.2),@(0.3),@(0.4),@(1)];
+    }
+    return _arr;
+}
+
+-(NSDictionary *)dic {
+    
+    FRAME_LOG(self.frame);
+    BOUNDS_LOG(self.bounds);
+    if (!_dic) {
+        
+        CGFloat x = 0;
+        CGFloat y = 0;
+        
+        
+        NSMutableArray *marr = [NSMutableArray array];
+        y = self.bounds.origin.y + self.bounds.size.height;
+        x = self.bounds.origin.x;
+        CGPoint p = CGPointMake(x, y);
+        
+        for (int i = 1; i < self.arr.count + 1; i ++) {
+            float t = (float) [self.arr[i-1] floatValue];
+            NSLog(@"t is %f",t);
+            
+            CGFloat y = SHANGKUANG + (self.bounds.size.height - SHANGKUANG) * (1 - t);
+            
+            NSLog(@"y is %f",y);
+                CGPoint p1 = CGPointMake(self.bounds.origin.x + self.bounds.size.width/(self.arr.count + 1) * i ,y);
+            [marr addObject:[NSValue valueWithCGPoint:p1]];
+        }
+        
+        y = self.bounds.origin.y + self.bounds.size.height;
+        x = self.bounds.origin.x + self.bounds.size.width;
+        CGPoint p4 = CGPointMake(x, y);
+        
+        [marr addObject:[NSValue valueWithCGPoint:p4]];
+        
+        NSArray *arr = [marr copy];
+        NSDictionary *de = @{
+                             @"startPoint":[NSValue valueWithCGPoint:p],
+                             @"pointList":arr
+                             };
+        _dic = de;
+        
+    }
+    
+    return _dic;
+}
+
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
-    
-
-    /**
-     *  Core Graphics绘图
-     */
-    /*
-     CGContextRef context = UIGraphicsGetCurrentContext();
-     CGContextMoveToPoint(context, 40, 40);
-     CGContextAddLineToPoint(context, 40, 140);
-     CGContextAddLineToPoint(context, 140, 40);
-     CGContextAddLineToPoint(context, 40, 40);
-     CGContextSetStrokeColorWithColor(context, [[UIColor redColor]CGColor]);
-     CGContextStrokePath(context);
-     */
-    
-    
     /**
      *  UIKit绘图
      */
     /**/
-    
-    CGPoint p = CGPointMake(40, 40);
-    CGPoint p1 = CGPointMake(40, 140);
-    CGPoint p2 = CGPointMake(140, 40);
-    CGPoint p3 = CGPointMake(40, 40);
-    NSValue *v = [NSValue valueWithCGPoint:p];
-    NSValue *v1 = [NSValue valueWithCGPoint:p1];
-    NSValue *v2 = [NSValue valueWithCGPoint:p2];
-    NSValue *v3 = [NSValue valueWithCGPoint:p3];
-    NSArray *arr = @[v1,v2,v3];
-    NSDictionary * dic = [NSDictionary dictionary];
-    NSDictionary *de = @{
-                         @"startPoint":v,
-                         @"pointList":arr
-                         };
-    
-    [dic objectForKey:@"startPoint"];
-    self.dic = de;
     NSValue *s = [self.dic objectForKey:@"startPoint"];
     NSArray *ar = [self.dic objectForKey:@"pointList"];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:[s CGPointValue]];
     
-
+    CGPoint t = [s CGPointValue];
     for (NSValue *v in ar) {
         CGPoint r =  [v CGPointValue];
-        [path addLineToPoint:r];
+        //[path addLineToPoint:r];
+        [path addCurveToPoint:r controlPoint1:CGPointMake(t.x + (r.x - t.x)/2,t.y) controlPoint2:CGPointMake(t.x + (r.x - t.x)/2,r.y)];
+        t = r;
     }
     
     [[UIColor redColor] setStroke];
@@ -71,7 +93,6 @@
     path.lineCapStyle = kCGLineCapRound;
     path.lineJoinStyle = kCGLineJoinMiter;
     [path stroke];
-    
-    
 }
+
 @end

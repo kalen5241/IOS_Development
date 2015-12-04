@@ -11,5 +11,6 @@
 @interface DisplayView : UIView
 
 @property (nonatomic,strong) NSDictionary *dic;
+@property (nonatomic,strong) NSArray *arr;
 
 @end
