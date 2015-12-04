@@ -14,6 +14,7 @@
 #import "AutoResizeCellHeightVC.h"
 #import "UMengSocialVCViewController.h"
 #import "ConnectionVC.h"
+#import "ImageDevVC.h"
 
 @implementation DataUtil
 
@@ -50,8 +51,13 @@
         item6.title = @"初始化方法、工厂方法、关联";
         item6.destVC = [[ConnectionVC alloc]init];
         item6.detail = @"通过工厂方法调用初始化方法给对象添加关联属性-ConnectionVC";
+        
+        GuideDataItem *item7 = [[GuideDataItem alloc]init];
+        item7.title = @"图片开法";
+        item7.destVC = [[ImageDevVC alloc]init];
+        item7.detail = @"图片开发的多种方法-ImageDevVC";
 
-        _guideArray = @[item1,item2,item3,item4,item5,item6];
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7];
     }
     return _guideArray;
 }
