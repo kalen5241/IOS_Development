@@ -73,6 +73,9 @@
 		F4BC57861BF97225003944F3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57851BF97225003944F3 /* libsqlite3.tbd */; };
 		F4BC57881BF97230003944F3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57871BF97230003944F3 /* CoreTelephony.framework */; };
 		F4BC578A1BF9723D003944F3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57891BF9723D003944F3 /* libstdc++.tbd */; };
+		F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ED59B41C112CAE00B36AD2 /* DrawPic.m */; };
+		F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ED59B51C112CAE00B36AD2 /* DrawPic.xib */; };
+		F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ED59B91C112D5100B36AD2 /* DisplayView.m */; };
 		F4F5DFD71BF6BAF500832FB2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F5DFD61BF6BAF500832FB2 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -210,6 +213,11 @@
 		F4BC57871BF97230003944F3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F4BC57891BF9723D003944F3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4ED59B31C112CAE00B36AD2 /* DrawPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPic.h; sourceTree = "<group>"; };
+		F4ED59B41C112CAE00B36AD2 /* DrawPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPic.m; sourceTree = "<group>"; };
+		F4ED59B51C112CAE00B36AD2 /* DrawPic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawPic.xib; sourceTree = "<group>"; };
+		F4ED59B81C112D5100B36AD2 /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		F4ED59B91C112D5100B36AD2 /* DisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
 		F4F5DFD61BF6BAF500832FB2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -366,6 +374,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4ED59B21C112C3000B36AD2 /* DrawPic */,
 				F45932E31C1034AD00AD965E /* ImageDev */,
 				F4B7F9401C102C0F000BAF87 /* MutilDataSource */,
 				F4B7F9371C102B85000BAF87 /* Connection */,
@@ -608,6 +617,18 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		F4ED59B21C112C3000B36AD2 /* DrawPic */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED59B31C112CAE00B36AD2 /* DrawPic.h */,
+				F4ED59B41C112CAE00B36AD2 /* DrawPic.m */,
+				F4ED59B51C112CAE00B36AD2 /* DrawPic.xib */,
+				F4ED59B81C112D5100B36AD2 /* DisplayView.h */,
+				F4ED59B91C112D5100B36AD2 /* DisplayView.m */,
+			);
+			path = DrawPic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -740,6 +761,7 @@
 				F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */,
 				F4B7F93F1C102B85000BAF87 /* ConnectionVC.xib in Resources */,
 				F4B7F98B1C102CE5000BAF87 /* UMSCommentInputController.xib in Resources */,
+				F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */,
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
 				F4B7F98A1C102CE5000BAF87 /* UMSCommentDetailController.xib in Resources */,
@@ -863,6 +885,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
+				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,
+				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
 				F4B7F8CC1C102AB7000BAF87 /* FirstVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,

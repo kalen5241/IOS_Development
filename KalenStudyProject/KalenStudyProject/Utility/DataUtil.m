@@ -15,6 +15,7 @@
 #import "UMengSocialVCViewController.h"
 #import "ConnectionVC.h"
 #import "ImageDevVC.h"
+#import "DrawPic.h"
 
 @implementation DataUtil
 
@@ -56,8 +57,14 @@
         item7.title = @"图片开法";
         item7.destVC = [[ImageDevVC alloc]init];
         item7.detail = @"图片开发的多种方法-ImageDevVC";
+        
+        GuideDataItem *item8 = [[GuideDataItem alloc]init];
+        item8.title = @"绘制曲线";
+        item8.destVC = [[DrawPic alloc]init];
+        item8.detail = @"用于测试绘制曲线-DrawPic";
+        
 
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7];
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8];
     }
     return _guideArray;
 }
