@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-KalenStudyProject-FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,7 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>22A6A645FB6D863D1C41E58AC24E0257</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2DB991DFC47A4B2363EA58A6EBAD228C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B051CD4781BDE41532AAD0A617A5B61</key>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,22 +122,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97C37D1573A83ADF32650BBE5A344246</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A4769F5A02F8F6D614D08C2E1CB15D5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB3DF2C557751D2FBCC8E5C8DB9EABA9</key>
+		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
+		<key>FF6893E95B2EA6337CDD4FEB0A2093AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

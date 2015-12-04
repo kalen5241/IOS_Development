@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BB7564CB812565B73E0453F5'
+               BlueprintIdentifier = 'F12F8BDB5373CE69CB436A93'
                BlueprintName = 'jastor'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libjastor.a'>

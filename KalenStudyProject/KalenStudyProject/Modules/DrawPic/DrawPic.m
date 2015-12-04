@@ -8,7 +8,7 @@
 
 #import "DrawPic.h"
 #import "DisplayView.h"
-
+#import <Masonry.h>
 
 @interface DrawPic ()
 
@@ -19,11 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DisplayView *d = [[DisplayView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64)];
-    
+    DisplayView *d = [DisplayView new];
     d.backgroundColor = [UIColor yellowColor];
     
     [self.view addSubview:d];
+    
+    [d mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(64,0,0,0));
+    }];
+    
+    
 }
 
 @end

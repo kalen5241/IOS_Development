@@ -102,6 +102,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
     GuideDataItem *item =  self.dataArray[indexPath.row];
+    item.destVC.title = item.title;
     [self.navigationController pushViewController:item.destVC animated:YES];
     
 }
