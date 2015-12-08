@@ -16,6 +16,7 @@
 #import "ConnectionVC.h"
 #import "ImageDevVC.h"
 #import "DrawPic.h"
+#import "CellTreeVC.h"
 
 @implementation DataUtil
 
@@ -63,8 +64,13 @@
         item8.destVC = [[DrawPic alloc]init];
         item8.detail = @"用于测试绘制曲线-DrawPic";
         
+        GuideDataItem *item9 = [[GuideDataItem alloc]init];
+        item9.title = @"树形展开Cell";
+        item9.destVC = [[CellTreeVC alloc]init];
+        item9.detail = @"可多级展开的TableView－CellTreeVC";
+        
 
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8];
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9];
     }
     return _guideArray;
 }
