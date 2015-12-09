@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 50)];
+    
+    [self.view addSubview:label];
+    
+    label.text = NSLocalizedString(@"demo", nil);
 }
 
 - (void)didReceiveMemoryWarning {

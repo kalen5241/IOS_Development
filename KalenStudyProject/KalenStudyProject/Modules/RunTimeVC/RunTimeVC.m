@@ -7,8 +7,8 @@
 //
 
 #import "RunTimeVC.h"
-#import "AnimalC.h"
-#import <objc/runtime.h>
+
+
 
 @interface RunTimeVC ()
 
