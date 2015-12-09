@@ -17,6 +17,7 @@
 #import "ImageDevVC.h"
 #import "DrawPic.h"
 #import "CellTreeVC.h"
+#import "RunTimeVC.h"
 
 @implementation DataUtil
 
@@ -69,8 +70,12 @@
         item9.destVC = [[CellTreeVC alloc]init];
         item9.detail = @"可多级展开的TableView－CellTreeVC";
         
-
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9];
+        GuideDataItem *item10 = [[GuideDataItem alloc]init];
+        item10.title = @"运行时RunTime";
+        item10.destVC = [[RunTimeVC alloc]init];
+        item10.detail = @"练习运行时－CellTreeVC";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10];
     }
     return _guideArray;
 }

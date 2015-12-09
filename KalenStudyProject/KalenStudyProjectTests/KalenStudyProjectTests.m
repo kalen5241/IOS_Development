@@ -10,6 +10,7 @@
 #import "ErrorDepositeViewController.h"
 #import "AnimalC.h"
 #import "DataUtil.h"
+#import "RunTimeVC.h"
 #import "FMDatabase.h"
 
 
@@ -285,4 +286,13 @@
   */
 }
 
+- (void) testRunTime {
+   RunTimeVC *ce = [[RunTimeVC alloc]init];
+   // [ce logVarName:[AnimalC class]];
+    //[ce changeVarValue:[AnimalC class]];
+   // [ce logMathodName:[AnimalC class]];
+    NSLog(@"*****************");
+   // [ce addMethod:[AnimalC class]];
+    [ce changeMethod:[AnimalC class]];
+}
 @end

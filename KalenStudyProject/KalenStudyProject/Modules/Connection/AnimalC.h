@@ -9,12 +9,24 @@
 #import <Foundation/Foundation.h>
 
 @interface AnimalC : NSObject
+{
+    @private NSString *age;
+    @private NSString *aciton;
+}
+
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *sex;
 
-//-(instancetype)init;
+-(void)method1;
+-(NSString *)method2;
+
+-(instancetype)init;
+
+- (void)setMode:(NSString *)modeA;
 
 -(instancetype)initWithName:(NSString *)name andSex:(NSString *)sex;
+
+-(instancetype)initWithAge:(NSString *)ageInput andAction:(NSString *)actionInput;
 
 +(instancetype)animal;
 
