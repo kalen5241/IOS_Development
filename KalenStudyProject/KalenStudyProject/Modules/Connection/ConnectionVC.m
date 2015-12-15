@@ -42,13 +42,29 @@
     
     block(@"小良心");
     
+//    [self car:^NSString *(NSString *a, NSString *b) {
+//        NSLog(@"ppppp");
+//        return [self moto:^NSString *(NSString *c, NSString *d) {
+//            NSLog(@"ooooo");
+//            return [a stringByAppendingString:b];
+//        }];
+//    }];
+    
+    [self car:@"1" andBrand:@"2" andComplete:^NSString *(NSString *a, NSString *b) {
+        NSLog(@"ppppp");
+        return [self moto:a andBrand:b andComplete:^NSString *(NSString *c, NSString *d) {
+            NSLog(@"ooooo");
+            return [a stringByAppendingString:b];
+        }];
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
+-(NSString *)car:(NSString *)name andBrand:(NSString *)brand andComplete:(NSString * (^)(NSString *a,NSString *b))kk {
+    return kk(name,brand);
 }
 
-
+-(NSString *)moto:(NSString *)name andBrand:(NSString *)brand andComplete:(NSString *(^)(NSString *c,NSString *d))mm {
+    return mm(name,brand);
+}
 
 @end
