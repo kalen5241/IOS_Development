@@ -164,4 +164,26 @@
     return fullPath;
 }
 
++ (void)showJSON{
+    NSArray *arrayPlists = [[NSBundle mainBundle] pathsForResourcesOfType:@"plist" inDirectory:nil];
+    //    NSLog(@"%@",arrayPlists);
+    
+    NSError *error = nil;
+    for (NSString *path in arrayPlists) {
+        NSArray *array = [[NSArray alloc] initWithContentsOfFile:path];
+        // NSString *jsonString = [array JSONString];
+        
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:array options:NSJSONWritingPrettyPrinted error: &error];
+        
+        
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData
+                                                     encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",jsonString);
+//        CFShow(@"\n\n\n\n\n");
+//        CFShow((__bridge CFTypeRef)(path.lastPathComponent));
+//        CFShow((__bridge CFTypeRef)(jsonString));
+    }
+}//读取 工程文件中的所有 plist 文件 转成 json 输出
+
+
 @end

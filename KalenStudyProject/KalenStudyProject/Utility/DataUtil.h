@@ -20,5 +20,5 @@ typedef NS_ENUM(NSUInteger, AppType) {
 + (NSArray *)fetchArray;
 + (NSString *)fetchKalenWorkPath:(AppType)appType;
 + (NSString*)getFullPath:(NSString*)fileName;
-
++ (void)showJSON;
 @end

@@ -141,6 +141,30 @@
     
 }
 
+- (void)testJsonWriteToFile {
+    
+    NSError *error = nil;
+    
+    NSDictionary *user = [[NSDictionary alloc] initWithObjectsAndKeys:@"0", @"Version", nil];
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:user options:NSJSONWritingPrettyPrinted error: &error];
+    
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData
+                                                 encoding:NSUTF8StringEncoding];
+    //[jsonString writeToFile:[DataUtil getFullPath:@"kalen.json"] atomically:YES];
+    
+    [jsonString writeToFile:[DataUtil getFullPath:@"kalen.json"] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"%@",[DataUtil getFullPath:@"kalen.json"]);
+}
+
+- (void)testJsonShow {
+    
+   // [DataUtil showJSON];
+    
+}
+
+
+
 - (void)testFileOperation {
     NSLog(@"kalen的User目录是%@",[DataUtil fetchKalenWorkPath:AppTypeUser]);
     NSLog(@"kalen的CS目录是%@",[DataUtil fetchKalenWorkPath:AppTypeCS]);
