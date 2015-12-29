@@ -14,6 +14,9 @@
 @end
 
 @implementation UMengSocialVCViewController
+- (IBAction)show:(UIButton *)sender {
+    AlertShow(@"sdfsfsfsdfsf");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

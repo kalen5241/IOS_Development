@@ -17,8 +17,9 @@
 #import "ImageDevVC.h"
 #import "DrawPic.h"
 #import "CellTreeVC.h"
+#import "ChartVC.h"
 #import "RunTimeVC.h"
-
+#import "CodeChartVC.h"
 @implementation DataUtil
 
 -(NSArray *)guideArray {
@@ -32,7 +33,7 @@
         
         GuideDataItem *item2 = [[GuideDataItem alloc]init];
         item2.title = @"UI测试";
-        item2.destVC = [[MutilDataSource alloc]init];
+        item2.destVC = [[UITestingVC alloc]init];
         item2.detail = @"UI自动化测试-UITestingVC";
         
         GuideDataItem *item3 = [[GuideDataItem alloc]init];
@@ -75,7 +76,17 @@
         item10.destVC = [[RunTimeVC alloc]init];
         item10.detail = @"练习运行时－CellTreeVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10];
+        GuideDataItem *item11 = [[GuideDataItem alloc]init];
+        item10.title = @"Chart";
+        item10.destVC = [[ChartVC alloc]init];
+        item10.detail = @"练习图表－CellTreeVC";
+        
+        GuideDataItem *item12 = [[GuideDataItem alloc]init];
+        item12.title = @"Chart";
+        item12.destVC = [[CodeChartVC alloc]init];
+        item12.detail = @"练习图表－CellTreeVC";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12];
     }
     return _guideArray;
 }

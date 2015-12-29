@@ -19,6 +19,8 @@
 		F42116BF1BFF072300436A70 /* ProductListInType.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116BE1BFF072300436A70 /* ProductListInType.m */; };
 		F42116C21BFF090D00436A70 /* FruitInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116C11BFF090D00436A70 /* FruitInfoModel.m */; };
 		F42116C51BFF0A4F00436A70 /* ProductListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F42116C41BFF0A4F00436A70 /* ProductListResponse.m */; };
+		F447F5D41C29421100733E8E /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F447F5D21C29421100733E8E /* WebViewVC.m */; };
+		F447F5D51C29421100733E8E /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F447F5D31C29421100733E8E /* WebViewVC.xib */; };
 		F45BF18A1BF83C4C00D28ADE /* YPDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF1891BF83C4C00D28ADE /* YPDataRequest.m */; };
 		F45BF18D1BF842B700D28ADE /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF18B1BF842B700D28ADE /* AFAppDotNetAPIClient.m */; };
 		F45BF1901BF84C4200D28ADE /* YPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF18F1BF84C4200D28ADE /* YPResponse.m */; };
@@ -77,6 +79,9 @@
 		F42116C11BFF090D00436A70 /* FruitInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitInfoModel.m; sourceTree = "<group>"; };
 		F42116C31BFF0A4F00436A70 /* ProductListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListResponse.h; sourceTree = "<group>"; };
 		F42116C41BFF0A4F00436A70 /* ProductListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListResponse.m; sourceTree = "<group>"; };
+		F447F5D11C29421100733E8E /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
+		F447F5D21C29421100733E8E /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		F447F5D31C29421100733E8E /* WebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
 		F45BF1881BF83C4C00D28ADE /* YPDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDataRequest.h; sourceTree = "<group>"; };
 		F45BF1891BF83C4C00D28ADE /* YPDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDataRequest.m; sourceTree = "<group>"; };
 		F45BF18B1BF842B700D28ADE /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
@@ -302,6 +307,9 @@
 				F40E7D961B80B0880059D5C3 /* BaseVC */,
 				F40E7D951B80B06F0059D5C3 /* FruitSelection */,
 				F40E7D8E1B80B0510059D5C3 /* Chat */,
+				F447F5D11C29421100733E8E /* WebViewVC.h */,
+				F447F5D21C29421100733E8E /* WebViewVC.m */,
+				F447F5D31C29421100733E8E /* WebViewVC.xib */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -428,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F447F5D51C29421100733E8E /* WebViewVC.xib in Resources */,
 				F40E7DBC1B80C26E0059D5C3 /* MessageVC.xib in Resources */,
 				F49B61FE1B5A834F00EB3A5B /* 葡萄1nomal.jpg in Resources */,
 				F49B62011B5A940500EB3A5B /* AllProduct.plist in Resources */,
@@ -508,6 +517,7 @@
 				F49B61F81B5A5D3100EB3A5B /* FruitProductCell.m in Sources */,
 				F49B61481B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld in Sources */,
 				F40E7DBB1B80C26E0059D5C3 /* MessageVC.m in Sources */,
+				F447F5D41C29421100733E8E /* WebViewVC.m in Sources */,
 				F40E7D8B1B80AC470059D5C3 /* KalenTabBarC.m in Sources */,
 				F49B61451B59D40E00EB3A5B /* AppDelegate.m in Sources */,
 				F42116C51BFF0A4F00436A70 /* ProductListResponse.m in Sources */,

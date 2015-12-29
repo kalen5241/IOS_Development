@@ -17,7 +17,6 @@
 #import "UIViewController+MMDrawerController.h"
 #import "LeftMenuVCViewController.h"
 
-
 #define CELL_ID @"KalenCell"
 @interface GuideViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -63,6 +62,9 @@
  
     NSString *sortPath = [[NSBundle mainBundle] pathForResource:@"Data.plist" ofType:nil];
     NSLog(@"文件路径为%@",sortPath);
+    
+    
+    AlertShow(@"dfdfsdfsd");
     
 }
 

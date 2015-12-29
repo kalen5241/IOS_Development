@@ -15,5 +15,7 @@
 
 #define BOUNDS_LOG(u) NSLog(@"bounds.x 为 %f",(u).origin.x);NSLog(@"bounds.y 为 %f",(u).origin.y);NSLog(@"bounds.H 为 %f",(u).size.height);NSLog(@"bounds.W 为 %f",(u).size.width);
 
+#define AlertShow(x) UIAlertView *at = [[UIAlertView alloc] initWithTitle:nil message:x delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];[at show];
+
 
 @end

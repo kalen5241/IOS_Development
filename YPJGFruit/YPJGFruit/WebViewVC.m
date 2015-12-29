@@ -1,18 +1,18 @@
 //
-//  UITestingVC.m
-//  KalenStudyProject
+//  WebViewVC.m
+//  YPJGFruit
 //
-//  Created by kalen on 15/11/11.
+//  Created by kalen on 15/12/22.
 //  Copyright © 2015年 kalen. All rights reserved.
 //
 
-#import "UITestingVC.h"
+#import "WebViewVC.h"
 
-@interface UITestingVC ()
+@interface WebViewVC ()
 
 @end
 
-@implementation UITestingVC
+@implementation WebViewVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)show:(UIButton *)sender {
-    
-    AlertShow(@"sdfsdfsf");
-    
 }
 
 /*
