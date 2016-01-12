@@ -20,6 +20,8 @@
 #import "ChartVC.h"
 #import "RunTimeVC.h"
 #import "CodeChartVC.h"
+#import "EqualDivideVC.h"
+
 @implementation DataUtil
 
 -(NSArray *)guideArray {
@@ -86,7 +88,12 @@
         item12.destVC = [[CodeChartVC alloc]init];
         item12.detail = @"练习图表－CellTreeVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12];
+        GuideDataItem *item13 = [[GuideDataItem alloc]init];
+        item13.title = @"equalDividVC";
+        item13.destVC = [[EqualDivideVC  alloc]init];
+        item13.detail = @"平分视图－CellTreeVC";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13];
     }
     return _guideArray;
 }

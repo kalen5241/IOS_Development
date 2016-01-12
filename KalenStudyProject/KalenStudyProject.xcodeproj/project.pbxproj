@@ -10,6 +10,7 @@
 		1240EA075694256753C0A7EC /* libPods-KalenStudyProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */; };
 		A85AC4BF9D526359C1D953E1 /* libPods-KalenStudyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
+		F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4586FD51C4350F500ED7432 /* EqualDivideVC.m */; };
 		F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45932E51C1034DC00AD965E /* ImageDevVC.m */; };
 		F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45932E61C1034DC00AD965E /* ImageDevVC.xib */; };
 		F45932EB1C10370E00AD965E /* taocan.png in Resources */ = {isa = PBXBuildFile; fileRef = F45932EA1C10370E00AD965E /* taocan.png */; };
@@ -132,6 +133,8 @@
 		F4319DD81C17FCD6006761A1 /* kalenPre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kalenPre.pch; sourceTree = "<group>"; };
 		F4319E5E1C18149F006761A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F4586FD41C4350F500ED7432 /* EqualDivideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualDivideVC.h; sourceTree = "<group>"; };
+		F4586FD51C4350F500ED7432 /* EqualDivideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualDivideVC.m; sourceTree = "<group>"; };
 		F45932E41C1034DC00AD965E /* ImageDevVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDevVC.h; sourceTree = "<group>"; };
 		F45932E51C1034DC00AD965E /* ImageDevVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDevVC.m; sourceTree = "<group>"; };
 		F45932E61C1034DC00AD965E /* ImageDevVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDevVC.xib; sourceTree = "<group>"; };
@@ -368,6 +371,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F4586FD31C43506400ED7432 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F4586FD41C4350F500ED7432 /* EqualDivideVC.h */,
+				F4586FD51C4350F500ED7432 /* EqualDivideVC.m */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
 		F45932E31C1034AD00AD965E /* ImageDev */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +500,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4586FD31C43506400ED7432 /* AutoLayout */,
 				F45C62751C30DD070045D0DD /* Chart */,
 				F4CC21971C16C68700DB49DA /* RunTimeVC */,
 				F4CC21291C167B3D00DB49DA /* CellTree */,
@@ -1081,6 +1094,7 @@
 				F4CC21921C16B93600DB49DA /* RATreeView+UIScrollView.m in Sources */,
 				F4CC21961C16BBBD00DB49DA /* RADataObject.m in Sources */,
 				F4B7F9541C102C0F000BAF87 /* MutilDataSource.m in Sources */,
+				F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */,
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
