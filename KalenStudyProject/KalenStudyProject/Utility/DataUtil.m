@@ -21,6 +21,7 @@
 #import "RunTimeVC.h"
 #import "CodeChartVC.h"
 #import "EqualDivideVC.h"
+#import "Block.h"
 
 @implementation DataUtil
 
@@ -79,9 +80,9 @@
         item10.detail = @"练习运行时－CellTreeVC";
         
         GuideDataItem *item11 = [[GuideDataItem alloc]init];
-        item10.title = @"Chart";
-        item10.destVC = [[ChartVC alloc]init];
-        item10.detail = @"练习图表－CellTreeVC";
+        item11.title = @"Chart";
+        item11.destVC = [[ChartVC alloc]init];
+        item11.detail = @"练习图表－CellTreeVC";
         
         GuideDataItem *item12 = [[GuideDataItem alloc]init];
         item12.title = @"Chart";
@@ -93,7 +94,12 @@
         item13.destVC = [[EqualDivideVC  alloc]init];
         item13.detail = @"平分视图－CellTreeVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13];
+        GuideDataItem *item14 = [[GuideDataItem alloc]init];
+        item14.title = @"Block";
+        item14.destVC = [[Block  alloc]init];
+        item14.detail = @"Block练习－Block";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14];
     }
     return _guideArray;
 }

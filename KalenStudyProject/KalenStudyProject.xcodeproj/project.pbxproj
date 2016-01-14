@@ -10,6 +10,7 @@
 		1240EA075694256753C0A7EC /* libPods-KalenStudyProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */; };
 		A85AC4BF9D526359C1D953E1 /* libPods-KalenStudyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
+		F432FD661C473E3F00D0E628 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD651C473E3F00D0E628 /* Block.m */; };
 		F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4586FD51C4350F500ED7432 /* EqualDivideVC.m */; };
 		F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45932E51C1034DC00AD965E /* ImageDevVC.m */; };
 		F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45932E61C1034DC00AD965E /* ImageDevVC.xib */; };
@@ -133,6 +134,8 @@
 		F4319DD81C17FCD6006761A1 /* kalenPre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kalenPre.pch; sourceTree = "<group>"; };
 		F4319E5E1C18149F006761A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F432FD641C473E3F00D0E628 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		F432FD651C473E3F00D0E628 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 		F4586FD41C4350F500ED7432 /* EqualDivideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualDivideVC.h; sourceTree = "<group>"; };
 		F4586FD51C4350F500ED7432 /* EqualDivideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualDivideVC.m; sourceTree = "<group>"; };
 		F45932E41C1034DC00AD965E /* ImageDevVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDevVC.h; sourceTree = "<group>"; };
@@ -371,6 +374,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F432FD631C473DFA00D0E628 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				F432FD641C473E3F00D0E628 /* Block.h */,
+				F432FD651C473E3F00D0E628 /* Block.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
 		F4586FD31C43506400ED7432 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +512,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F432FD631C473DFA00D0E628 /* Block */,
 				F4586FD31C43506400ED7432 /* AutoLayout */,
 				F45C62751C30DD070045D0DD /* Chart */,
 				F4CC21971C16C68700DB49DA /* RunTimeVC */,
@@ -1115,6 +1128,7 @@
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
 				F45C628D1C30DEAF0045D0DD /* UULineChart.m in Sources */,
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,
+				F432FD661C473E3F00D0E628 /* Block.m in Sources */,
 				F4B7F9521C102C0F000BAF87 /* CustomCellTwo.m in Sources */,
 				F45C62791C30DD6E0045D0DD /* ChartVC.m in Sources */,
 			);
