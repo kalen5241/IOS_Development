@@ -11,6 +11,11 @@
 		A85AC4BF9D526359C1D953E1 /* libPods-KalenStudyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
 		F432FD661C473E3F00D0E628 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD651C473E3F00D0E628 /* Block.m */; };
+		F432FD701C49EEE300D0E628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD6F1C49EEE300D0E628 /* ViewController.m */; };
+		F432FD761C49EF6E00D0E628 /* CellItems.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD751C49EF6E00D0E628 /* CellItems.m */; };
+		F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD781C49EFE100D0E628 /* LayoutClass.m */; };
+		F432FD801C4A01B200D0E628 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD7E1C4A01B200D0E628 /* CustomCell.m */; };
+		F432FD811C4A01B200D0E628 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F432FD7F1C4A01B200D0E628 /* CustomCell.xib */; };
 		F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4586FD51C4350F500ED7432 /* EqualDivideVC.m */; };
 		F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45932E51C1034DC00AD965E /* ImageDevVC.m */; };
 		F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45932E61C1034DC00AD965E /* ImageDevVC.xib */; };
@@ -136,6 +141,15 @@
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F432FD641C473E3F00D0E628 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
 		F432FD651C473E3F00D0E628 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		F432FD6E1C49EEE300D0E628 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F432FD6F1C49EEE300D0E628 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F432FD741C49EF6E00D0E628 /* CellItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellItems.h; sourceTree = "<group>"; };
+		F432FD751C49EF6E00D0E628 /* CellItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellItems.m; sourceTree = "<group>"; };
+		F432FD771C49EFE100D0E628 /* LayoutClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutClass.h; sourceTree = "<group>"; };
+		F432FD781C49EFE100D0E628 /* LayoutClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutClass.m; sourceTree = "<group>"; };
+		F432FD7D1C4A01B200D0E628 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		F432FD7E1C4A01B200D0E628 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		F432FD7F1C4A01B200D0E628 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		F4586FD41C4350F500ED7432 /* EqualDivideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualDivideVC.h; sourceTree = "<group>"; };
 		F4586FD51C4350F500ED7432 /* EqualDivideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualDivideVC.m; sourceTree = "<group>"; };
 		F45932E41C1034DC00AD965E /* ImageDevVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDevVC.h; sourceTree = "<group>"; };
@@ -383,6 +397,22 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */ = {
+			isa = PBXGroup;
+			children = (
+				F432FD6E1C49EEE300D0E628 /* ViewController.h */,
+				F432FD6F1C49EEE300D0E628 /* ViewController.m */,
+				F432FD771C49EFE100D0E628 /* LayoutClass.h */,
+				F432FD781C49EFE100D0E628 /* LayoutClass.m */,
+				F432FD7D1C4A01B200D0E628 /* CustomCell.h */,
+				F432FD7E1C4A01B200D0E628 /* CustomCell.m */,
+				F432FD7F1C4A01B200D0E628 /* CustomCell.xib */,
+				F432FD741C49EF6E00D0E628 /* CellItems.h */,
+				F432FD751C49EF6E00D0E628 /* CellItems.m */,
+			);
+			path = TV_UI_Date_Seperated;
+			sourceTree = "<group>";
+		};
 		F4586FD31C43506400ED7432 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +542,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
 				F432FD631C473DFA00D0E628 /* Block */,
 				F4586FD31C43506400ED7432 /* AutoLayout */,
 				F45C62751C30DD070045D0DD /* Chart */,
@@ -959,6 +990,7 @@
 				F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */,
 				F4B7F93F1C102B85000BAF87 /* ConnectionVC.xib in Resources */,
 				F4B7F98B1C102CE5000BAF87 /* UMSCommentInputController.xib in Resources */,
+				F432FD811C4A01B200D0E628 /* CustomCell.xib in Resources */,
 				F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */,
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
@@ -1083,6 +1115,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,
@@ -1091,6 +1124,7 @@
 				F45C628A1C30DEAF0045D0DD /* UUChart.m in Sources */,
 				F4CC21931C16B93600DB49DA /* RATreeView.m in Sources */,
 				F4CC21901C16B93600DB49DA /* RATreeView+TableViewDataSource.m in Sources */,
+				F432FD761C49EF6E00D0E628 /* CellItems.m in Sources */,
 				F45C628C1C30DEAF0045D0DD /* UUColor.m in Sources */,
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
 				F45C62891C30DEAF0045D0DD /* UUBarChart.m in Sources */,
@@ -1111,6 +1145,7 @@
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
+				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
@@ -1118,6 +1153,7 @@
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,
 				F4CC212D1C167BB400DB49DA /* CellTreeVC.m in Sources */,
 				F4CC218F1C16B93600DB49DA /* RATreeView+Private.m in Sources */,
+				F432FD801C4A01B200D0E628 /* CustomCell.m in Sources */,
 				F4B7F9A01C102D1C000BAF87 /* DataUtil.m in Sources */,
 				F4CC219B1C16C6D100DB49DA /* RunTimeVC.m in Sources */,
 				F4B7F99F1C102D1C000BAF87 /* Constants.m in Sources */,
