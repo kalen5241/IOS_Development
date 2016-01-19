@@ -10,6 +10,7 @@
 #import "LayoutClass.h"
 #import "CellItems.h"
 #import "CustomCell.h"
+#import <Masonry.h>
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) CellItems *items;
@@ -17,55 +18,65 @@
 
 @implementation ViewController
 
+#pragma mark --LazyLoad
 
 -(CellItems *)items {
     if (!_items) {
-        _items = [[CustomCell alloc]init];
+        _items = [[CellItems alloc]init];
     }
     return _items;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [LayoutClass view:self.view andView:self.tv];
-    
-}
-
 -(UITableView *)tv {
-    
-    
     if (!_tv) {
         _tv = [[UITableView alloc]init];
         _tv.dataSource = self;
         _tv.delegate = self;
-        
+        _tv.backgroundColor = [UIColor redColor];
+        _tv.tag = 1;
     }
-    
     return _tv;
 }
 
+#pragma mark --ViewLifeCircle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.tag = 0;
+    [LayoutClass view:self.view andView:self.tv];
+    
+}
+
+
+#pragma mark --UITableViewCell
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return self.items.secitons;
+}
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    
+    return self.items.rows;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    CustomCell* cell = (CustomCell *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil]lastObject];
-
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if (!cell) {
+        cell = (CustomCell *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil]lastObject];
+    }
+    
     self.items.indexPath = indexPath;
+    
     self.items.tv = tableView;
+    
     self.items.cell = cell;
     
     return cell;
 }
-
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
 
 @end

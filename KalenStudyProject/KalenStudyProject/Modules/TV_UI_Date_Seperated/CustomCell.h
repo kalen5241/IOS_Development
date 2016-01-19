@@ -10,6 +10,4 @@
 
 @interface CustomCell : UITableViewCell
 
-@property (nonatomic,strong) NSString *str;
-
 @end

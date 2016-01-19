@@ -22,6 +22,7 @@
 #import "CodeChartVC.h"
 #import "EqualDivideVC.h"
 #import "Block.h"
+#import "ViewController.h"
 
 @implementation DataUtil
 
@@ -85,9 +86,9 @@
         item11.detail = @"练习图表－CellTreeVC";
         
         GuideDataItem *item12 = [[GuideDataItem alloc]init];
-        item12.title = @"Chart";
+        item12.title = @"CodeChart";
         item12.destVC = [[CodeChartVC alloc]init];
-        item12.detail = @"练习图表－CellTreeVC";
+        item12.detail = @"练习代码图表－CellTreeVC";
         
         GuideDataItem *item13 = [[GuideDataItem alloc]init];
         item13.title = @"equalDividVC";
@@ -99,7 +100,12 @@
         item14.destVC = [[Block  alloc]init];
         item14.detail = @"Block练习－Block";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14];
+        GuideDataItem *item15 = [[GuideDataItem alloc]init];
+        item15.title = @"分离数据";
+        item15.destVC = [[ViewController  alloc]init];
+        item15.detail = @"分离数据－ViewController";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15];
     }
     return _guideArray;
 }

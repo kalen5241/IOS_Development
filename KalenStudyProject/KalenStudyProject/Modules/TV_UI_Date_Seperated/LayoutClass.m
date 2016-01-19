@@ -19,23 +19,31 @@
 
 + (void)view:(UIView *)superView andView:(UIView *)subView {
     
-    [superView addSubview:subView];
+    __block UIView  *weakSuperView = superView;
+    __block UIView  *weakSubView = subView;
     
-    // tag = 0 viewController的view  tag = 1 tableview tag = 3 contentView tag = 4 label 
+    [weakSuperView addSubview:weakSubView];
     
-    if (superView.tag == 0 && subView.tag == 1) {
-        [superView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(superView).with.insets(UIEdgeInsetsMake(64,0,0,0));
+    /* 
+     tag = 0 viewController的view
+     tag = 1 tableview 
+     tag = 2 contentView
+     tag = 3 label
+    */
+    
+    if (weakSuperView.tag == 0 && weakSubView.tag == 1) {
+        [weakSubView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(weakSuperView).with.insets(UIEdgeInsetsMake(64,0,0,0));
         }];
     }
     
 
-    if (superView.tag == 2 && subView.tag == 3) {
-        [superView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(superView).with.insets(UIEdgeInsetsMake(0,0,0,0));
+    if (weakSuperView.tag == 2 && weakSubView.tag == 3) {
+        weakSubView.backgroundColor = [UIColor redColor];
+        [weakSubView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(weakSuperView).with.insets(UIEdgeInsetsMake(20,0,0,0));
         }];
     }
-    
 }
 
 

@@ -7,14 +7,52 @@
 //
 
 #import "CellItems.h"
-
+#import "LayoutClass.h"
 @implementation CellItems
-- (void)deposite {
-    
-    self.cell.str = self.strArray[self.indexPath.row];
 
+
+//- (void)deposite {
+//    
+//    self.cell.str = self.strArray[self.indexPath.row];
+//
+//}
+
+-(NSArray *)strArray {
+    
+    if (!_strArray) {
+        _strArray = @[@"ddd",@"ddds",@"ddds",@"ddds",@"ddds"];
+    }
+    return _strArray;
 }
 
+-(void)setCell:(CustomCell *)cell {
+    _cell = cell;
+    
+    _cell.contentView.tag = 2;
+    
+    UILabel *l1 = [[UILabel alloc]init];
+    l1.tag = 3;
+    l1.text = self.strArray[self.indexPath.row];
+    [LayoutClass view:_cell.contentView andView:l1];
+    
+}
 
+- (NSInteger)rows {
+    
+    if (!_rows) {
+        _rows = self.strArray.count;
+    }
+    
+    return _rows;
+}
+
+- (NSInteger)secitons {
+    
+    if (!_secitons) {
+        _secitons = 1;
+    }
+    
+    return _secitons;
+}
 
 @end
