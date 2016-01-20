@@ -20,7 +20,7 @@
 -(NSArray *)strArray {
     
     if (!_strArray) {
-        _strArray = @[@"ddd",@"ddds",@"ddds",@"ddds",@"ddds"];
+        _strArray = @[@"ddXFDFGSDFSDFSDFSDFSDFSDFSDFSFSDFSFSDFSDFSDFSd",@"ddds",@"ddSDFSDFSDFSFSDFSDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFds",@"ddds",@"dSDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFdds"];
     }
     return _strArray;
 }

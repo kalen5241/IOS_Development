@@ -23,6 +23,7 @@
 #import "EqualDivideVC.h"
 #import "Block.h"
 #import "ViewController.h"
+#import "OpenOtherAppVC.h"
 
 @implementation DataUtil
 
@@ -105,7 +106,12 @@
         item15.destVC = [[ViewController  alloc]init];
         item15.detail = @"分离数据－ViewController";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15];
+        GuideDataItem *item16 = [[GuideDataItem alloc]init];
+        item16.title = @"OpenOtherVC";
+        item16.destVC = [[OpenOtherAppVC alloc]init];
+        item16.detail = @"分离数据－OpenOtherAppVC";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16];
     }
     return _guideArray;
 }

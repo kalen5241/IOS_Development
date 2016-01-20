@@ -11,6 +11,7 @@
 #import "CellItems.h"
 #import "CustomCell.h"
 #import <Masonry.h>
+#import <UITableView+FDTemplateLayoutCell.h>
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic ,strong) CellItems *items;
@@ -42,8 +43,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.tag = 0;
-    [LayoutClass view:self.view andView:self.tv];
+    
+    UINib *smsDetailCellNib = [UINib nibWithNibName:@"CustomCell" bundle:nil];
+    [self.tv registerNib:smsDetailCellNib forCellReuseIdentifier:@"cell"];
+    self.tv.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+//    self.view.tag = 0;
+//    [LayoutClass view:self.view andView:self.tv];
     
 }
 
@@ -51,14 +57,16 @@
 #pragma mark --UITableViewCell
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return self.items.secitons;
+   // return self.items.secitons;
+    return 1;
 }
 
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.items.rows;
+   // return self.items.rows;
+    return 4;
 }
 
 
@@ -66,17 +74,36 @@
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    if (!cell) {
-        cell = (CustomCell *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil]lastObject];
-    }
+//    if (!cell) {
+//        cell = (CustomCell *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:nil options:nil]lastObject];
+//    }
+//    
+//    self.items.indexPath = indexPath;
+//    
+//    self.items.tv = tableView;
+//    
+//    self.items.cell = cell;
     
-    self.items.indexPath = indexPath;
-    
-    self.items.tv = tableView;
-    
-    self.items.cell = cell;
+    cell.textLabel.text = @"sdfsdfsdfsdfsdfsdf";
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return [tableView fd_heightForCellWithIdentifier:@"cell"  cacheByIndexPath:indexPath configuration:^(id cell) {
+        
+      __weak  CustomCell *myCell = (CustomCell *)cell;
+//        
+//        self.items.indexPath = indexPath;
+//        
+//        self.items.tv = tableView;
+//        
+//        self.items.cell = myCell;
+        
+            myCell.textLabel.text = @"sdfsdfsdfsdfsdfsdf";
+//        
+    }];
 }
 
 @end

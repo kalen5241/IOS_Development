@@ -36,6 +36,8 @@
 		F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4680D901BF2F0F500C1EC76 /* LaunchScreen.storyboard */; };
 		F4680D9D1BF2F0F500C1EC76 /* KalenStudyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680D9C1BF2F0F500C1EC76 /* KalenStudyProjectTests.m */; };
 		F4680DA81BF2F0F500C1EC76 /* KalenStudyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */; };
+		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
+		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
 		F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */; };
 		F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */; };
@@ -187,6 +189,9 @@
 		F4680DA31BF2F0F500C1EC76 /* KalenStudyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalenStudyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalenStudyProjectUITests.m; sourceTree = "<group>"; };
 		F4680DA91BF2F0F500C1EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
+		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
+		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
 		F4B233C91BFE18DB00C30745 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F4B7F8B71C102A8D000BAF87 /* UITestingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestingVC.h; sourceTree = "<group>"; };
 		F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestingVC.m; sourceTree = "<group>"; };
@@ -539,9 +544,20 @@
 			path = KalenStudyProjectUITests;
 			sourceTree = "<group>";
 		};
+		F48B54EB1C4F78560065F35B /* OpenOtherApp */ = {
+			isa = PBXGroup;
+			children = (
+				F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */,
+				F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */,
+				F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */,
+			);
+			path = OpenOtherApp;
+			sourceTree = "<group>";
+		};
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
 				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
 				F432FD631C473DFA00D0E628 /* Block */,
 				F4586FD31C43506400ED7432 /* AutoLayout */,
@@ -984,6 +1000,7 @@
 				F4B7F98E1C102CE5000BAF87 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */,
 				F4B7F9511C102C0F000BAF87 /* CustomCellOne.xib in Resources */,
+				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
 				F4B7F8EA1C102B08000BAF87 /* ErrorDepositeViewController.xib in Resources */,
 				F4B7F9921C102CE5000BAF87 /* ios-social-sdk-shake.html in Resources */,
 				F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */,
@@ -1131,6 +1148,7 @@
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
 				F4B7F8CC1C102AB7000BAF87 /* FirstVC.m in Sources */,
 				F45C62911C30E5280045D0DD /* TableViewCell.m in Sources */,
+				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
