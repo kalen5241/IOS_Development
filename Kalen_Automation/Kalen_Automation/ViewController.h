@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *tf;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 @end
 

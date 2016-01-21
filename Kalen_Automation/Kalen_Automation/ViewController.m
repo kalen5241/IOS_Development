@@ -20,6 +20,14 @@
     Animal *A1 = [[Animal alloc]init];
     A1.sex =@"Male";
     NSLog(@"%d",[A1 isMale]);
+    
+    
+    
+
+}
+- (IBAction)changeLabelText:(UIButton *)sender {
+    
+    self.label.text = self.tf.text;
 
 }
 

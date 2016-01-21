@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4BFA7CA1C5067B2001A6C15 /* Kalen_AutomationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BFA7C91C5067B2001A6C15 /* Kalen_AutomationUITests.m */; };
 		F4DC58301B206E910028DC0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC582F1B206E910028DC0B /* main.m */; };
 		F4DC58331B206E910028DC0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC58321B206E910028DC0B /* AppDelegate.m */; };
 		F4DC58361B206E920028DC0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DC58351B206E910028DC0B /* ViewController.m */; };
@@ -18,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F4BFA7CC1C5067B2001A6C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4DC58221B206E910028DC0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4DC58291B206E910028DC0B;
+			remoteInfo = Kalen_Automation;
+		};
 		F4DC58441B206E920028DC0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4DC58221B206E910028DC0B /* Project object */;
@@ -28,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4BFA7C71C5067B2001A6C15 /* Kalen_AutomationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kalen_AutomationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BFA7C91C5067B2001A6C15 /* Kalen_AutomationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kalen_AutomationUITests.m; sourceTree = "<group>"; };
+		F4BFA7CB1C5067B2001A6C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DC582A1B206E910028DC0B /* Kalen_Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kalen_Automation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC582E1B206E910028DC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DC582F1B206E910028DC0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F4BFA7C41C5067B2001A6C15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DC58271B206E910028DC0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,11 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4BFA7C81C5067B2001A6C15 /* Kalen_AutomationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFA7C91C5067B2001A6C15 /* Kalen_AutomationUITests.m */,
+				F4BFA7CB1C5067B2001A6C15 /* Info.plist */,
+			);
+			path = Kalen_AutomationUITests;
+			sourceTree = "<group>";
+		};
 		F4DC58211B206E910028DC0B = {
 			isa = PBXGroup;
 			children = (
 				F4DC582C1B206E910028DC0B /* Kalen_Automation */,
 				F4DC58461B206E920028DC0B /* Kalen_AutomationTests */,
+				F4BFA7C81C5067B2001A6C15 /* Kalen_AutomationUITests */,
 				F4DC582B1B206E910028DC0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +105,7 @@
 			children = (
 				F4DC582A1B206E910028DC0B /* Kalen_Automation.app */,
 				F4DC58431B206E920028DC0B /* Kalen_AutomationTests.xctest */,
+				F4BFA7C71C5067B2001A6C15 /* Kalen_AutomationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +156,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F4BFA7C61C5067B2001A6C15 /* Kalen_AutomationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BFA7D01C5067B2001A6C15 /* Build configuration list for PBXNativeTarget "Kalen_AutomationUITests" */;
+			buildPhases = (
+				F4BFA7C31C5067B2001A6C15 /* Sources */,
+				F4BFA7C41C5067B2001A6C15 /* Frameworks */,
+				F4BFA7C51C5067B2001A6C15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BFA7CD1C5067B2001A6C15 /* PBXTargetDependency */,
+			);
+			name = Kalen_AutomationUITests;
+			productName = Kalen_AutomationUITests;
+			productReference = F4BFA7C71C5067B2001A6C15 /* Kalen_AutomationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F4DC58291B206E910028DC0B /* Kalen_Automation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4DC584D1B206E920028DC0B /* Build configuration list for PBXNativeTarget "Kalen_Automation" */;
@@ -171,6 +218,10 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = kalen;
 				TargetAttributes = {
+					F4BFA7C61C5067B2001A6C15 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F4DC58291B206E910028DC0B;
+					};
 					F4DC58291B206E910028DC0B = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -195,11 +246,19 @@
 			targets = (
 				F4DC58291B206E910028DC0B /* Kalen_Automation */,
 				F4DC58421B206E920028DC0B /* Kalen_AutomationTests */,
+				F4BFA7C61C5067B2001A6C15 /* Kalen_AutomationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F4BFA7C51C5067B2001A6C15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DC58281B206E910028DC0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F4BFA7C31C5067B2001A6C15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFA7CA1C5067B2001A6C15 /* Kalen_AutomationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4DC58261B206E910028DC0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +309,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F4BFA7CD1C5067B2001A6C15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4DC58291B206E910028DC0B /* Kalen_Automation */;
+			targetProxy = F4BFA7CC1C5067B2001A6C15 /* PBXContainerItemProxy */;
+		};
 		F4DC58451B206E920028DC0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4DC58291B206E910028DC0B /* Kalen_Automation */;
@@ -269,6 +341,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F4BFA7CE1C5067B2001A6C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Kalen_AutomationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kalen.Kalen-AutomationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kalen_Automation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F4BFA7CF1C5067B2001A6C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Kalen_AutomationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kalen.Kalen-AutomationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kalen_Automation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		F4DC584B1B206E920028DC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +505,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F4BFA7D01C5067B2001A6C15 /* Build configuration list for PBXNativeTarget "Kalen_AutomationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFA7CE1C5067B2001A6C15 /* Debug */,
+				F4BFA7CF1C5067B2001A6C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F4DC58251B206E910028DC0B /* Build configuration list for PBXProject "Kalen_Automation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -418,6 +529,7 @@
 				F4DC584F1B206E920028DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4DC58501B206E920028DC0B /* Build configuration list for PBXNativeTarget "Kalen_AutomationTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +538,7 @@
 				F4DC58521B206E920028DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
