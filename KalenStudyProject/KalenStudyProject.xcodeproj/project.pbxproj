@@ -36,6 +36,8 @@
 		F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4680D901BF2F0F500C1EC76 /* LaunchScreen.storyboard */; };
 		F4680D9D1BF2F0F500C1EC76 /* KalenStudyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680D9C1BF2F0F500C1EC76 /* KalenStudyProjectTests.m */; };
 		F4680DA81BF2F0F500C1EC76 /* KalenStudyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */; };
+		F46E04EE1C58D32500F5D060 /* ScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */; };
+		F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */; };
 		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
 		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
@@ -189,6 +191,9 @@
 		F4680DA31BF2F0F500C1EC76 /* KalenStudyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalenStudyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalenStudyProjectUITests.m; sourceTree = "<group>"; };
 		F4680DA91BF2F0F500C1EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46E04EC1C58D32500F5D060 /* ScreenShotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotVC.h; sourceTree = "<group>"; };
+		F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVC.m; sourceTree = "<group>"; };
+		F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
 		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
 		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
@@ -329,6 +334,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */,
 				F4B7F9931C102CE5000BAF87 /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */,
 				F4BC57841BF97218003944F3 /* CoreGraphics.framework in Frameworks */,
 				F4F5DFD71BF6BAF500832FB2 /* libz.tbd in Frameworks */,
@@ -368,6 +374,7 @@
 		20998B82165AF7755FE88ACD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */,
 				F4BC57891BF9723D003944F3 /* libstdc++.tbd */,
 				F4BC57871BF97230003944F3 /* CoreTelephony.framework */,
 				F4BC57851BF97225003944F3 /* libsqlite3.tbd */,
@@ -544,6 +551,15 @@
 			path = KalenStudyProjectUITests;
 			sourceTree = "<group>";
 		};
+		F46E04EB1C58D2C000F5D060 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				F46E04EC1C58D32500F5D060 /* ScreenShotVC.h */,
+				F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */,
+			);
+			path = ScreenShot;
+			sourceTree = "<group>";
+		};
 		F48B54EB1C4F78560065F35B /* OpenOtherApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +573,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
 				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
 				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
 				F432FD631C473DFA00D0E628 /* Block */,
@@ -1158,6 +1175,7 @@
 				F45C62951C3138DD0045D0DD /* CodeChartVC.m in Sources */,
 				F4CC21921C16B93600DB49DA /* RATreeView+UIScrollView.m in Sources */,
 				F4CC21961C16BBBD00DB49DA /* RADataObject.m in Sources */,
+				F46E04EE1C58D32500F5D060 /* ScreenShotVC.m in Sources */,
 				F4B7F9541C102C0F000BAF87 /* MutilDataSource.m in Sources */,
 				F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */,
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
@@ -1337,6 +1355,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1373,6 +1392,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

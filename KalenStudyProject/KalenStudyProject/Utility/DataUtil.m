@@ -24,6 +24,7 @@
 #import "Block.h"
 #import "ViewController.h"
 #import "OpenOtherAppVC.h"
+#import "ScreenShotVC.h"
 
 @implementation DataUtil
 
@@ -111,7 +112,12 @@
         item16.destVC = [[OpenOtherAppVC alloc]init];
         item16.detail = @"分离数据－OpenOtherAppVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16];
+        GuideDataItem *item17 = [[GuideDataItem alloc]init];
+        item17.title = @"OpenOtherVC";
+        item17.destVC = [[ScreenShotVC alloc]init];
+        item17.detail = @"分离数据－OpenOtherAppVC";
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17];
     }
     return _guideArray;
 }
