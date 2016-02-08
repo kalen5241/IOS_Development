@@ -7,6 +7,8 @@ target 'KalenStudyProject' do
 
 platform :ios, '7.0'
 
+
+pod 'iCarousel', '~> 1.8.1'
 pod 'AFNetworking', '~> 2.5.4'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'MMPlaceHolder', '~> 1.8'

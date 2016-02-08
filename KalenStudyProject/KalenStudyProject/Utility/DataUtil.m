@@ -25,6 +25,7 @@
 #import "ViewController.h"
 #import "OpenOtherAppVC.h"
 #import "ScreenShotVC.h"
+#import "TaskManagerVC.h"
 
 @implementation DataUtil
 
@@ -113,11 +114,20 @@
         item16.detail = @"分离数据－OpenOtherAppVC";
         
         GuideDataItem *item17 = [[GuideDataItem alloc]init];
-        item17.title = @"OpenOtherVC";
+        item17.title = @"截取高清屏幕";
         item17.destVC = [[ScreenShotVC alloc]init];
-        item17.detail = @"分离数据－OpenOtherAppVC";
+        item17.detail = @"截取高清屏幕－ScreenShotVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17];
+        
+        GuideDataItem *item18 = [[GuideDataItem alloc]init];
+        item18.title = @"仿iOS9任务管理器滑动效果";
+        item18.destVC = [[TaskManagerVC alloc]init];
+        item18.detail = @"仿iOS9任务管理器滑动效果－TaskManagerVC";
+        
+        
+        
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18];
     }
     return _guideArray;
 }

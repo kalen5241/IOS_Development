@@ -16,6 +16,7 @@
 		F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD781C49EFE100D0E628 /* LayoutClass.m */; };
 		F432FD801C4A01B200D0E628 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD7E1C4A01B200D0E628 /* CustomCell.m */; };
 		F432FD811C4A01B200D0E628 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F432FD7F1C4A01B200D0E628 /* CustomCell.xib */; };
+		F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44658AF1C672F620071DE83 /* TaskManagerVC.m */; };
 		F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4586FD51C4350F500ED7432 /* EqualDivideVC.m */; };
 		F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45932E51C1034DC00AD965E /* ImageDevVC.m */; };
 		F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45932E61C1034DC00AD965E /* ImageDevVC.xib */; };
@@ -154,6 +155,8 @@
 		F432FD7D1C4A01B200D0E628 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		F432FD7E1C4A01B200D0E628 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		F432FD7F1C4A01B200D0E628 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F44658AE1C672F620071DE83 /* TaskManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManagerVC.h; sourceTree = "<group>"; };
+		F44658AF1C672F620071DE83 /* TaskManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManagerVC.m; sourceTree = "<group>"; };
 		F4586FD41C4350F500ED7432 /* EqualDivideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualDivideVC.h; sourceTree = "<group>"; };
 		F4586FD51C4350F500ED7432 /* EqualDivideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualDivideVC.m; sourceTree = "<group>"; };
 		F45932E41C1034DC00AD965E /* ImageDevVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDevVC.h; sourceTree = "<group>"; };
@@ -425,6 +428,15 @@
 			path = TV_UI_Date_Seperated;
 			sourceTree = "<group>";
 		};
+		F44658AD1C672EDF0071DE83 /* IOS9TaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				F44658AE1C672F620071DE83 /* TaskManagerVC.h */,
+				F44658AF1C672F620071DE83 /* TaskManagerVC.m */,
+			);
+			path = IOS9TaskManager;
+			sourceTree = "<group>";
+		};
 		F4586FD31C43506400ED7432 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +585,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
 				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
 				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
 				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
@@ -1150,6 +1163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
+				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,

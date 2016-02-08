@@ -25,6 +25,7 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - iCarousel (1.8.1)
   - IQKeyboardManager (3.2.4)
   - jastor (0.2.1)
   - Masonry (0.6.2)
@@ -48,6 +49,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - FMDB (~> 2.5)
+  - iCarousel (~> 1.8.1)
   - IQKeyboardManager (~> 3.2.4)
   - jastor (~> 0.2.1)
   - Masonry (~> 0.6.2)
@@ -60,6 +62,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   jastor: fe9ff71f4b683698253d6a0d9a2561987fd9aff3
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
