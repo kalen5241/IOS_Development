@@ -1,0 +1,19 @@
+//
+//  CarCarePch.pch
+//  CarCare
+//
+//  Created by kalen on 16/3/2.
+//  Copyright © 2016年 auguoguo. All rights reserved.
+//
+
+#ifndef CarCarePch_pch
+#define CarCarePch_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry.h>
+#import "Constants.h"
+
+
+#endif /* CarCarePch_pch */

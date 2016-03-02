@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxV-xd-0YF" userLabel="PurchaseV">
-                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <rect key="frame" x="0.0" y="433" width="600" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-s8-3Wh">
                             <rect key="frame" x="505" y="10" width="75" height="30"/>
@@ -43,7 +43,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="g4N-5e-Kcq" userLabel="FruitCategoriesTV">
-                    <rect key="frame" x="0.0" y="65" width="75" height="485"/>
+                    <rect key="frame" x="0.0" y="65" width="75" height="368"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="IiA-jP-qDB"/>
@@ -54,7 +54,7 @@
                     </connections>
                 </tableView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iz1-w1-1aq" userLabel="FruitProductsTV">
-                    <rect key="frame" x="75" y="65" width="525" height="485"/>
+                    <rect key="frame" x="75" y="65" width="525" height="368"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="koj-Ve-j0I"/>
@@ -76,7 +76,7 @@
                 <constraint firstAttribute="trailing" secondItem="iz1-w1-1aq" secondAttribute="trailing" id="V0A-YG-sLM"/>
                 <constraint firstItem="iz1-w1-1aq" firstAttribute="top" secondItem="DtA-oF-tF1" secondAttribute="bottom" id="dif-xo-ty7"/>
                 <constraint firstItem="g4N-5e-Kcq" firstAttribute="height" secondItem="iz1-w1-1aq" secondAttribute="height" id="fI3-vu-UCw"/>
-                <constraint firstAttribute="bottom" secondItem="IxV-xd-0YF" secondAttribute="bottom" id="njB-7n-7I8"/>
+                <constraint firstAttribute="bottom" secondItem="IxV-xd-0YF" secondAttribute="bottom" constant="117" id="njB-7n-7I8"/>
                 <constraint firstItem="g4N-5e-Kcq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qgu-Oh-R8S"/>
                 <constraint firstItem="IxV-xd-0YF" firstAttribute="top" secondItem="g4N-5e-Kcq" secondAttribute="bottom" id="ql4-YY-73w"/>
                 <constraint firstItem="DtA-oF-tF1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="svq-k9-zVu"/>
