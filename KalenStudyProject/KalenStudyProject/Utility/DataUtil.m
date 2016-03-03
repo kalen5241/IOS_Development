@@ -26,6 +26,7 @@
 #import "OpenOtherAppVC.h"
 #import "ScreenShotVC.h"
 #import "TaskManagerVC.h"
+#import "H5VC.h"
 
 @implementation DataUtil
 
@@ -124,10 +125,13 @@
         item18.destVC = [[TaskManagerVC alloc]init];
         item18.detail = @"仿iOS9任务管理器滑动效果－TaskManagerVC";
         
+        GuideDataItem *item19 = [[GuideDataItem alloc]init];
+        item19.title = @"WebView读取本地H5";
+        item19.destVC = [[H5VC alloc]init];
+        item19.detail = @"混合app开发－H5VC";
         
         
-        
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18];
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19];
     }
     return _guideArray;
 }

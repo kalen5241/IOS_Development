@@ -19,6 +19,8 @@
 		F4ECCF091C86DD63003A0961 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECCF081C86DD63003A0961 /* Constants.m */; };
 		F4ECCF151C86E36F003A0961 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECCF141C86E36F003A0961 /* BaseVC.m */; };
 		F4ECCF181C86E419003A0961 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECCF171C86E419003A0961 /* LoginVC.m */; };
+		F4ECCF211C880820003A0961 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = F4ECCF1F1C880820003A0961 /* normalize.css */; };
+		F4ECCF221C880820003A0961 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F4ECCF201C880820003A0961 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		F4ECCF141C86E36F003A0961 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		F4ECCF161C86E419003A0961 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		F4ECCF171C86E419003A0961 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		F4ECCF1F1C880820003A0961 /* normalize.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = normalize.css; sourceTree = "<group>"; };
+		F4ECCF201C880820003A0961 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				F4ECCED51C86DAB1003A0961 /* AppDelegate.h */,
+				F4ECCF1E1C880820003A0961 /* css */,
+				F4ECCF201C880820003A0961 /* index.html */,
 				F4ECCED61C86DAB1003A0961 /* AppDelegate.m */,
 				F4ECCED81C86DAB1003A0961 /* ViewController.h */,
 				F4ECCED91C86DAB1003A0961 /* ViewController.m */,
@@ -261,6 +267,14 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
+		F4ECCF1E1C880820003A0961 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECCF1F1C880820003A0961 /* normalize.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,7 +381,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ECCF221C880820003A0961 /* index.html in Resources */,
 				F4ECCEE21C86DAB1003A0961 /* LaunchScreen.storyboard in Resources */,
+				F4ECCF211C880820003A0961 /* normalize.css in Resources */,
 				F4ECCEDF1C86DAB1003A0961 /* Assets.xcassets in Resources */,
 				F4ECCEDD1C86DAB1003A0961 /* Main.storyboard in Resources */,
 			);

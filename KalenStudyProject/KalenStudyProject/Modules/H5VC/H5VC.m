@@ -1,18 +1,18 @@
 //
-//  LoginVC.m
-//  CarCare
+//  H5VC.m
+//  KalenStudyProject
 //
-//  Created by kalen on 16/3/2.
-//  Copyright © 2016年 auguoguo. All rights reserved.
+//  Created by kalen on 16/3/3.
+//  Copyright © 2016年 kalen. All rights reserved.
 //
 
-#import "LoginVC.h"
+#import "H5VC.h"
 
-@interface LoginVC () <UIWebViewDelegate>
+@interface H5VC () <UIWebViewDelegate>
 
 @end
 
-@implementation LoginVC
+@implementation H5VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,8 +37,9 @@
     
     [browser loadRequest:request];
     
-    
 }
+
+
 
 
 @end

@@ -112,6 +112,9 @@
 		F4CC21961C16BBBD00DB49DA /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC21951C16BBBD00DB49DA /* RADataObject.m */; };
 		F4CC219B1C16C6D100DB49DA /* RunTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC21991C16C6D100DB49DA /* RunTimeVC.m */; };
 		F4CC219C1C16C6D100DB49DA /* RunTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CC219A1C16C6D100DB49DA /* RunTimeVC.xib */; };
+		F4ECCF261C8809D4003A0961 /* H5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECCF251C8809D4003A0961 /* H5VC.m */; };
+		F4ECCF2A1C880A2F003A0961 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = F4ECCF281C880A2F003A0961 /* normalize.css */; };
+		F4ECCF2B1C880A2F003A0961 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F4ECCF291C880A2F003A0961 /* index.html */; };
 		F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ED59B41C112CAE00B36AD2 /* DrawPic.m */; };
 		F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ED59B51C112CAE00B36AD2 /* DrawPic.xib */; };
 		F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ED59B91C112D5100B36AD2 /* DisplayView.m */; };
@@ -324,6 +327,10 @@
 		F4CC21991C16C6D100DB49DA /* RunTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeVC.m; sourceTree = "<group>"; };
 		F4CC219A1C16C6D100DB49DA /* RunTimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunTimeVC.xib; sourceTree = "<group>"; };
 		F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4ECCF241C8809D4003A0961 /* H5VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5VC.h; sourceTree = "<group>"; };
+		F4ECCF251C8809D4003A0961 /* H5VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5VC.m; sourceTree = "<group>"; };
+		F4ECCF281C880A2F003A0961 /* normalize.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = normalize.css; sourceTree = "<group>"; };
+		F4ECCF291C880A2F003A0961 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		F4ED59B31C112CAE00B36AD2 /* DrawPic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPic.h; sourceTree = "<group>"; };
 		F4ED59B41C112CAE00B36AD2 /* DrawPic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPic.m; sourceTree = "<group>"; };
 		F4ED59B51C112CAE00B36AD2 /* DrawPic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawPic.xib; sourceTree = "<group>"; };
@@ -535,6 +542,8 @@
 		F4680D821BF2F0F500C1EC76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F4ECCF271C880A2F003A0961 /* css */,
+				F4ECCF291C880A2F003A0961 /* index.html */,
 				F4B233C91BFE18DB00C30745 /* Data.plist */,
 				F4680D901BF2F0F500C1EC76 /* LaunchScreen.storyboard */,
 				F4680D8E1BF2F0F500C1EC76 /* Assets.xcassets */,
@@ -585,6 +594,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4ECCF231C880978003A0961 /* H5VC */,
 				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
 				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
 				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
@@ -888,6 +898,23 @@
 			path = RunTimeVC;
 			sourceTree = "<group>";
 		};
+		F4ECCF231C880978003A0961 /* H5VC */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECCF241C8809D4003A0961 /* H5VC.h */,
+				F4ECCF251C8809D4003A0961 /* H5VC.m */,
+			);
+			path = H5VC;
+			sourceTree = "<group>";
+		};
+		F4ECCF271C880A2F003A0961 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECCF281C880A2F003A0961 /* normalize.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
 		F4ED59B21C112C3000B36AD2 /* DrawPic */ = {
 			isa = PBXGroup;
 			children = (
@@ -1015,10 +1042,12 @@
 				F4CC219C1C16C6D100DB49DA /* RunTimeVC.xib in Resources */,
 				F4B7F8D11C102AB7000BAF87 /* LeftMenuVCViewController.xib in Resources */,
 				F4B7F8F61C102B2F000BAF87 /* UMengSocialVCViewController.xib in Resources */,
+				F4ECCF2B1C880A2F003A0961 /* index.html in Resources */,
 				F4B7F9871C102CE5000BAF87 /* UMSocialLocalizable.strings in Resources */,
 				F45932EB1C10370E00AD965E /* taocan.png in Resources */,
 				F4B7F9961C102CE5000BAF87 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				F45C627A1C30DD6E0045D0DD /* ChartVC.xib in Resources */,
+				F4ECCF2A1C880A2F003A0961 /* normalize.css in Resources */,
 				F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */,
 				F4B7F98F1C102CE5000BAF87 /* UMSLoginViewController.xib in Resources */,
 				F4B7F9911C102CE5000BAF87 /* UMSShareListController.xib in Resources */,
@@ -1177,6 +1206,7 @@
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
 				F45C62891C30DEAF0045D0DD /* UUBarChart.m in Sources */,
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
+				F4ECCF261C8809D4003A0961 /* H5VC.m in Sources */,
 				F4B7F8CC1C102AB7000BAF87 /* FirstVC.m in Sources */,
 				F45C62911C30E5280045D0DD /* TableViewCell.m in Sources */,
 				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
