@@ -9,8 +9,9 @@
 #import "AppDelegate.h"
 
 #import "KalenTabBarC.h"
-
+#import "LoginViewController.h"
 #import "MessageVC.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -22,11 +23,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     self.window  =  [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    KalenTabBarC *kalenTabBarVC =[[KalenTabBarC alloc]init];
+//
+//    KalenTabBarC *kalenTabBarVC =[[KalenTabBarC alloc]init];
+//    
+//    self.window.rootViewController = kalenTabBarVC;
+//    
+//    [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = kalenTabBarVC;
-    
+    UINavigationController *na = [[UINavigationController alloc]initWithRootViewController:[[LoginViewController alloc]init]];
+    self.window.rootViewController = na;
+    // 处理输入框键盘事件
+//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+//    manager.enable = YES;
+//    manager.shouldResignOnTouchOutside = YES;
+//    manager.shouldToolbarUsesTextFieldTintColor = YES;
+//    manager.enableAutoToolbar = NO;
+//    
     [self.window makeKeyAndVisible];
     
     return YES;

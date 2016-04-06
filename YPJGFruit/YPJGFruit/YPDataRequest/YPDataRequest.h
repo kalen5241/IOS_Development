@@ -10,7 +10,6 @@
 #import <AFNetworking.h>
 #import <UIKit+AFNetworking.h>
 #import "YPResponse.h"
-#import "AFAppDotNetAPIClient.h"
 #import "ProductListResponse.h"
 
 @interface YPDataRequest : NSObject

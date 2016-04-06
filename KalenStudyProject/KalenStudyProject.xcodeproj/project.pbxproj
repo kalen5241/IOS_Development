@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1240EA075694256753C0A7EC /* libPods-KalenStudyProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */; };
 		A85AC4BF9D526359C1D953E1 /* libPods-KalenStudyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */; };
+		F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA2171C8FBB16006B03D6 /* TestCell.m */; };
+		F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
 		F432FD661C473E3F00D0E628 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD651C473E3F00D0E628 /* Block.m */; };
 		F432FD701C49EEE300D0E628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD6F1C49EEE300D0E628 /* ViewController.m */; };
@@ -41,6 +43,9 @@
 		F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */; };
 		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
 		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
+		F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */; };
+		F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CF51C895BD600E07927 /* CustomElementVC.m */; };
+		F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CFB1C89661D00E07927 /* CustomCell8.m */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
 		F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */; };
 		F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */; };
@@ -144,6 +149,10 @@
 		B1410998BFE8C63DB2802136 /* Pods-KalenStudyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalenStudyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalenStudyProject/Pods-KalenStudyProject.release.xcconfig"; sourceTree = "<group>"; };
 		BDD5512B0737CAB75810049F /* Pods-KalenStudyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalenStudyProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalenStudyProjectTests/Pods-KalenStudyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40CA2161C8FBB16006B03D6 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		F40CA2171C8FBB16006B03D6 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		F40CA2191C8FBB89006B03D6 /* AutoCellHeightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCellHeightVC.h; sourceTree = "<group>"; };
+		F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightVC.m; sourceTree = "<group>"; };
 		F4319DD81C17FCD6006761A1 /* kalenPre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kalenPre.pch; sourceTree = "<group>"; };
 		F4319E5E1C18149F006761A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -203,6 +212,12 @@
 		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
 		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
 		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
+		F4966CEE1C89370000E07927 /* CustomTextFieldByCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextFieldByCode.h; sourceTree = "<group>"; };
+		F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextFieldByCode.m; sourceTree = "<group>"; };
+		F4966CF41C895BD600E07927 /* CustomElementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomElementVC.h; sourceTree = "<group>"; };
+		F4966CF51C895BD600E07927 /* CustomElementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomElementVC.m; sourceTree = "<group>"; };
+		F4966CFA1C89661D00E07927 /* CustomCell8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell8.h; sourceTree = "<group>"; };
+		F4966CFB1C89661D00E07927 /* CustomCell8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell8.m; sourceTree = "<group>"; };
 		F4B233C91BFE18DB00C30745 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F4B7F8B71C102A8D000BAF87 /* UITestingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestingVC.h; sourceTree = "<group>"; };
 		F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestingVC.m; sourceTree = "<group>"; };
@@ -591,9 +606,23 @@
 			path = OpenOtherApp;
 			sourceTree = "<group>";
 		};
+		F4966CEA1C892D8F00E07927 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F4966CEE1C89370000E07927 /* CustomTextFieldByCode.h */,
+				F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */,
+				F4966CF41C895BD600E07927 /* CustomElementVC.h */,
+				F4966CF51C895BD600E07927 /* CustomElementVC.m */,
+				F4966CFA1C89661D00E07927 /* CustomCell8.h */,
+				F4966CFB1C89661D00E07927 /* CustomCell8.m */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4966CEA1C892D8F00E07927 /* CustomTextField */,
 				F4ECCF231C880978003A0961 /* H5VC */,
 				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
 				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
@@ -662,9 +691,13 @@
 		F4B7F8EB1C102B16000BAF87 /* AutoResizeCellHeight */ = {
 			isa = PBXGroup;
 			children = (
-				F4B7F8EC1C102B16000BAF87 /* AutoResizeCellHeightVC.h */,
 				F4B7F8ED1C102B16000BAF87 /* AutoResizeCellHeightVC.m */,
+				F4B7F8EC1C102B16000BAF87 /* AutoResizeCellHeightVC.h */,
 				F4B7F8EE1C102B16000BAF87 /* AutoResizeCellHeightVC.xib */,
+				F40CA2191C8FBB89006B03D6 /* AutoCellHeightVC.h */,
+				F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */,
+				F40CA2161C8FBB16006B03D6 /* TestCell.h */,
+				F40CA2171C8FBB16006B03D6 /* TestCell.m */,
 			);
 			path = AutoResizeCellHeight;
 			sourceTree = "<group>";
@@ -1201,6 +1234,7 @@
 				F45C628A1C30DEAF0045D0DD /* UUChart.m in Sources */,
 				F4CC21931C16B93600DB49DA /* RATreeView.m in Sources */,
 				F4CC21901C16B93600DB49DA /* RATreeView+TableViewDataSource.m in Sources */,
+				F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */,
 				F432FD761C49EF6E00D0E628 /* CellItems.m in Sources */,
 				F45C628C1C30DEAF0045D0DD /* UUColor.m in Sources */,
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
@@ -1212,6 +1246,7 @@
 				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
+				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
 				F4B7F8D01C102AB7000BAF87 /* LeftMenuVCViewController.m in Sources */,
@@ -1226,10 +1261,12 @@
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
 				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
+				F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
+				F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */,
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,
 				F4CC212D1C167BB400DB49DA /* CellTreeVC.m in Sources */,
 				F4CC218F1C16B93600DB49DA /* RATreeView+Private.m in Sources */,
@@ -1241,6 +1278,7 @@
 				F4CC218A1C16B93600DB49DA /* RATreeNode.m in Sources */,
 				F4CC218D1C16B93600DB49DA /* RATreeNodeInfo.m in Sources */,
 				F4B7F93D1C102B85000BAF87 /* AnimalC.m in Sources */,
+				F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */,
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
 				F45C628D1C30DEAF0045D0DD /* UULineChart.m in Sources */,
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,

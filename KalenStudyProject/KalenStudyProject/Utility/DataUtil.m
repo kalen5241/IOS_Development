@@ -27,6 +27,8 @@
 #import "ScreenShotVC.h"
 #import "TaskManagerVC.h"
 #import "H5VC.h"
+#import "CustomElementVC.h"
+#import "AutoCellHeightVC.h"
 
 @implementation DataUtil
 
@@ -131,7 +133,18 @@
         item19.detail = @"混合app开发－H5VC";
         
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19];
+        GuideDataItem *item20 = [[GuideDataItem alloc]init];
+        item20.title = @"自定义控件";
+        item20.destVC = [[CustomElementVC alloc]init];
+        item20.detail = @"自定义控件－CustomElementVC";
+        
+        GuideDataItem *item21 = [[GuideDataItem alloc]init];
+        item21.title = @"自动布局+自动计算高度";
+        item21.destVC = [[AutoCellHeightVC alloc]init];
+        item21.detail = @"自动布局+自动计算高度－AutoResizeCellHeightVC";
+        
+        
+        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

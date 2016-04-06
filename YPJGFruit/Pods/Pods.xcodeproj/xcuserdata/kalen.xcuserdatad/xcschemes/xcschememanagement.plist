@@ -34,7 +34,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-YPJGFruit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TMCache.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,12 +67,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>029AEF0769BF0D90753730568553B0C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>49FA5DAFFF876CE85BB9B2EE548DA32A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +107,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA828E717C66D9512E0DC5E5A29158F7</key>
+		<key>AEE869EBFEE4BDA9799BDF31CF02B29D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFCECFBBC9B3C870C4677CE43AF24B3E</key>
+		<key>B5E2FD58F20F033F6071563F480C7007</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F964B77113D837BFF83E61A57B111A8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,19 @@
+//
+//  YPJGHeader.pch
+//  YPJGFruit
+//
+//  Created by kalen on 16/3/31.
+//  Copyright © 2016年 kalen. All rights reserved.
+//
+
+#ifndef YPJGHeader_pch
+#define YPJGHeader_pch
+
+#import "Constants.h"
+#import "UIColor+Hex.h"
+#import "Masonry.h"
+#import "CWUtil.h"
+#import "CWLabel.h"
+#import "UIImageView+WebCache.h"
+
+#endif /* YPJGHeader_pch */
