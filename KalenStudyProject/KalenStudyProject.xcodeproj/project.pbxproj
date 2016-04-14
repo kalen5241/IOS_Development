@@ -46,6 +46,13 @@
 		F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */; };
 		F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CF51C895BD600E07927 /* CustomElementVC.m */; };
 		F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CFB1C89661D00E07927 /* CustomCell8.m */; };
+		F49C0AEF1CBFC46D0041A265 /* cube.html in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AEE1CBFC46D0041A265 /* cube.html */; };
+		F49C0AF61CBFD0D70041A265 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF01CBFD0D70041A265 /* 1.jpg */; };
+		F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF11CBFD0D70041A265 /* 2.jpg */; };
+		F49C0AF81CBFD0D70041A265 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF21CBFD0D70041A265 /* 3.jpg */; };
+		F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF31CBFD0D70041A265 /* 4.jpg */; };
+		F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF41CBFD0D70041A265 /* 5.jpg */; };
+		F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF51CBFD0D70041A265 /* 6.jpg */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
 		F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */; };
 		F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */; };
@@ -218,6 +225,13 @@
 		F4966CF51C895BD600E07927 /* CustomElementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomElementVC.m; sourceTree = "<group>"; };
 		F4966CFA1C89661D00E07927 /* CustomCell8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell8.h; sourceTree = "<group>"; };
 		F4966CFB1C89661D00E07927 /* CustomCell8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell8.m; sourceTree = "<group>"; };
+		F49C0AEE1CBFC46D0041A265 /* cube.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cube.html; sourceTree = "<group>"; };
+		F49C0AF01CBFD0D70041A265 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F49C0AF11CBFD0D70041A265 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F49C0AF21CBFD0D70041A265 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		F49C0AF31CBFD0D70041A265 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		F49C0AF41CBFD0D70041A265 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		F49C0AF51CBFD0D70041A265 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		F4B233C91BFE18DB00C30745 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F4B7F8B71C102A8D000BAF87 /* UITestingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestingVC.h; sourceTree = "<group>"; };
 		F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestingVC.m; sourceTree = "<group>"; };
@@ -557,6 +571,13 @@
 		F4680D821BF2F0F500C1EC76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F49C0AF01CBFD0D70041A265 /* 1.jpg */,
+				F49C0AF11CBFD0D70041A265 /* 2.jpg */,
+				F49C0AF21CBFD0D70041A265 /* 3.jpg */,
+				F49C0AF31CBFD0D70041A265 /* 4.jpg */,
+				F49C0AF41CBFD0D70041A265 /* 5.jpg */,
+				F49C0AF51CBFD0D70041A265 /* 6.jpg */,
+				F49C0AEE1CBFC46D0041A265 /* cube.html */,
 				F4ECCF271C880A2F003A0961 /* css */,
 				F4ECCF291C880A2F003A0961 /* index.html */,
 				F4B233C91BFE18DB00C30745 /* Data.plist */,
@@ -1086,22 +1107,29 @@
 				F4B7F9911C102CE5000BAF87 /* UMSShareListController.xib in Resources */,
 				F4B7F8CB1C102AB7000BAF87 /* BasicCell.xib in Resources */,
 				F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */,
+				F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */,
 				F4B7F98C1C102CE5000BAF87 /* UMSCommentInputControlleriPad.xib in Resources */,
 				F4B7F8F01C102B16000BAF87 /* AutoResizeCellHeightVC.xib in Resources */,
 				F4B7F8CF1C102AB7000BAF87 /* GuideViewController.xib in Resources */,
 				F4B7F98E1C102CE5000BAF87 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */,
+				F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */,
 				F4B7F9511C102C0F000BAF87 /* CustomCellOne.xib in Resources */,
+				F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */,
 				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
 				F4B7F8EA1C102B08000BAF87 /* ErrorDepositeViewController.xib in Resources */,
 				F4B7F9921C102CE5000BAF87 /* ios-social-sdk-shake.html in Resources */,
 				F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */,
 				F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */,
+				F49C0AF81CBFD0D70041A265 /* 3.jpg in Resources */,
+				F49C0AF61CBFD0D70041A265 /* 1.jpg in Resources */,
 				F4B7F93F1C102B85000BAF87 /* ConnectionVC.xib in Resources */,
 				F4B7F98B1C102CE5000BAF87 /* UMSCommentInputController.xib in Resources */,
+				F49C0AEF1CBFC46D0041A265 /* cube.html in Resources */,
 				F432FD811C4A01B200D0E628 /* CustomCell.xib in Resources */,
 				F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */,
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
+				F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
 				F4B7F98A1C102CE5000BAF87 /* UMSCommentDetailController.xib in Resources */,
 				F4B7F9531C102C0F000BAF87 /* CustomCellTwo.xib in Resources */,

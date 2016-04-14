@@ -29,7 +29,7 @@
         make.edges.equalTo(self.view);
     }];
     
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"cube" ofType:@"html"];
     
     NSURL* url = [NSURL fileURLWithPath:path];
     
