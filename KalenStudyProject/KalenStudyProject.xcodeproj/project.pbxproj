@@ -53,6 +53,18 @@
 		F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF31CBFD0D70041A265 /* 4.jpg */; };
 		F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF41CBFD0D70041A265 /* 5.jpg */; };
 		F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF51CBFD0D70041A265 /* 6.jpg */; };
+		F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */; };
+		F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */; };
+		F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */; };
+		F4AFEDEA1CDEC19F005E94C5 /* DelePassValueOtherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */; };
+		F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */; };
+		F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */; };
+		F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */; };
+		F4AFEDFB1CE1B04B005E94C5 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */; };
+		F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */; };
+		F4AFEE001CE1B77D005E94C5 /* ThreedPassVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */; };
+		F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */; };
+		F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
 		F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */; };
 		F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */; };
@@ -232,6 +244,25 @@
 		F49C0AF31CBFD0D70041A265 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		F49C0AF41CBFD0D70041A265 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		F49C0AF51CBFD0D70041A265 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		F4AFEDE01CDEA7B3005E94C5 /* PassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueVC.h; sourceTree = "<group>"; };
+		F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueVC.m; sourceTree = "<group>"; };
+		F4AFEDE31CDEADE1005E94C5 /* DelePassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueVC.h; sourceTree = "<group>"; };
+		F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueVC.m; sourceTree = "<group>"; };
+		F4AFEDE61CDEC19F005E94C5 /* DelePassValueOtherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueOtherVC.h; sourceTree = "<group>"; };
+		F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueOtherVC.m; sourceTree = "<group>"; };
+		F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelePassValueOtherVC.xib; sourceTree = "<group>"; };
+		F4AFEDEC1CE03BCB005E94C5 /* ReadLocalFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadLocalFile.h; sourceTree = "<group>"; };
+		F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadLocalFile.m; sourceTree = "<group>"; };
+		F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadLocalFile.xib; sourceTree = "<group>"; };
+		F4AFEDF71CE1B04B005E94C5 /* NotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
+		F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationVC.m; sourceTree = "<group>"; };
+		F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		F4AFEDFC1CE1B77D005E94C5 /* ThreedPassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreedPassVC.h; sourceTree = "<group>"; };
+		F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreedPassVC.m; sourceTree = "<group>"; };
+		F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreedPassVC.xib; sourceTree = "<group>"; };
+		F4AFEE021CE1EF05005E94C5 /* MutThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutThreadVC.h; sourceTree = "<group>"; };
+		F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutThreadVC.m; sourceTree = "<group>"; };
+		F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MutThreadVC.xib; sourceTree = "<group>"; };
 		F4B233C91BFE18DB00C30745 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F4B7F8B71C102A8D000BAF87 /* UITestingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestingVC.h; sourceTree = "<group>"; };
 		F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestingVC.m; sourceTree = "<group>"; };
@@ -640,9 +671,52 @@
 			path = CustomTextField;
 			sourceTree = "<group>";
 		};
+		F4AFEDDF1CDEA76B005E94C5 /* PassValue */ = {
+			isa = PBXGroup;
+			children = (
+				F4AFEDE01CDEA7B3005E94C5 /* PassValueVC.h */,
+				F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */,
+				F4AFEDE31CDEADE1005E94C5 /* DelePassValueVC.h */,
+				F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */,
+				F4AFEDF71CE1B04B005E94C5 /* NotificationVC.h */,
+				F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */,
+				F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */,
+				F4AFEDE61CDEC19F005E94C5 /* DelePassValueOtherVC.h */,
+				F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */,
+				F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */,
+				F4AFEDFC1CE1B77D005E94C5 /* ThreedPassVC.h */,
+				F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */,
+				F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */,
+			);
+			path = PassValue;
+			sourceTree = "<group>";
+		};
+		F4AFEDEB1CE03B74005E94C5 /* FileOperation */ = {
+			isa = PBXGroup;
+			children = (
+				F4AFEDEC1CE03BCB005E94C5 /* ReadLocalFile.h */,
+				F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */,
+				F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */,
+			);
+			path = FileOperation;
+			sourceTree = "<group>";
+		};
+		F4AFEE011CE1EEC8005E94C5 /* MultipleThread */ = {
+			isa = PBXGroup;
+			children = (
+				F4AFEE021CE1EF05005E94C5 /* MutThreadVC.h */,
+				F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */,
+				F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */,
+			);
+			path = MultipleThread;
+			sourceTree = "<group>";
+		};
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
+				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
+				F4AFEDDF1CDEA76B005E94C5 /* PassValue */,
 				F4966CEA1C892D8F00E07927 /* CustomTextField */,
 				F4ECCF231C880978003A0961 /* H5VC */,
 				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
@@ -1114,10 +1188,13 @@
 				F4B7F98E1C102CE5000BAF87 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */,
 				F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */,
+				F4AFEDEA1CDEC19F005E94C5 /* DelePassValueOtherVC.xib in Resources */,
 				F4B7F9511C102C0F000BAF87 /* CustomCellOne.xib in Resources */,
 				F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */,
 				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
+				F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */,
 				F4B7F8EA1C102B08000BAF87 /* ErrorDepositeViewController.xib in Resources */,
+				F4AFEE001CE1B77D005E94C5 /* ThreedPassVC.xib in Resources */,
 				F4B7F9921C102CE5000BAF87 /* ios-social-sdk-shake.html in Resources */,
 				F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */,
 				F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */,
@@ -1131,7 +1208,9 @@
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
 				F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
+				F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */,
 				F4B7F98A1C102CE5000BAF87 /* UMSCommentDetailController.xib in Resources */,
+				F4AFEDFB1CE1B04B005E94C5 /* NotificationVC.xib in Resources */,
 				F4B7F9531C102C0F000BAF87 /* CustomCellTwo.xib in Resources */,
 				F4CC212E1C167BB400DB49DA /* CellTreeVC.xib in Resources */,
 				F4B7F9901C102CE5000BAF87 /* UMSnsAccountViewController.xib in Resources */,
@@ -1253,8 +1332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
+				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
+				F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,
 				F4CC21911C16B93600DB49DA /* RATreeView+TableViewDelegate.m in Sources */,
@@ -1273,10 +1354,14 @@
 				F45C62911C30E5280045D0DD /* TableViewCell.m in Sources */,
 				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
+				F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */,
+				F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
+				F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */,
+				F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */,
 				F4B7F8D01C102AB7000BAF87 /* LeftMenuVCViewController.m in Sources */,
 				F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */,
 				F45C62951C3138DD0045D0DD /* CodeChartVC.m in Sources */,
@@ -1284,6 +1369,7 @@
 				F4CC21961C16BBBD00DB49DA /* RADataObject.m in Sources */,
 				F46E04EE1C58D32500F5D060 /* ScreenShotVC.m in Sources */,
 				F4B7F9541C102C0F000BAF87 /* MutilDataSource.m in Sources */,
+				F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */,
 				F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */,
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,

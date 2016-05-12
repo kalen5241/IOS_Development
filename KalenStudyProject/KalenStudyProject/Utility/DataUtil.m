@@ -29,6 +29,9 @@
 #import "H5VC.h"
 #import "CustomElementVC.h"
 #import "AutoCellHeightVC.h"
+#import "PassValueVC.h"
+#import "ReadLocalFile.h"
+#import "MutThreadVC.h"
 
 @implementation DataUtil
 
@@ -121,7 +124,6 @@
         item17.destVC = [[ScreenShotVC alloc]init];
         item17.detail = @"截取高清屏幕－ScreenShotVC";
         
-        
         GuideDataItem *item18 = [[GuideDataItem alloc]init];
         item18.title = @"仿iOS9任务管理器滑动效果";
         item18.destVC = [[TaskManagerVC alloc]init];
@@ -131,7 +133,6 @@
         item19.title = @"WebView读取本地H5";
         item19.destVC = [[H5VC alloc]init];
         item19.detail = @"混合app开发－H5VC";
-        
         
         GuideDataItem *item20 = [[GuideDataItem alloc]init];
         item20.title = @"自定义控件";
@@ -143,8 +144,22 @@
         item21.destVC = [[AutoCellHeightVC alloc]init];
         item21.detail = @"自动布局+自动计算高度－AutoResizeCellHeightVC";
         
+        GuideDataItem *item22 = [[GuideDataItem alloc]init];
+        item22.title = @"多中传值方式";
+        item22.destVC = [[PassValueVC alloc]init];
+        item22.detail = @"多中传值方式－PassValueVC";
         
-        _guideArray = @[item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item23 = [[GuideDataItem alloc]init];
+        item23.title = @"文件操作";
+        item23.destVC = [[ReadLocalFile alloc]init];
+        item23.detail = @"读写文件操作－ReadLocalFile";
+        
+        GuideDataItem *item24 = [[GuideDataItem alloc]init];
+        item24.title = @"多线程";
+        item24.destVC = [[MutThreadVC alloc]init];
+        item24.detail = @"多线程－MutThreadVC";
+        
+        _guideArray = @[item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

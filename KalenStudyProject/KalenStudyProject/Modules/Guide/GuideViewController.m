@@ -64,7 +64,6 @@
     NSLog(@"文件路径为%@",sortPath);
     
     
-    AlertShow(@"dfdfsdfsd");
     
 }
 

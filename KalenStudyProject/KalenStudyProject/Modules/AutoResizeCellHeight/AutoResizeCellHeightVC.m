@@ -10,8 +10,8 @@
 #import "DataUtil.h"
 #import "BasicCell.h"
 #import "GuideDataItem.h"
-#import <UITableView+FDTemplateLayoutCell.h>
 
+#import <UITableView+FDTemplateLayoutCell.h>
 
 #define CELL_ID @"SmsDetailCellId"
 
