@@ -7,8 +7,11 @@
 //
 
 #import "BlueToothVC.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface BlueToothVC ()
+@interface BlueToothVC () <CBCentralManagerDelegate>
+
+@property (nonatomic, strong) CBCentralManager *centralManager;
 
 @end
 
@@ -21,5 +24,32 @@
 
 
 - (IBAction)run:(UIButton *)sender {
+    
+    _centralManager = [[CBCentralManager alloc]initWithDelegate:self queue:nil];
+    
 }
+
+
+#pragma mark --CBCentralManagerDelegate
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
+    
+    if (central.state != CBCentralManagerStatePoweredOn) {
+        NSLog(@"蓝牙未启动");
+        return;
+    }
+    [_centralManager scanForPeripheralsWithServices:nil options:nil];
+}
+
+
+- (void)centralManager:(CBCentralManager *)central
+ didDiscoverPeripheral:(CBPeripheral *)peripheral
+     advertisementData:(NSDictionary<NSString *,id> *)advertisementData
+                  RSSI:(NSNumber *)RSSI
+{
+    
+    
+    NSLog(@">>>>>>>发现设备：%@",peripheral.name);
+    
+}
+
 @end

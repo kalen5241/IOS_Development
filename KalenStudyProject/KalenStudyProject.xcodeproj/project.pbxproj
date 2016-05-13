@@ -43,6 +43,9 @@
 		F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */; };
 		F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F486AA001CE578EE00EC910A /* BlueToothVC.m */; };
 		F486AA031CE578EE00EC910A /* BlueToothVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F486AA011CE578EE00EC910A /* BlueToothVC.xib */; };
+		F486AA051CE57A3700EC910A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA041CE57A3700EC910A /* CoreBluetooth.framework */; };
+		F486AA071CE57A3F00EC910A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA061CE57A3F00EC910A /* UIKit.framework */; };
+		F486AA091CE57A5800EC910A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA081CE57A5800EC910A /* Foundation.framework */; };
 		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
 		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
 		F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */; };
@@ -233,6 +236,9 @@
 		F486A9FF1CE578EE00EC910A /* BlueToothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothVC.h; sourceTree = "<group>"; };
 		F486AA001CE578EE00EC910A /* BlueToothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothVC.m; sourceTree = "<group>"; };
 		F486AA011CE578EE00EC910A /* BlueToothVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothVC.xib; sourceTree = "<group>"; };
+		F486AA041CE57A3700EC910A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F486AA061CE57A3F00EC910A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F486AA081CE57A5800EC910A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
 		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
 		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
@@ -409,6 +415,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F486AA091CE57A5800EC910A /* Foundation.framework in Frameworks */,
+				F486AA071CE57A3F00EC910A /* UIKit.framework in Frameworks */,
+				F486AA051CE57A3700EC910A /* CoreBluetooth.framework in Frameworks */,
 				F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */,
 				F4B7F9931C102CE5000BAF87 /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */,
 				F4BC57841BF97218003944F3 /* CoreGraphics.framework in Frameworks */,
@@ -449,6 +458,9 @@
 		20998B82165AF7755FE88ACD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F486AA081CE57A5800EC910A /* Foundation.framework */,
+				F486AA061CE57A3F00EC910A /* UIKit.framework */,
+				F486AA041CE57A3700EC910A /* CoreBluetooth.framework */,
 				F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */,
 				F4BC57891BF9723D003944F3 /* libstdc++.tbd */,
 				F4BC57871BF97230003944F3 /* CoreTelephony.framework */,
@@ -1567,9 +1579,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
+				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1604,9 +1616,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
+				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
