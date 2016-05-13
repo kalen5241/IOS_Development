@@ -32,6 +32,7 @@
 #import "PassValueVC.h"
 #import "ReadLocalFile.h"
 #import "MutThreadVC.h"
+#import "BlueToothVC.h"
 
 @implementation DataUtil
 
@@ -159,7 +160,12 @@
         item24.destVC = [[MutThreadVC alloc]init];
         item24.detail = @"多线程－MutThreadVC";
         
-        _guideArray = @[item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item25 = [[GuideDataItem alloc]init];
+        item25.title = @"蓝牙";
+        item25.destVC = [[BlueToothVC alloc]init];
+        item25.detail = @"蓝牙－BlueToothVC";
+        
+        _guideArray = @[item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

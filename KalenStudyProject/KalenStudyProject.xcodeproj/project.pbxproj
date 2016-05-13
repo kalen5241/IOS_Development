@@ -41,6 +41,8 @@
 		F4680DA81BF2F0F500C1EC76 /* KalenStudyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */; };
 		F46E04EE1C58D32500F5D060 /* ScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */; };
 		F46E04F01C59C8A100F5D060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */; };
+		F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F486AA001CE578EE00EC910A /* BlueToothVC.m */; };
+		F486AA031CE578EE00EC910A /* BlueToothVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F486AA011CE578EE00EC910A /* BlueToothVC.xib */; };
 		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
 		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
 		F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */; };
@@ -228,6 +230,9 @@
 		F46E04EC1C58D32500F5D060 /* ScreenShotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotVC.h; sourceTree = "<group>"; };
 		F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVC.m; sourceTree = "<group>"; };
 		F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F486A9FF1CE578EE00EC910A /* BlueToothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothVC.h; sourceTree = "<group>"; };
+		F486AA001CE578EE00EC910A /* BlueToothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothVC.m; sourceTree = "<group>"; };
+		F486AA011CE578EE00EC910A /* BlueToothVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothVC.xib; sourceTree = "<group>"; };
 		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
 		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
 		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
@@ -648,6 +653,16 @@
 			path = ScreenShot;
 			sourceTree = "<group>";
 		};
+		F486A9FE1CE578C700EC910A /* BlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				F486A9FF1CE578EE00EC910A /* BlueToothVC.h */,
+				F486AA001CE578EE00EC910A /* BlueToothVC.m */,
+				F486AA011CE578EE00EC910A /* BlueToothVC.xib */,
+			);
+			path = BlueTooth;
+			sourceTree = "<group>";
+		};
 		F48B54EB1C4F78560065F35B /* OpenOtherApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,6 +729,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F486A9FE1CE578C700EC910A /* BlueTooth */,
 				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
 				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
 				F4AFEDDF1CDEA76B005E94C5 /* PassValue */,
@@ -1180,6 +1196,7 @@
 				F4B7F98F1C102CE5000BAF87 /* UMSLoginViewController.xib in Resources */,
 				F4B7F9911C102CE5000BAF87 /* UMSShareListController.xib in Resources */,
 				F4B7F8CB1C102AB7000BAF87 /* BasicCell.xib in Resources */,
+				F486AA031CE578EE00EC910A /* BlueToothVC.xib in Resources */,
 				F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */,
 				F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */,
 				F4B7F98C1C102CE5000BAF87 /* UMSCommentInputControlleriPad.xib in Resources */,
@@ -1357,6 +1374,7 @@
 				F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */,
 				F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
+				F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */,
 				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
