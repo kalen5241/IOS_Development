@@ -182,7 +182,7 @@
 }
 
 
-#pragma mark --文件操作相关
+
 + (NSString *)fetchKalenWorkPath:(AppType)appType {
     /*
      rootPath
@@ -256,6 +256,10 @@
     return fullPath;
 }
 
+
+/**
+ * 读取 工程文件中的所有 plist 文件 转成 json 输出
+ */
 + (void)showJSON{
     NSArray *arrayPlists = [[NSBundle mainBundle] pathsForResourcesOfType:@"plist" inDirectory:nil];
     //    NSLog(@"%@",arrayPlists);
@@ -275,7 +279,7 @@
 //        CFShow((__bridge CFTypeRef)(path.lastPathComponent));
 //        CFShow((__bridge CFTypeRef)(jsonString));
     }
-}//读取 工程文件中的所有 plist 文件 转成 json 输出
+}
 
 
 + (NSDictionary *)fetchUserDefaultContent {
@@ -300,7 +304,15 @@
     }
 }
 
-#pragma mark --图像处理相关
+
+
+/**
+ * 缩放图像，并根据imageview的宽高进行图片裁剪，图片没有被拉伸和变形
+ * @param  image        原始图像文件
+ * @param  width        目标imageview的宽
+ * @param  height     目标imageview的高
+ */
+
 + (UIImage *)compressImageWith:(UIImage *)image width:(float)width height:(float)height
 {
     float imageWidth = image.size.width;
@@ -330,5 +342,27 @@
     
 }
 
+
+/**
+ *  检测电话号格式
+ * @param  phoneNum       电话号
+ */
++ (BOOL)checkPhoneNumInput:(NSString *)phoneNum {
+    
+    NSString *patternTel = @"^1[1,2,3,4,5,6,7,8,9][0-9]{9}$";
+    
+    NSError *err = nil;
+    NSRegularExpression *TelExp = [NSRegularExpression regularExpressionWithPattern:patternTel options:NSRegularExpressionCaseInsensitive error:&err];
+    
+    NSTextCheckingResult * isMatchTel = [TelExp firstMatchInString:phoneNum options:0 range:NSMakeRange(0, [phoneNum length])];
+    
+    if (isMatchTel) {
+        return TRUE;
+    }else {
+        return FALSE;
+    }
+    
+    
+}
 
 @end
