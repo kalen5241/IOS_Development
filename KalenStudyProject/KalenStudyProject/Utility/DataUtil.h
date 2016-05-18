@@ -21,4 +21,18 @@ typedef NS_ENUM(NSUInteger, AppType) {
 + (NSString *)fetchKalenWorkPath:(AppType)appType;
 + (NSString*)getFullPath:(NSString*)fileName;
 + (void)showJSON;
+
+
+/**
+ * 以字典形式返回NSUserDefault中的数据
+ */
++ (NSDictionary *)fetchUserDefaultContent;
+
+/**
+ * 缩放图像，并根据imageview的宽高进行图片裁剪，图片没有被拉伸和变形
+ * @param  image        原始图像文件
+ * @param  width        目标imageview的宽
+ * @param  height     目标imageview的高
+ */
++ (UIImage *)compressImageWith:(UIImage *)image width:(float)width height:(float)height;
 @end

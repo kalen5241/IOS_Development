@@ -181,6 +181,8 @@
     return [[[DataUtil alloc]init] fetchGuideArray];
 }
 
+
+#pragma mark --文件操作相关
 + (NSString *)fetchKalenWorkPath:(AppType)appType {
     /*
      rootPath
@@ -274,6 +276,59 @@
 //        CFShow((__bridge CFTypeRef)(jsonString));
     }
 }//读取 工程文件中的所有 plist 文件 转成 json 输出
+
+
++ (NSDictionary *)fetchUserDefaultContent {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    
+    NSString *path = (NSString *)[paths lastObject];
+    
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    
+    NSString *filepath = [NSString stringWithFormat:@"%@/Preferences/%@.plist",path,bundleIdentifier];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:filepath]) {
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filepath];
+        
+        return dict;
+    }else {
+        NSLog(@">>>>>>>>>>路径不存在");
+        return nil;
+    }
+}
+
+#pragma mark --图像处理相关
++ (UIImage *)compressImageWith:(UIImage *)image width:(float)width height:(float)height
+{
+    float imageWidth = image.size.width;
+    float imageHeight = image.size.height;
+    
+    float widthScale = imageWidth /width;
+    float heightScale = imageHeight /height;
+    
+    // 创建一个bitmap的context
+    // 并把它设置成为当前正在使用的context
+    //    UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(width, height), NO, 2.0);
+    if (widthScale > heightScale) {
+        [image drawInRect:CGRectMake(0, 0, imageWidth /heightScale , height)];
+    }
+    else {
+        [image drawInRect:CGRectMake(0, 0, width , imageHeight /widthScale)];
+    }
+    
+    // 从当前context中创建一个改变大小后的图片
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    //    [newImage retain];
+    // 使当前的context出堆栈
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+    
+}
 
 
 @end

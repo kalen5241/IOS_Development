@@ -71,6 +71,12 @@
 		F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */; };
 		F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
+		F4B616B71CEAFD3D0076A4EF /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B616B61CEAFD3D0076A4EF /* UIImage+Additions.m */; };
+		F4B616BB1CEAFD510076A4EF /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B616B81CEAFD510076A4EF /* 1.jpg */; };
+		F4B616BC1CEAFD510076A4EF /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B616B91CEAFD510076A4EF /* 2.jpg */; };
+		F4B616BD1CEAFD510076A4EF /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F4B616BA1CEAFD510076A4EF /* 3.JPG */; };
+		F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B616BF1CEB039F0076A4EF /* UIImage+Resize.m */; };
+		F4B616C21CEB1FD40076A4EF /* bb.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B616C11CEB1FD40076A4EF /* bb.png */; };
 		F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */; };
 		F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */; };
 		F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F8BE1C102AB7000BAF87 /* BasicCell.m */; };
@@ -275,6 +281,14 @@
 		F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutThreadVC.m; sourceTree = "<group>"; };
 		F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MutThreadVC.xib; sourceTree = "<group>"; };
 		F4B233C91BFE18DB00C30745 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		F4B616B51CEAFD3D0076A4EF /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		F4B616B61CEAFD3D0076A4EF /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		F4B616B81CEAFD510076A4EF /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F4B616B91CEAFD510076A4EF /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F4B616BA1CEAFD510076A4EF /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.JPG; sourceTree = "<group>"; };
+		F4B616BE1CEB039F0076A4EF /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		F4B616BF1CEB039F0076A4EF /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		F4B616C11CEB1FD40076A4EF /* bb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb.png; sourceTree = "<group>"; };
 		F4B7F8B71C102A8D000BAF87 /* UITestingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestingVC.h; sourceTree = "<group>"; };
 		F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestingVC.m; sourceTree = "<group>"; };
 		F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITestingVC.xib; sourceTree = "<group>"; };
@@ -659,6 +673,14 @@
 		F46E04EB1C58D2C000F5D060 /* ScreenShot */ = {
 			isa = PBXGroup;
 			children = (
+				F4B616C11CEB1FD40076A4EF /* bb.png */,
+				F4B616B81CEAFD510076A4EF /* 1.jpg */,
+				F4B616B91CEAFD510076A4EF /* 2.jpg */,
+				F4B616BA1CEAFD510076A4EF /* 3.JPG */,
+				F4B616BE1CEB039F0076A4EF /* UIImage+Resize.h */,
+				F4B616BF1CEB039F0076A4EF /* UIImage+Resize.m */,
+				F4B616B51CEAFD3D0076A4EF /* UIImage+Additions.h */,
+				F4B616B61CEAFD3D0076A4EF /* UIImage+Additions.m */,
 				F46E04EC1C58D32500F5D060 /* ScreenShotVC.h */,
 				F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */,
 			);
@@ -1214,11 +1236,14 @@
 				F4B7F98C1C102CE5000BAF87 /* UMSCommentInputControlleriPad.xib in Resources */,
 				F4B7F8F01C102B16000BAF87 /* AutoResizeCellHeightVC.xib in Resources */,
 				F4B7F8CF1C102AB7000BAF87 /* GuideViewController.xib in Resources */,
+				F4B616BB1CEAFD510076A4EF /* 1.jpg in Resources */,
+				F4B616BC1CEAFD510076A4EF /* 2.jpg in Resources */,
 				F4B7F98E1C102CE5000BAF87 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */,
 				F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */,
 				F4AFEDEA1CDEC19F005E94C5 /* DelePassValueOtherVC.xib in Resources */,
 				F4B7F9511C102C0F000BAF87 /* CustomCellOne.xib in Resources */,
+				F4B616C21CEB1FD40076A4EF /* bb.png in Resources */,
 				F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */,
 				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
 				F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */,
@@ -1237,6 +1262,7 @@
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
 				F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
+				F4B616BD1CEAFD510076A4EF /* 3.JPG in Resources */,
 				F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */,
 				F4B7F98A1C102CE5000BAF87 /* UMSCommentDetailController.xib in Resources */,
 				F4AFEDFB1CE1B04B005E94C5 /* NotificationVC.xib in Resources */,
@@ -1361,6 +1387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
+				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
 				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
@@ -1373,6 +1400,7 @@
 				F4CC21931C16B93600DB49DA /* RATreeView.m in Sources */,
 				F4CC21901C16B93600DB49DA /* RATreeView+TableViewDataSource.m in Sources */,
 				F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */,
+				F4B616B71CEAFD3D0076A4EF /* UIImage+Additions.m in Sources */,
 				F432FD761C49EF6E00D0E628 /* CellItems.m in Sources */,
 				F45C628C1C30DEAF0045D0DD /* UUColor.m in Sources */,
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,

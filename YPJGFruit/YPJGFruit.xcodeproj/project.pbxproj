@@ -26,7 +26,6 @@
 		F45BF1961BF8543800D28ADE /* YPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F45BF1951BF8543800D28ADE /* YPModel.m */; };
 		F49B61421B59D40E00EB3A5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61411B59D40E00EB3A5B /* main.m */; };
 		F49B61451B59D40E00EB3A5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B61441B59D40E00EB3A5B /* AppDelegate.m */; };
-		F49B61481B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */; };
 		F49B614B1B59D40E00EB3A5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B614A1B59D40E00EB3A5B /* ViewController.m */; };
 		F49B614E1B59D40E00EB3A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49B614C1B59D40E00EB3A5B /* Main.storyboard */; };
 		F49B61501B59D40E00EB3A5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49B614F1B59D40E00EB3A5B /* Images.xcassets */; };
@@ -131,7 +130,6 @@
 		F49B61411B59D40E00EB3A5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F49B61431B59D40E00EB3A5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F49B61441B59D40E00EB3A5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YPJGFruit.xcdatamodel; sourceTree = "<group>"; };
 		F49B61491B59D40E00EB3A5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F49B614A1B59D40E00EB3A5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F49B614D1B59D40E00EB3A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -363,7 +361,6 @@
 				F49B61681B59D42600EB3A5B /* YPJGFruitShop */,
 				F49B614C1B59D40E00EB3A5B /* Main.storyboard */,
 				F49B614F1B59D40E00EB3A5B /* Images.xcassets */,
-				F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */,
 				F49B613F1B59D40E00EB3A5B /* Supporting Files */,
 			);
 			path = YPJGFruit;
@@ -823,7 +820,6 @@
 				F4F8F2951CAD0BAA00CDCA5C /* CSDataRequest.m in Sources */,
 				F4F8F2501CAD050C00CDCA5C /* CWTextView.m in Sources */,
 				F49B61F81B5A5D3100EB3A5B /* FruitProductCell.m in Sources */,
-				F49B61481B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld in Sources */,
 				F40E7DBB1B80C26E0059D5C3 /* MessageVC.m in Sources */,
 				F4F8F2AD1CAD112F00CDCA5C /* ForgetPasswordVC.m in Sources */,
 				F447F5D41C29421100733E8E /* WebViewVC.m in Sources */,
@@ -1003,7 +999,7 @@
 			baseConfigurationReference = 961C16A3B3BA4477C3038497 /* Pods-YPJGFruit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/YPJGFruit/YPJGFruit/YPJGHeader.pch;
+				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/YPJGFruit/YPJGFruit/YPJGHeader.pch;
 				INFOPLIST_FILE = YPJGFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1015,7 +1011,7 @@
 			baseConfigurationReference = 858F67375FE1B3D35190A4BC /* Pods-YPJGFruit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/kalen/Desktop/IOS_Development/YPJGFruit/YPJGFruit/YPJGHeader.pch;
+				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/YPJGFruit/YPJGFruit/YPJGHeader.pch;
 				INFOPLIST_FILE = YPJGFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1087,19 +1083,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F49B61461B59D40E00EB3A5B /* YPJGFruit.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */,
-			);
-			currentVersion = F49B61471B59D40E00EB3A5B /* YPJGFruit.xcdatamodel */;
-			path = YPJGFruit.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F49B61341B59D40E00EB3A5B /* Project object */;
 }

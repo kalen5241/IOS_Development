@@ -25,7 +25,10 @@
     
 //  NSData *data = [fileHandle readDataToEndOfFile];
     
-    [self readFileToArray:filePath];
+//    [self readFileToArray:filePath];
+    
+  NSDictionary *dict = [DataUtil fetchUserDefaultContent];
+    NSLog(@">>>>>>%@",dict);
     
 }
 
