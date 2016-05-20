@@ -33,6 +33,7 @@
 #import "ReadLocalFile.h"
 #import "MutThreadVC.h"
 #import "BlueToothVC.h"
+#import "FD_Masonry_DemoVC.h"
 
 @implementation DataUtil
 
@@ -165,7 +166,12 @@
         item25.destVC = [[BlueToothVC alloc]init];
         item25.detail = @"蓝牙－BlueToothVC";
         
-        _guideArray = @[item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item26 = [[GuideDataItem alloc]init];
+        item26.title = @"FD_Masonry";
+        item26.destVC = [[FD_Masonry_DemoVC alloc]init];
+        item26.detail = @"自动布局－FD_Masonry_DemoVC";
+        
+        _guideArray = @[item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

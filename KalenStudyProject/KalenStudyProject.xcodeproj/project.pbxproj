@@ -132,6 +132,14 @@
 		F4BC57861BF97225003944F3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57851BF97225003944F3 /* libsqlite3.tbd */; };
 		F4BC57881BF97230003944F3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57871BF97230003944F3 /* CoreTelephony.framework */; };
 		F4BC578A1BF9723D003944F3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57891BF9723D003944F3 /* libstdc++.tbd */; };
+		F4C447F31CEF5367002C8097 /* FD_Masonry_KalenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447E81CEF5367002C8097 /* FD_Masonry_KalenVC.m */; };
+		F4C447F41CEF5367002C8097 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447EB1CEF5367002C8097 /* DataModel.m */; };
+		F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447ED1CEF5367002C8097 /* FD_Masonry_DemoVC.m */; };
+		F4C447F71CEF5367002C8097 /* TableViewCellXib.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447F11CEF5367002C8097 /* TableViewCellXib.m */; };
+		F4C447F81CEF5367002C8097 /* TableViewCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C447F21CEF5367002C8097 /* TableViewCellXib.xib */; };
+		F4C447FB1CEF54ED002C8097 /* TableViewCellCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447FA1CEF54ED002C8097 /* TableViewCellCode.m */; };
+		F4C447FE1CEF5901002C8097 /* KalenTableViewCellCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C447FD1CEF5901002C8097 /* KalenTableViewCellCode.m */; };
+		F4C448011CEF6282002C8097 /* KalenDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C448001CEF6282002C8097 /* KalenDataModel.m */; };
 		F4CC212D1C167BB400DB49DA /* CellTreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC212B1C167BB400DB49DA /* CellTreeVC.m */; };
 		F4CC212E1C167BB400DB49DA /* CellTreeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CC212C1C167BB400DB49DA /* CellTreeVC.xib */; };
 		F4CC218A1C16B93600DB49DA /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC21771C16B93600DB49DA /* RATreeNode.m */; };
@@ -383,6 +391,21 @@
 		F4BC57851BF97225003944F3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F4BC57871BF97230003944F3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F4BC57891BF9723D003944F3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F4C447E71CEF5367002C8097 /* FD_Masonry_KalenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FD_Masonry_KalenVC.h; sourceTree = "<group>"; };
+		F4C447E81CEF5367002C8097 /* FD_Masonry_KalenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FD_Masonry_KalenVC.m; sourceTree = "<group>"; };
+		F4C447EA1CEF5367002C8097 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		F4C447EB1CEF5367002C8097 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		F4C447EC1CEF5367002C8097 /* FD_Masonry_DemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FD_Masonry_DemoVC.h; sourceTree = "<group>"; };
+		F4C447ED1CEF5367002C8097 /* FD_Masonry_DemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FD_Masonry_DemoVC.m; sourceTree = "<group>"; };
+		F4C447F01CEF5367002C8097 /* TableViewCellXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellXib.h; sourceTree = "<group>"; };
+		F4C447F11CEF5367002C8097 /* TableViewCellXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellXib.m; sourceTree = "<group>"; };
+		F4C447F21CEF5367002C8097 /* TableViewCellXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellXib.xib; sourceTree = "<group>"; };
+		F4C447F91CEF54ED002C8097 /* TableViewCellCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellCode.h; sourceTree = "<group>"; };
+		F4C447FA1CEF54ED002C8097 /* TableViewCellCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellCode.m; sourceTree = "<group>"; };
+		F4C447FC1CEF5901002C8097 /* KalenTableViewCellCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalenTableViewCellCode.h; sourceTree = "<group>"; };
+		F4C447FD1CEF5901002C8097 /* KalenTableViewCellCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalenTableViewCellCode.m; sourceTree = "<group>"; };
+		F4C447FF1CEF6282002C8097 /* KalenDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalenDataModel.h; sourceTree = "<group>"; };
+		F4C448001CEF6282002C8097 /* KalenDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalenDataModel.m; sourceTree = "<group>"; };
 		F4CC212A1C167BB400DB49DA /* CellTreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTreeVC.h; sourceTree = "<group>"; };
 		F4CC212B1C167BB400DB49DA /* CellTreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTreeVC.m; sourceTree = "<group>"; };
 		F4CC212C1C167BB400DB49DA /* CellTreeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTreeVC.xib; sourceTree = "<group>"; };
@@ -763,6 +786,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4C447E51CEF5310002C8097 /* Layout */,
 				F486A9FE1CE578C700EC910A /* BlueTooth */,
 				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
 				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
@@ -1027,6 +1051,45 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		F4C447E51CEF5310002C8097 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F4C447E61CEF5367002C8097 /* FD_Masonry_Kalen */,
+				F4C447E91CEF5367002C8097 /* FD_Masonry_Demo */,
+			);
+			name = Layout;
+			path = LayOut;
+			sourceTree = "<group>";
+		};
+		F4C447E61CEF5367002C8097 /* FD_Masonry_Kalen */ = {
+			isa = PBXGroup;
+			children = (
+				F4C447E71CEF5367002C8097 /* FD_Masonry_KalenVC.h */,
+				F4C447E81CEF5367002C8097 /* FD_Masonry_KalenVC.m */,
+				F4C447FC1CEF5901002C8097 /* KalenTableViewCellCode.h */,
+				F4C447FD1CEF5901002C8097 /* KalenTableViewCellCode.m */,
+				F4C447FF1CEF6282002C8097 /* KalenDataModel.h */,
+				F4C448001CEF6282002C8097 /* KalenDataModel.m */,
+			);
+			path = FD_Masonry_Kalen;
+			sourceTree = "<group>";
+		};
+		F4C447E91CEF5367002C8097 /* FD_Masonry_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F4C447F91CEF54ED002C8097 /* TableViewCellCode.h */,
+				F4C447FA1CEF54ED002C8097 /* TableViewCellCode.m */,
+				F4C447EA1CEF5367002C8097 /* DataModel.h */,
+				F4C447EB1CEF5367002C8097 /* DataModel.m */,
+				F4C447EC1CEF5367002C8097 /* FD_Masonry_DemoVC.h */,
+				F4C447ED1CEF5367002C8097 /* FD_Masonry_DemoVC.m */,
+				F4C447F01CEF5367002C8097 /* TableViewCellXib.h */,
+				F4C447F11CEF5367002C8097 /* TableViewCellXib.m */,
+				F4C447F21CEF5367002C8097 /* TableViewCellXib.xib */,
+			);
+			path = FD_Masonry_Demo;
+			sourceTree = "<group>";
+		};
 		F4CC21291C167B3D00DB49DA /* CellTree */ = {
 			isa = PBXGroup;
 			children = (
@@ -1248,6 +1311,7 @@
 				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
 				F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */,
 				F4B7F8EA1C102B08000BAF87 /* ErrorDepositeViewController.xib in Resources */,
+				F4C447F81CEF5367002C8097 /* TableViewCellXib.xib in Resources */,
 				F4AFEE001CE1B77D005E94C5 /* ThreedPassVC.xib in Resources */,
 				F4B7F9921C102CE5000BAF87 /* ios-social-sdk-shake.html in Resources */,
 				F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */,
@@ -1387,6 +1451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
+				F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */,
 				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
 				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
@@ -1408,6 +1473,7 @@
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
 				F4ECCF261C8809D4003A0961 /* H5VC.m in Sources */,
 				F4B7F8CC1C102AB7000BAF87 /* FirstVC.m in Sources */,
+				F4C447F71CEF5367002C8097 /* TableViewCellXib.m in Sources */,
 				F45C62911C30E5280045D0DD /* TableViewCell.m in Sources */,
 				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
@@ -1416,6 +1482,8 @@
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */,
 				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
+				F4C447FB1CEF54ED002C8097 /* TableViewCellCode.m in Sources */,
+				F4C448011CEF6282002C8097 /* KalenDataModel.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
 				F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */,
@@ -1430,12 +1498,14 @@
 				F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */,
 				F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */,
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
+				F4C447F31CEF5367002C8097 /* FD_Masonry_KalenVC.m in Sources */,
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
 				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
 				F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
+				F4C447F41CEF5367002C8097 /* DataModel.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
 				F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */,
@@ -1456,6 +1526,7 @@
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,
 				F432FD661C473E3F00D0E628 /* Block.m in Sources */,
 				F4B7F9521C102C0F000BAF87 /* CustomCellTwo.m in Sources */,
+				F4C447FE1CEF5901002C8097 /* KalenTableViewCellCode.m in Sources */,
 				F45C62791C30DD6E0045D0DD /* ChartVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
