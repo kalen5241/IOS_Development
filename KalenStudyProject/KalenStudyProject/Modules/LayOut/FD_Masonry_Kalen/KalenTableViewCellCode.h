@@ -9,8 +9,6 @@
 #import "TableViewCell.h"
 #import "KalenDataModel.h"
 
-static NSString * const kHWTestHeightCellIdentifier = @"kHWTestHeightCellIdentifier";
-
 @interface KalenTableViewCellCode : TableViewCell
 @property (strong, nonatomic) KalenDataModel *dataModel;
 @end

@@ -34,6 +34,7 @@
 #import "MutThreadVC.h"
 #import "BlueToothVC.h"
 #import "FD_Masonry_DemoVC.h"
+#import "FD_Masonry_KalenVC.h"
 
 @implementation DataUtil
 
@@ -103,7 +104,7 @@
         
         GuideDataItem *item13 = [[GuideDataItem alloc]init];
         item13.title = @"equalDividVC";
-        item13.destVC = [[EqualDivideVC  alloc]init];
+        item13.destVC = [[EqualDivideVC alloc]init];
         item13.detail = @"平分视图－CellTreeVC";
         
         GuideDataItem *item14 = [[GuideDataItem alloc]init];
@@ -171,7 +172,12 @@
         item26.destVC = [[FD_Masonry_DemoVC alloc]init];
         item26.detail = @"自动布局－FD_Masonry_DemoVC";
         
-        _guideArray = @[item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item27 = [[GuideDataItem alloc]init];
+        item27.title = @"FD_Masonry_Kalen";
+        item27.destVC = [[FD_Masonry_KalenVC alloc]init];
+        item27.detail = @"自动布局－FD_Masonry_KalenVC";
+        
+        _guideArray = @[item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

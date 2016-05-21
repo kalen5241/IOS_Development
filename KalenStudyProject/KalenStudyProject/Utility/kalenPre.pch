@@ -15,5 +15,6 @@
 #import <objc/runtime.h>
 #import "Constants.h"
 #import <Masonry.h>
+#import "UITableView+FDTemplateLayoutCell.h"
 #import "DataUtil.h"
 #endif /* kalenPre_pch */

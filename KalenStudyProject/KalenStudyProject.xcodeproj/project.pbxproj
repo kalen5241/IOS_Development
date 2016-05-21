@@ -18,6 +18,8 @@
 		F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD781C49EFE100D0E628 /* LayoutClass.m */; };
 		F432FD801C4A01B200D0E628 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD7E1C4A01B200D0E628 /* CustomCell.m */; };
 		F432FD811C4A01B200D0E628 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F432FD7F1C4A01B200D0E628 /* CustomCell.xib */; };
+		F43E75FA1CEFE1900070BF86 /* FD_Masonry_CellXib.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E75F81CEFE1900070BF86 /* FD_Masonry_CellXib.m */; };
+		F43E75FB1CEFE1900070BF86 /* FD_Masonry_CellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43E75F91CEFE1900070BF86 /* FD_Masonry_CellXib.xib */; };
 		F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44658AF1C672F620071DE83 /* TaskManagerVC.m */; };
 		F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4586FD51C4350F500ED7432 /* EqualDivideVC.m */; };
 		F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45932E51C1034DC00AD965E /* ImageDevVC.m */; };
@@ -205,6 +207,9 @@
 		F432FD7D1C4A01B200D0E628 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		F432FD7E1C4A01B200D0E628 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		F432FD7F1C4A01B200D0E628 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F43E75F71CEFE1900070BF86 /* FD_Masonry_CellXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FD_Masonry_CellXib.h; sourceTree = "<group>"; };
+		F43E75F81CEFE1900070BF86 /* FD_Masonry_CellXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FD_Masonry_CellXib.m; sourceTree = "<group>"; };
+		F43E75F91CEFE1900070BF86 /* FD_Masonry_CellXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FD_Masonry_CellXib.xib; sourceTree = "<group>"; };
 		F44658AE1C672F620071DE83 /* TaskManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManagerVC.h; sourceTree = "<group>"; };
 		F44658AF1C672F620071DE83 /* TaskManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManagerVC.m; sourceTree = "<group>"; };
 		F4586FD41C4350F500ED7432 /* EqualDivideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualDivideVC.h; sourceTree = "<group>"; };
@@ -1070,6 +1075,9 @@
 				F4C447FD1CEF5901002C8097 /* KalenTableViewCellCode.m */,
 				F4C447FF1CEF6282002C8097 /* KalenDataModel.h */,
 				F4C448001CEF6282002C8097 /* KalenDataModel.m */,
+				F43E75F71CEFE1900070BF86 /* FD_Masonry_CellXib.h */,
+				F43E75F81CEFE1900070BF86 /* FD_Masonry_CellXib.m */,
+				F43E75F91CEFE1900070BF86 /* FD_Masonry_CellXib.xib */,
 			);
 			path = FD_Masonry_Kalen;
 			sourceTree = "<group>";
@@ -1281,6 +1289,7 @@
 				F4B7F98D1C102CE5000BAF87 /* UMShareEditViewController.xib in Resources */,
 				F45C62921C30E5280045D0DD /* TableViewCell.xib in Resources */,
 				F4CC219C1C16C6D100DB49DA /* RunTimeVC.xib in Resources */,
+				F43E75FB1CEFE1900070BF86 /* FD_Masonry_CellXib.xib in Resources */,
 				F4B7F8D11C102AB7000BAF87 /* LeftMenuVCViewController.xib in Resources */,
 				F4B7F8F61C102B2F000BAF87 /* UMengSocialVCViewController.xib in Resources */,
 				F4ECCF2B1C880A2F003A0961 /* index.html in Resources */,
@@ -1484,6 +1493,7 @@
 				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
 				F4C447FB1CEF54ED002C8097 /* TableViewCellCode.m in Sources */,
 				F4C448011CEF6282002C8097 /* KalenDataModel.m in Sources */,
+				F43E75FA1CEFE1900070BF86 /* FD_Masonry_CellXib.m in Sources */,
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
 				F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */,
