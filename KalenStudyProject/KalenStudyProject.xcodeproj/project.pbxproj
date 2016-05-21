@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1240EA075694256753C0A7EC /* libPods-KalenStudyProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */; };
 		A85AC4BF9D526359C1D953E1 /* libPods-KalenStudyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */; };
+		F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B05221CF00463002AD0AF /* NSArray+Log.m */; };
+		F40B05261CF00463002AD0AF /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B05241CF00463002AD0AF /* NSDictionary+Log.m */; };
+		F40B052F1CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B05281CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m */; };
+		F40B05301CF006D0002AD0AF /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052A1CF006D0002AD0AF /* NSString+Util.m */; };
+		F40B05311CF006D0002AD0AF /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052C1CF006D0002AD0AF /* UIColor+Hex.m */; };
+		F40B05321CF006D0002AD0AF /* UIColor+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052E1CF006D0002AD0AF /* UIColor+Image.m */; };
 		F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA2171C8FBB16006B03D6 /* TestCell.m */; };
 		F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
@@ -189,6 +195,18 @@
 		B1410998BFE8C63DB2802136 /* Pods-KalenStudyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalenStudyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalenStudyProject/Pods-KalenStudyProject.release.xcconfig"; sourceTree = "<group>"; };
 		BDD5512B0737CAB75810049F /* Pods-KalenStudyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalenStudyProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalenStudyProjectTests/Pods-KalenStudyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC8ED7C20B1A28FA2E242D69 /* libPods-KalenStudyProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40B05211CF00463002AD0AF /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		F40B05221CF00463002AD0AF /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		F40B05231CF00463002AD0AF /* NSDictionary+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		F40B05241CF00463002AD0AF /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		F40B05271CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+JudgeNull.h"; sourceTree = "<group>"; };
+		F40B05281CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+JudgeNull.m"; sourceTree = "<group>"; };
+		F40B05291CF006D0002AD0AF /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		F40B052A1CF006D0002AD0AF /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		F40B052B1CF006D0002AD0AF /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		F40B052C1CF006D0002AD0AF /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		F40B052D1CF006D0002AD0AF /* UIColor+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Image.h"; sourceTree = "<group>"; };
+		F40B052E1CF006D0002AD0AF /* UIColor+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Image.m"; sourceTree = "<group>"; };
 		F40CA2161C8FBB16006B03D6 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		F40CA2171C8FBB16006B03D6 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		F40CA2191C8FBB89006B03D6 /* AutoCellHeightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCellHeightVC.h; sourceTree = "<group>"; };
@@ -527,6 +545,32 @@
 				BDD5512B0737CAB75810049F /* Pods-KalenStudyProjectTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F40B05191CF00285002AD0AF /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extends;
+			sourceTree = "<group>";
+		};
+		F40B05201CF003D7002AD0AF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F40B05271CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.h */,
+				F40B05281CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m */,
+				F40B05291CF006D0002AD0AF /* NSString+Util.h */,
+				F40B052A1CF006D0002AD0AF /* NSString+Util.m */,
+				F40B052B1CF006D0002AD0AF /* UIColor+Hex.h */,
+				F40B052C1CF006D0002AD0AF /* UIColor+Hex.m */,
+				F40B052D1CF006D0002AD0AF /* UIColor+Image.h */,
+				F40B052E1CF006D0002AD0AF /* UIColor+Image.m */,
+				F40B05211CF00463002AD0AF /* NSArray+Log.h */,
+				F40B05221CF00463002AD0AF /* NSArray+Log.m */,
+				F40B05231CF00463002AD0AF /* NSDictionary+Log.h */,
+				F40B05241CF00463002AD0AF /* NSDictionary+Log.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F432FD631C473DFA00D0E628 /* Block */ = {
@@ -1044,6 +1088,8 @@
 		F4B7F9971C102D1C000BAF87 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F40B05201CF003D7002AD0AF /* Category */,
+				F40B05191CF00285002AD0AF /* Extends */,
 				F45932E91C1036D400AD965E /* Resources */,
 				F4B7F9981C102D1C000BAF87 /* AppDelegate.h */,
 				F4B7F9991C102D1C000BAF87 /* AppDelegate.m */,
@@ -1463,7 +1509,9 @@
 				F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */,
 				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
 				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
+				F40B05301CF006D0002AD0AF /* NSString+Util.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
+				F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
 				F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
@@ -1480,7 +1528,9 @@
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
 				F45C62891C30DEAF0045D0DD /* UUBarChart.m in Sources */,
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
+				F40B05261CF00463002AD0AF /* NSDictionary+Log.m in Sources */,
 				F4ECCF261C8809D4003A0961 /* H5VC.m in Sources */,
+				F40B05311CF006D0002AD0AF /* UIColor+Hex.m in Sources */,
 				F4B7F8CC1C102AB7000BAF87 /* FirstVC.m in Sources */,
 				F4C447F71CEF5367002C8097 /* TableViewCellXib.m in Sources */,
 				F45C62911C30E5280045D0DD /* TableViewCell.m in Sources */,
@@ -1497,6 +1547,7 @@
 				F4B7F8CA1C102AB7000BAF87 /* BasicCell.m in Sources */,
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
 				F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */,
+				F40B05321CF006D0002AD0AF /* UIColor+Image.m in Sources */,
 				F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */,
 				F4B7F8D01C102AB7000BAF87 /* LeftMenuVCViewController.m in Sources */,
 				F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */,
@@ -1515,6 +1566,7 @@
 				F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
+				F40B052F1CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m in Sources */,
 				F4C447F41CEF5367002C8097 /* DataModel.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
@@ -1690,7 +1742,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1727,7 +1779,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = /Users/kalen/Desktop/Kalen_GitHub/IOS_Development/KalenStudyProject/KalenStudyProject/Utility/kalenPre.pch;
 				INFOPLIST_FILE = KalenStudyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
