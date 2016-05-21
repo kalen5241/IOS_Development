@@ -15,6 +15,8 @@
 		F40B05301CF006D0002AD0AF /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052A1CF006D0002AD0AF /* NSString+Util.m */; };
 		F40B05311CF006D0002AD0AF /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052C1CF006D0002AD0AF /* UIColor+Hex.m */; };
 		F40B05321CF006D0002AD0AF /* UIColor+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B052E1CF006D0002AD0AF /* UIColor+Image.m */; };
+		F40B05371CF00974002AD0AF /* UtilCheckerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B05351CF00974002AD0AF /* UtilCheckerVC.m */; };
+		F40B05381CF00974002AD0AF /* UtilCheckerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40B05361CF00974002AD0AF /* UtilCheckerVC.xib */; };
 		F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA2171C8FBB16006B03D6 /* TestCell.m */; };
 		F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
@@ -207,6 +209,9 @@
 		F40B052C1CF006D0002AD0AF /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		F40B052D1CF006D0002AD0AF /* UIColor+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Image.h"; sourceTree = "<group>"; };
 		F40B052E1CF006D0002AD0AF /* UIColor+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Image.m"; sourceTree = "<group>"; };
+		F40B05341CF00974002AD0AF /* UtilCheckerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilCheckerVC.h; sourceTree = "<group>"; };
+		F40B05351CF00974002AD0AF /* UtilCheckerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilCheckerVC.m; sourceTree = "<group>"; };
+		F40B05361CF00974002AD0AF /* UtilCheckerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UtilCheckerVC.xib; sourceTree = "<group>"; };
 		F40CA2161C8FBB16006B03D6 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		F40CA2171C8FBB16006B03D6 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		F40CA2191C8FBB89006B03D6 /* AutoCellHeightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCellHeightVC.h; sourceTree = "<group>"; };
@@ -573,6 +578,16 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		F40B05331CF008BA002AD0AF /* UtilChecker */ = {
+			isa = PBXGroup;
+			children = (
+				F40B05341CF00974002AD0AF /* UtilCheckerVC.h */,
+				F40B05351CF00974002AD0AF /* UtilCheckerVC.m */,
+				F40B05361CF00974002AD0AF /* UtilCheckerVC.xib */,
+			);
+			path = UtilChecker;
+			sourceTree = "<group>";
+		};
 		F432FD631C473DFA00D0E628 /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,6 +850,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F40B05331CF008BA002AD0AF /* UtilChecker */,
 				F4C447E51CEF5310002C8097 /* Layout */,
 				F486A9FE1CE578C700EC910A /* BlueTooth */,
 				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
@@ -1350,6 +1366,7 @@
 				F4B7F8CB1C102AB7000BAF87 /* BasicCell.xib in Resources */,
 				F486AA031CE578EE00EC910A /* BlueToothVC.xib in Resources */,
 				F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */,
+				F40B05381CF00974002AD0AF /* UtilCheckerVC.xib in Resources */,
 				F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */,
 				F4B7F98C1C102CE5000BAF87 /* UMSCommentInputControlleriPad.xib in Resources */,
 				F4B7F8F01C102B16000BAF87 /* AutoResizeCellHeightVC.xib in Resources */,
@@ -1513,6 +1530,7 @@
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
+				F40B05371CF00974002AD0AF /* UtilCheckerVC.m in Sources */,
 				F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,

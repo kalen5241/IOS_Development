@@ -35,6 +35,7 @@
 #import "BlueToothVC.h"
 #import "FD_Masonry_DemoVC.h"
 #import "FD_Masonry_KalenVC.h"
+#import "UtilCheckerVC.h"
 
 @implementation DataUtil
 
@@ -177,7 +178,12 @@
         item27.destVC = [[FD_Masonry_KalenVC alloc]init];
         item27.detail = @"自动布局－FD_Masonry_KalenVC";
         
-        _guideArray = @[item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item28 = [[GuideDataItem alloc]init];
+        item28.title = @"工具检测器";
+        item28.destVC = [[UtilCheckerVC alloc]init];
+        item28.detail = @"工具检测器－UtilCheckerVC";
+        
+        _guideArray = @[item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

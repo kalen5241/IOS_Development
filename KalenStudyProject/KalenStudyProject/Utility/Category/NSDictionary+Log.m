@@ -6,10 +6,14 @@
     NSMutableString *strM = [NSMutableString stringWithString:@"{\n"];
     
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [strM appendFormat:@"\t%@ = %@;\n", key, obj];
+        if ([obj isKindOfClass:[NSArray class]]) {
+            [strM appendFormat:@"\t\t\"%@\":%@\n", key, obj];
+        }else{
+            [strM appendFormat:@"\t\t\"%@\":\"%@\"\n", key, obj];
+        }
     }];
     
-    [strM appendString:@"}\n"];
+    [strM appendString:@"\t}"];
     
     return strM;
 }
