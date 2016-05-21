@@ -588,13 +588,44 @@
 			path = UtilChecker;
 			sourceTree = "<group>";
 		};
+		F40B05391CF01CB4002AD0AF /* OldVersion */ = {
+			isa = PBXGroup;
+			children = (
+				F486A9FE1CE578C700EC910A /* BlueTooth */,
+				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
+				F4AFEDDF1CDEA76B005E94C5 /* PassValue */,
+				F4ECCF231C880978003A0961 /* H5VC */,
+				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
+				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
+				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
+				F432FD631C473DFA00D0E628 /* Block */,
+				F45C62751C30DD070045D0DD /* Chart */,
+				F4CC21971C16C68700DB49DA /* RunTimeVC */,
+				F4CC21291C167B3D00DB49DA /* CellTree */,
+				F45932E31C1034AD00AD965E /* ImageDev */,
+				F4B7F9401C102C0F000BAF87 /* MutilDataSource */,
+				F4B7F9371C102B85000BAF87 /* Connection */,
+				F4B7F8F11C102B2F000BAF87 /* UMengSocial */,
+				F4B7F8EB1C102B16000BAF87 /* AutoResizeCellHeight */,
+				F4B7F8E21C102B08000BAF87 /* ErrorDeposite */,
+				F4B7F8B61C102A8D000BAF87 /* UITesting */,
+				F4ED59B21C112C3000B36AD2 /* DrawPic */,
+				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
+				F4586FD31C43506400ED7432 /* AutoLayout */,
+				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
+				F4966CEA1C892D8F00E07927 /* CustomTextField */,
+			);
+			path = OldVersion;
+			sourceTree = "<group>";
+		};
 		F432FD631C473DFA00D0E628 /* Block */ = {
 			isa = PBXGroup;
 			children = (
 				F432FD641C473E3F00D0E628 /* Block.h */,
 				F432FD651C473E3F00D0E628 /* Block.m */,
 			);
-			path = Block;
+			name = Block;
+			path = ../Block;
 			sourceTree = "<group>";
 		};
 		F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */ = {
@@ -610,7 +641,8 @@
 				F432FD741C49EF6E00D0E628 /* CellItems.h */,
 				F432FD751C49EF6E00D0E628 /* CellItems.m */,
 			);
-			path = TV_UI_Date_Seperated;
+			name = TV_UI_Date_Seperated;
+			path = ../TV_UI_Date_Seperated;
 			sourceTree = "<group>";
 		};
 		F44658AD1C672EDF0071DE83 /* IOS9TaskManager */ = {
@@ -619,7 +651,8 @@
 				F44658AE1C672F620071DE83 /* TaskManagerVC.h */,
 				F44658AF1C672F620071DE83 /* TaskManagerVC.m */,
 			);
-			path = IOS9TaskManager;
+			name = IOS9TaskManager;
+			path = ../IOS9TaskManager;
 			sourceTree = "<group>";
 		};
 		F4586FD31C43506400ED7432 /* AutoLayout */ = {
@@ -628,7 +661,8 @@
 				F4586FD41C4350F500ED7432 /* EqualDivideVC.h */,
 				F4586FD51C4350F500ED7432 /* EqualDivideVC.m */,
 			);
-			path = AutoLayout;
+			name = AutoLayout;
+			path = ../AutoLayout;
 			sourceTree = "<group>";
 		};
 		F45932E31C1034AD00AD965E /* ImageDev */ = {
@@ -638,7 +672,8 @@
 				F45932E51C1034DC00AD965E /* ImageDevVC.m */,
 				F45932E61C1034DC00AD965E /* ImageDevVC.xib */,
 			);
-			path = ImageDev;
+			name = ImageDev;
+			path = ../ImageDev;
 			sourceTree = "<group>";
 		};
 		F45932E91C1036D400AD965E /* Resources */ = {
@@ -662,7 +697,8 @@
 				F45C62931C3138DD0045D0DD /* CodeChartVC.h */,
 				F45C62941C3138DD0045D0DD /* CodeChartVC.m */,
 			);
-			path = Chart;
+			name = Chart;
+			path = ../Chart;
 			sourceTree = "<group>";
 		};
 		F45C627B1C30DEAF0045D0DD /* UUChart */ = {
@@ -771,7 +807,8 @@
 				F46E04EC1C58D32500F5D060 /* ScreenShotVC.h */,
 				F46E04ED1C58D32500F5D060 /* ScreenShotVC.m */,
 			);
-			path = ScreenShot;
+			name = ScreenShot;
+			path = ../ScreenShot;
 			sourceTree = "<group>";
 		};
 		F486A9FE1CE578C700EC910A /* BlueTooth */ = {
@@ -781,7 +818,8 @@
 				F486AA001CE578EE00EC910A /* BlueToothVC.m */,
 				F486AA011CE578EE00EC910A /* BlueToothVC.xib */,
 			);
-			path = BlueTooth;
+			name = BlueTooth;
+			path = ../BlueTooth;
 			sourceTree = "<group>";
 		};
 		F48B54EB1C4F78560065F35B /* OpenOtherApp */ = {
@@ -791,7 +829,8 @@
 				F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */,
 				F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */,
 			);
-			path = OpenOtherApp;
+			name = OpenOtherApp;
+			path = ../OpenOtherApp;
 			sourceTree = "<group>";
 		};
 		F4966CEA1C892D8F00E07927 /* CustomTextField */ = {
@@ -804,7 +843,8 @@
 				F4966CFA1C89661D00E07927 /* CustomCell8.h */,
 				F4966CFB1C89661D00E07927 /* CustomCell8.m */,
 			);
-			path = CustomTextField;
+			name = CustomTextField;
+			path = ../CustomTextField;
 			sourceTree = "<group>";
 		};
 		F4AFEDDF1CDEA76B005E94C5 /* PassValue */ = {
@@ -824,7 +864,8 @@
 				F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */,
 				F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */,
 			);
-			path = PassValue;
+			name = PassValue;
+			path = ../PassValue;
 			sourceTree = "<group>";
 		};
 		F4AFEDEB1CE03B74005E94C5 /* FileOperation */ = {
@@ -834,7 +875,8 @@
 				F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */,
 				F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */,
 			);
-			path = FileOperation;
+			name = FileOperation;
+			path = ../FileOperation;
 			sourceTree = "<group>";
 		};
 		F4AFEE011CE1EEC8005E94C5 /* MultipleThread */ = {
@@ -844,38 +886,17 @@
 				F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */,
 				F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */,
 			);
-			path = MultipleThread;
+			name = MultipleThread;
+			path = ../MultipleThread;
 			sourceTree = "<group>";
 		};
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F40B05391CF01CB4002AD0AF /* OldVersion */,
 				F40B05331CF008BA002AD0AF /* UtilChecker */,
 				F4C447E51CEF5310002C8097 /* Layout */,
-				F486A9FE1CE578C700EC910A /* BlueTooth */,
-				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
-				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
-				F4AFEDDF1CDEA76B005E94C5 /* PassValue */,
-				F4966CEA1C892D8F00E07927 /* CustomTextField */,
-				F4ECCF231C880978003A0961 /* H5VC */,
-				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
-				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
-				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
-				F432FD6D1C49EE0800D0E628 /* TV_UI_Date_Seperated */,
-				F432FD631C473DFA00D0E628 /* Block */,
-				F4586FD31C43506400ED7432 /* AutoLayout */,
-				F45C62751C30DD070045D0DD /* Chart */,
-				F4CC21971C16C68700DB49DA /* RunTimeVC */,
-				F4CC21291C167B3D00DB49DA /* CellTree */,
-				F4ED59B21C112C3000B36AD2 /* DrawPic */,
-				F45932E31C1034AD00AD965E /* ImageDev */,
-				F4B7F9401C102C0F000BAF87 /* MutilDataSource */,
-				F4B7F9371C102B85000BAF87 /* Connection */,
-				F4B7F8F11C102B2F000BAF87 /* UMengSocial */,
-				F4B7F8EB1C102B16000BAF87 /* AutoResizeCellHeight */,
-				F4B7F8E21C102B08000BAF87 /* ErrorDeposite */,
 				F4B7F8BC1C102AB7000BAF87 /* Guide */,
-				F4B7F8B61C102A8D000BAF87 /* UITesting */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -887,7 +908,8 @@
 				F4B7F8B81C102A8D000BAF87 /* UITestingVC.m */,
 				F4B7F8B91C102A8D000BAF87 /* UITestingVC.xib */,
 			);
-			path = UITesting;
+			name = UITesting;
+			path = ../UITesting;
 			sourceTree = "<group>";
 		};
 		F4B7F8BC1C102AB7000BAF87 /* Guide */ = {
@@ -919,7 +941,8 @@
 				F4B7F8E61C102B08000BAF87 /* ErrorDepositeViewController.m */,
 				F4B7F8E71C102B08000BAF87 /* ErrorDepositeViewController.xib */,
 			);
-			path = ErrorDeposite;
+			name = ErrorDeposite;
+			path = ../ErrorDeposite;
 			sourceTree = "<group>";
 		};
 		F4B7F8EB1C102B16000BAF87 /* AutoResizeCellHeight */ = {
@@ -933,7 +956,8 @@
 				F40CA2161C8FBB16006B03D6 /* TestCell.h */,
 				F40CA2171C8FBB16006B03D6 /* TestCell.m */,
 			);
-			path = AutoResizeCellHeight;
+			name = AutoResizeCellHeight;
+			path = ../AutoResizeCellHeight;
 			sourceTree = "<group>";
 		};
 		F4B7F8F11C102B2F000BAF87 /* UMengSocial */ = {
@@ -943,7 +967,8 @@
 				F4B7F8F31C102B2F000BAF87 /* UMengSocialVCViewController.m */,
 				F4B7F8F41C102B2F000BAF87 /* UMengSocialVCViewController.xib */,
 			);
-			path = UMengSocial;
+			name = UMengSocial;
+			path = ../UMengSocial;
 			sourceTree = "<group>";
 		};
 		F4B7F9371C102B85000BAF87 /* Connection */ = {
@@ -955,7 +980,8 @@
 				F4B7F93B1C102B85000BAF87 /* ConnectionVC.m */,
 				F4B7F93C1C102B85000BAF87 /* ConnectionVC.xib */,
 			);
-			path = Connection;
+			name = Connection;
+			path = ../Connection;
 			sourceTree = "<group>";
 		};
 		F4B7F9401C102C0F000BAF87 /* MutilDataSource */ = {
@@ -975,7 +1001,8 @@
 				F4B7F94C1C102C0F000BAF87 /* MutilDataSource.m */,
 				F4B7F94D1C102C0F000BAF87 /* MutilDataSource.xib */,
 			);
-			path = MutilDataSource;
+			name = MutilDataSource;
+			path = ../MutilDataSource;
 			sourceTree = "<group>";
 		};
 		F4B7F9561C102C56000BAF87 /* ThirdParty */ = {
@@ -1169,7 +1196,8 @@
 				F4CC212B1C167BB400DB49DA /* CellTreeVC.m */,
 				F4CC212C1C167BB400DB49DA /* CellTreeVC.xib */,
 			);
-			path = CellTree;
+			name = CellTree;
+			path = ../CellTree;
 			sourceTree = "<group>";
 		};
 		F4CC21751C16B93600DB49DA /* RATreeView */ = {
@@ -1206,7 +1234,8 @@
 				F4CC21991C16C6D100DB49DA /* RunTimeVC.m */,
 				F4CC219A1C16C6D100DB49DA /* RunTimeVC.xib */,
 			);
-			path = RunTimeVC;
+			name = RunTimeVC;
+			path = ../RunTimeVC;
 			sourceTree = "<group>";
 		};
 		F4ECCF231C880978003A0961 /* H5VC */ = {
@@ -1215,7 +1244,8 @@
 				F4ECCF241C8809D4003A0961 /* H5VC.h */,
 				F4ECCF251C8809D4003A0961 /* H5VC.m */,
 			);
-			path = H5VC;
+			name = H5VC;
+			path = ../H5VC;
 			sourceTree = "<group>";
 		};
 		F4ECCF271C880A2F003A0961 /* css */ = {
@@ -1235,7 +1265,8 @@
 				F4ED59B81C112D5100B36AD2 /* DisplayView.h */,
 				F4ED59B91C112D5100B36AD2 /* DisplayView.m */,
 			);
-			path = DrawPic;
+			name = DrawPic;
+			path = ../DrawPic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
