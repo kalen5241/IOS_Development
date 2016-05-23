@@ -135,6 +135,8 @@
 		F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F9991C102D1C000BAF87 /* AppDelegate.m */; };
 		F4B7F99F1C102D1C000BAF87 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99B1C102D1C000BAF87 /* Constants.m */; };
 		F4B7F9A01C102D1C000BAF87 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99D1C102D1C000BAF87 /* DataUtil.m */; };
+		F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC4C1CF2F0A7002520AA /* DBTool.m */; };
+		F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC511CF3058C002520AA /* DBTestVC.m */; };
 		F4BC577E1BF9701B003944F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */; };
 		F4BC57801BF971F8003944F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577F1BF971F8003944F3 /* Security.framework */; };
 		F4BC57821BF97208003944F3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57811BF97208003944F3 /* libiconv.tbd */; };
@@ -412,6 +414,10 @@
 		F4B7F99B1C102D1C000BAF87 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		F4B7F99C1C102D1C000BAF87 /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
 		F4B7F99D1C102D1C000BAF87 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		F4B9CC4B1CF2F0A7002520AA /* DBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
+		F4B9CC4C1CF2F0A7002520AA /* DBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
+		F4B9CC511CF3058C002520AA /* DBTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTestVC.m; sourceTree = "<group>"; };
+		F4B9CC521CF3058C002520AA /* DBTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTestVC.h; sourceTree = "<group>"; };
 		F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4BC577F1BF971F8003944F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4BC57811BF97208003944F3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -893,6 +899,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4B9CC4A1CF2EEDF002520AA /* DB */,
 				F40B05391CF01CB4002AD0AF /* OldVersion */,
 				F40B05331CF008BA002AD0AF /* UtilChecker */,
 				F4C447E51CEF5310002C8097 /* Layout */,
@@ -1143,6 +1150,17 @@
 				F4319DD81C17FCD6006761A1 /* kalenPre.pch */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		F4B9CC4A1CF2EEDF002520AA /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				F4B9CC511CF3058C002520AA /* DBTestVC.m */,
+				F4B9CC521CF3058C002520AA /* DBTestVC.h */,
+				F4B9CC4B1CF2F0A7002520AA /* DBTool.h */,
+				F4B9CC4C1CF2F0A7002520AA /* DBTool.m */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		F4C447E51CEF5310002C8097 /* Layout */ = {
@@ -1557,6 +1575,7 @@
 				F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */,
 				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
 				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
+				F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */,
 				F40B05301CF006D0002AD0AF /* NSString+Util.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */,
@@ -1630,6 +1649,7 @@
 				F4B7F8E81C102B08000BAF87 /* Animal.m in Sources */,
 				F4CC218A1C16B93600DB49DA /* RATreeNode.m in Sources */,
 				F4CC218D1C16B93600DB49DA /* RATreeNodeInfo.m in Sources */,
+				F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */,
 				F4B7F93D1C102B85000BAF87 /* AnimalC.m in Sources */,
 				F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */,
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
