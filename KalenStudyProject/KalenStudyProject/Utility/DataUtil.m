@@ -33,6 +33,10 @@
 #import "ReadLocalFile.h"
 #import "MutThreadVC.h"
 #import "BlueToothVC.h"
+#import "FD_Masonry_DemoVC.h"
+#import "FD_Masonry_KalenVC.h"
+#import "UtilCheckerVC.h"
+#import "DBTestVC.h"
 
 @implementation DataUtil
 
@@ -102,7 +106,7 @@
         
         GuideDataItem *item13 = [[GuideDataItem alloc]init];
         item13.title = @"equalDividVC";
-        item13.destVC = [[EqualDivideVC  alloc]init];
+        item13.destVC = [[EqualDivideVC alloc]init];
         item13.detail = @"平分视图－CellTreeVC";
         
         GuideDataItem *item14 = [[GuideDataItem alloc]init];
@@ -165,7 +169,27 @@
         item25.destVC = [[BlueToothVC alloc]init];
         item25.detail = @"蓝牙－BlueToothVC";
         
-        _guideArray = @[item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item26 = [[GuideDataItem alloc]init];
+        item26.title = @"FD_Masonry";
+        item26.destVC = [[FD_Masonry_DemoVC alloc]init];
+        item26.detail = @"自动布局－FD_Masonry_DemoVC";
+        
+        GuideDataItem *item27 = [[GuideDataItem alloc]init];
+        item27.title = @"FD_Masonry_Kalen";
+        item27.destVC = [[FD_Masonry_KalenVC alloc]init];
+        item27.detail = @"自动布局－FD_Masonry_KalenVC";
+        
+        GuideDataItem *item28 = [[GuideDataItem alloc]init];
+        item28.title = @"工具检测器";
+        item28.destVC = [[UtilCheckerVC alloc]init];
+        item28.detail = @"工具检测器－UtilCheckerVC";
+        
+        GuideDataItem *item29 = [[GuideDataItem alloc]init];
+        item29.title = @"基类测试";
+        item29.destVC = [[DBTestVC alloc]init];
+        item29.detail = @"基类测试－UtilCheckerVC";
+        
+        _guideArray = @[item29,item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }
@@ -180,6 +204,8 @@
 + (NSArray *)fetchArray {
     return [[[DataUtil alloc]init] fetchGuideArray];
 }
+
+
 
 + (NSString *)fetchKalenWorkPath:(AppType)appType {
     /*
@@ -254,6 +280,10 @@
     return fullPath;
 }
 
+
+/**
+ * 读取 工程文件中的所有 plist 文件 转成 json 输出
+ */
 + (void)showJSON{
     NSArray *arrayPlists = [[NSBundle mainBundle] pathsForResourcesOfType:@"plist" inDirectory:nil];
     //    NSLog(@"%@",arrayPlists);
@@ -273,7 +303,90 @@
 //        CFShow((__bridge CFTypeRef)(path.lastPathComponent));
 //        CFShow((__bridge CFTypeRef)(jsonString));
     }
-}//读取 工程文件中的所有 plist 文件 转成 json 输出
+}
 
+
++ (NSDictionary *)fetchUserDefaultContent {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    
+    NSString *path = (NSString *)[paths lastObject];
+    
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    
+    NSString *filepath = [NSString stringWithFormat:@"%@/Preferences/%@.plist",path,bundleIdentifier];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:filepath]) {
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filepath];
+        
+        return dict;
+    }else {
+        NSLog(@">>>>>>>>>>路径不存在");
+        return nil;
+    }
+}
+
+
+
+/**
+ * 缩放图像，并根据imageview的宽高进行图片裁剪，图片没有被拉伸和变形
+ * @param  image        原始图像文件
+ * @param  width        目标imageview的宽
+ * @param  height     目标imageview的高
+ */
+
++ (UIImage *)compressImageWith:(UIImage *)image width:(float)width height:(float)height
+{
+    float imageWidth = image.size.width;
+    float imageHeight = image.size.height;
+    
+    float widthScale = imageWidth /width;
+    float heightScale = imageHeight /height;
+    
+    // 创建一个bitmap的context
+    // 并把它设置成为当前正在使用的context
+    //    UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(width, height), NO, 2.0);
+    if (widthScale > heightScale) {
+        [image drawInRect:CGRectMake(0, 0, imageWidth /heightScale , height)];
+    }
+    else {
+        [image drawInRect:CGRectMake(0, 0, width , imageHeight /widthScale)];
+    }
+    
+    // 从当前context中创建一个改变大小后的图片
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    //    [newImage retain];
+    // 使当前的context出堆栈
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+    
+}
+
+
+/**
+ *  检测电话号格式
+ * @param  phoneNum       电话号
+ */
++ (BOOL)checkPhoneNumInput:(NSString *)phoneNum {
+    
+    NSString *patternTel = @"^1[1,2,3,4,5,6,7,8,9][0-9]{9}$";
+    
+    NSError *err = nil;
+    NSRegularExpression *TelExp = [NSRegularExpression regularExpressionWithPattern:patternTel options:NSRegularExpressionCaseInsensitive error:&err];
+    
+    NSTextCheckingResult * isMatchTel = [TelExp firstMatchInString:phoneNum options:0 range:NSMakeRange(0, [phoneNum length])];
+    
+    if (isMatchTel) {
+        return TRUE;
+    }else {
+        return FALSE;
+    }
+    
+    
+}
 
 @end
