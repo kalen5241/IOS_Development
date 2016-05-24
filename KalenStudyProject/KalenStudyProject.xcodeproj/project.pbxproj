@@ -137,6 +137,8 @@
 		F4B7F9A01C102D1C000BAF87 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99D1C102D1C000BAF87 /* DataUtil.m */; };
 		F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC4C1CF2F0A7002520AA /* DBTool.m */; };
 		F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC511CF3058C002520AA /* DBTestVC.m */; };
+		F4B9CC571CF30893002520AA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC561CF30893002520AA /* BaseVC.m */; };
+		F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC591CF308DA002520AA /* BaseTableVC.m */; };
 		F4BC577E1BF9701B003944F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */; };
 		F4BC57801BF971F8003944F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577F1BF971F8003944F3 /* Security.framework */; };
 		F4BC57821BF97208003944F3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57811BF97208003944F3 /* libiconv.tbd */; };
@@ -418,6 +420,10 @@
 		F4B9CC4C1CF2F0A7002520AA /* DBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
 		F4B9CC511CF3058C002520AA /* DBTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTestVC.m; sourceTree = "<group>"; };
 		F4B9CC521CF3058C002520AA /* DBTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTestVC.h; sourceTree = "<group>"; };
+		F4B9CC551CF30893002520AA /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		F4B9CC561CF30893002520AA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		F4B9CC581CF308DA002520AA /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
+		F4B9CC591CF308DA002520AA /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4BC577F1BF971F8003944F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4BC57811BF97208003944F3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -899,6 +905,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4B9CC541CF30800002520AA /* BaseController */,
 				F4B9CC4A1CF2EEDF002520AA /* DB */,
 				F40B05391CF01CB4002AD0AF /* OldVersion */,
 				F40B05331CF008BA002AD0AF /* UtilChecker */,
@@ -1161,6 +1168,17 @@
 				F4B9CC4C1CF2F0A7002520AA /* DBTool.m */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		F4B9CC541CF30800002520AA /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B9CC551CF30893002520AA /* BaseVC.h */,
+				F4B9CC561CF30893002520AA /* BaseVC.m */,
+				F4B9CC581CF308DA002520AA /* BaseTableVC.h */,
+				F4B9CC591CF308DA002520AA /* BaseTableVC.m */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 		F4C447E51CEF5310002C8097 /* Layout */ = {
@@ -1632,12 +1650,14 @@
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
 				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
 				F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */,
+				F4B9CC571CF30893002520AA /* BaseVC.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
 				F40B052F1CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m in Sources */,
 				F4C447F41CEF5367002C8097 /* DataModel.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
+				F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */,
 				F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */,
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,
 				F4CC212D1C167BB400DB49DA /* CellTreeVC.m in Sources */,
