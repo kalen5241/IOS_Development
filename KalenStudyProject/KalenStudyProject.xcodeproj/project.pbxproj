@@ -139,6 +139,7 @@
 		F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC511CF3058C002520AA /* DBTestVC.m */; };
 		F4B9CC571CF30893002520AA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC561CF30893002520AA /* BaseVC.m */; };
 		F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC591CF308DA002520AA /* BaseTableVC.m */; };
+		F4B9CC5E1CF3E707002520AA /* BaseTableTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */; };
 		F4BC577E1BF9701B003944F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */; };
 		F4BC57801BF971F8003944F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577F1BF971F8003944F3 /* Security.framework */; };
 		F4BC57821BF97208003944F3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57811BF97208003944F3 /* libiconv.tbd */; };
@@ -424,6 +425,8 @@
 		F4B9CC561CF30893002520AA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		F4B9CC581CF308DA002520AA /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		F4B9CC591CF308DA002520AA /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
+		F4B9CC5C1CF3E707002520AA /* BaseTableTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableTestVC.h; sourceTree = "<group>"; };
+		F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableTestVC.m; sourceTree = "<group>"; };
 		F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4BC577F1BF971F8003944F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4BC57811BF97208003944F3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -911,6 +914,8 @@
 				F40B05331CF008BA002AD0AF /* UtilChecker */,
 				F4C447E51CEF5310002C8097 /* Layout */,
 				F4B7F8BC1C102AB7000BAF87 /* Guide */,
+				F4B9CC5C1CF3E707002520AA /* BaseTableTestVC.h */,
+				F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1657,6 +1662,7 @@
 				F4C447F41CEF5367002C8097 /* DataModel.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
+				F4B9CC5E1CF3E707002520AA /* BaseTableTestVC.m in Sources */,
 				F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */,
 				F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */,
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,

@@ -7,9 +7,10 @@
 //
 
 #import "BaseTableVC.h"
+#import "FD_Masonry_CellXib.h"
 
-@interface BaseTableVC ()
-@property (nonatomic,strong) UITableView *tableview;
+@interface BaseTableVC () <UITableViewDataSource,UITableViewDelegate>
+
 @end
 
 @implementation BaseTableVC
@@ -32,20 +33,21 @@
     }];
 }
 
+#pragma mark --Getters
 - (UITableView *)tableview {
     
     if (!_tableview) {
         _tableview = [[UITableView alloc]init];
-        _tableview.dataSource = self.delegate;
-        _tableview.delegate = self.delegate;
+        _tableview.dataSource = self;
+        _tableview.delegate = self;
         NSString *tempIdefinder = self.cellIdentinfier ? self.cellIdentinfier : @"CELL";
         
-        /*! xib*/
+        /*! xib
         NSString *tempNibName = self.tempNibName ? self.tempNibName :@"FD_Masonry_CellXib";
-        [_tableview registerNib:[UINib nibWithNibName:tempNibName bundle:nil] forCellReuseIdentifier:tempIdefinder];
+        [_tableview registerNib:[UINib nibWithNibName:tempNibName bundle:nil] forCellReuseIdentifier:tempIdefinder];*/
         
         /*! code*/
-        Class tempClass =[self.customCell class] ? self.customCell : [UITableViewCell class];
+        Class tempClass =self.customCellClass ? self.customCellClass : [UITableViewCell class];
         [_tableview registerClass:tempClass forCellReuseIdentifier:tempIdefinder];
         
         //下拉刷新
@@ -57,6 +59,37 @@
     return _tableview;
 }
 
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.dataArray.count;
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*! code*/
+     KalenTableViewCellCode *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];
+    /*! xib
+    FD_Masonry_CellXib *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];*/
+    
+    cell.dataModel = self.dataArray[indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CGFloat height = [tableView fd_heightForCellWithIdentifier:@"CELL" cacheByIndexPath:indexPath configuration:^(id cell) {
+        /*! xib
+        FD_Masonry_CellXib *tbCell = (FD_Masonry_CellXib *)cell;*/
+        
+        /*! code*/
+         KalenTableViewCellCode *tbCell = (KalenTableViewCellCode *)cell;
+        tbCell.dataModel = self.dataArray[indexPath.row];
+    }];
+    return height;
+}
 
 //顶部下拉刷新
 - (void)endHanderFresh {
