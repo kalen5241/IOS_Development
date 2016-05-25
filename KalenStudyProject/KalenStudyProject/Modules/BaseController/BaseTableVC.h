@@ -19,4 +19,8 @@
 @property (nonatomic,assign) BOOL isHanderFlag;
 @property (nonatomic,strong) NSMutableArray *dataArray;
 @property (nonatomic,strong) UITableView *tableview;
+@property (nonatomic,assign) BOOL isXib;
+@property (nonatomic,assign) BOOL isStatic;
+@property (nonatomic,assign) BOOL freshFlag;
+
 @end

@@ -140,6 +140,7 @@
 		F4B9CC571CF30893002520AA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC561CF30893002520AA /* BaseVC.m */; };
 		F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC591CF308DA002520AA /* BaseTableVC.m */; };
 		F4B9CC5E1CF3E707002520AA /* BaseTableTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */; };
+		F4B9CC701CF42776002520AA /* StaticDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC6F1CF42776002520AA /* StaticDemo.m */; };
 		F4BC577E1BF9701B003944F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */; };
 		F4BC57801BF971F8003944F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577F1BF971F8003944F3 /* Security.framework */; };
 		F4BC57821BF97208003944F3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57811BF97208003944F3 /* libiconv.tbd */; };
@@ -427,6 +428,8 @@
 		F4B9CC591CF308DA002520AA /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		F4B9CC5C1CF3E707002520AA /* BaseTableTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableTestVC.h; sourceTree = "<group>"; };
 		F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableTestVC.m; sourceTree = "<group>"; };
+		F4B9CC6E1CF42776002520AA /* StaticDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticDemo.h; sourceTree = "<group>"; };
+		F4B9CC6F1CF42776002520AA /* StaticDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticDemo.m; sourceTree = "<group>"; };
 		F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4BC577F1BF971F8003944F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4BC57811BF97208003944F3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -916,6 +919,8 @@
 				F4B7F8BC1C102AB7000BAF87 /* Guide */,
 				F4B9CC5C1CF3E707002520AA /* BaseTableTestVC.h */,
 				F4B9CC5D1CF3E707002520AA /* BaseTableTestVC.m */,
+				F4B9CC6E1CF42776002520AA /* StaticDemo.h */,
+				F4B9CC6F1CF42776002520AA /* StaticDemo.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1678,6 +1683,7 @@
 				F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */,
 				F4B7F93D1C102B85000BAF87 /* AnimalC.m in Sources */,
 				F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */,
+				F4B9CC701CF42776002520AA /* StaticDemo.m in Sources */,
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
 				F45C628D1C30DEAF0045D0DD /* UULineChart.m in Sources */,
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,

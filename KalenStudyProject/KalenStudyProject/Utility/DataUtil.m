@@ -38,6 +38,7 @@
 #import "UtilCheckerVC.h"
 #import "DBTestVC.h"
 #import "BaseTableTestVC.h"
+#import "StaticDemo.h"
 
 @implementation DataUtil
 
@@ -191,11 +192,16 @@
         item29.detail = @"基类测试－UtilCheckerVC";
         
         GuideDataItem *item30 = [[GuideDataItem alloc]init];
-        item30.title = @"表格基类测试";
+        item30.title = @"动态表格基类测试";
         item30.destVC = [[BaseTableTestVC alloc]init];
         item30.detail = @"表格基类测试－UtilCheckerVC";
         
-        _guideArray = @[item30,item29,item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item31 = [[GuideDataItem alloc]init];
+        item31.title = @"静态表格基类测试";
+        item31.destVC = [[StaticDemo alloc]init];
+        item31.detail = @"静态表格基类测试－UtilCheckerVC";
+        
+        _guideArray = @[item31,item30,item29,item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

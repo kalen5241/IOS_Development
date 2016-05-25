@@ -11,16 +11,23 @@
 #import "FD_Masonry_CellXib.h"
 
 @interface BaseTableTestVC ()
-//@property (nonatomic,strong) NSMutableArray *dataArray;
 @end
 
 @implementation BaseTableTestVC
 
 - (void)viewDidLoad {
+    
+    self.freshFlag = YES;
+    self.isXib = NO;
+    self.isStatic= NO;
+    
+    if (self.isXib) {
+    /* !xib*/
+    self.tempNibName = @"FD_Masonry_CellXib";
+    }else {
     /* !code*/
      self.customCellClass = [KalenTableViewCellCode class];
-    /* !xib
-    self.tempNibName = @"FD_Masonry_CellXib";*/
+    }
     self.cellIdentinfier = @"CELL";
     self.dataArray =  [self fetchDataArray];
     [super viewDidLoad];

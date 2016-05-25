@@ -38,29 +38,39 @@
     
     if (!_tableview) {
         _tableview = [[UITableView alloc]init];
-        _tableview.dataSource = self;
-        _tableview.delegate = self;
+        
+        if (self.isStatic) {
+            _tableview.dataSource = self.delegate;
+            _tableview.delegate = self.delegate;
+        }else {
+            _tableview.dataSource = self;
+            _tableview.delegate = self;
+        }
+
         NSString *tempIdefinder = self.cellIdentinfier ? self.cellIdentinfier : @"CELL";
         
-        /*! xib
-        NSString *tempNibName = self.tempNibName ? self.tempNibName :@"FD_Masonry_CellXib";
-        [_tableview registerNib:[UINib nibWithNibName:tempNibName bundle:nil] forCellReuseIdentifier:tempIdefinder];*/
+        if (self.isXib && !self.isStatic) {
+            /*! xib*/
+            NSString *tempNibName = self.tempNibName ? self.tempNibName :@"FD_Masonry_CellXib";
+            [_tableview registerNib:[UINib nibWithNibName:tempNibName bundle:nil] forCellReuseIdentifier:tempIdefinder];
+        }else if (!self.isStatic) {
+            /*! code*/
+            Class tempClass =self.customCellClass ? self.customCellClass : [UITableViewCell class];
+            [_tableview registerClass:tempClass forCellReuseIdentifier:tempIdefinder];
+        }
         
-        /*! code*/
-        Class tempClass =self.customCellClass ? self.customCellClass : [UITableViewCell class];
-        [_tableview registerClass:tempClass forCellReuseIdentifier:tempIdefinder];
-        
+        if (self.freshFlag) {
         //下拉刷新
         _tableview.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(endHanderFresh)];
         
         //上拉加载
         _tableview.footer =  [MJRefreshBackStateFooter footerWithRefreshingTarget:self refreshingAction:@selector(endFooterFresh)];
+        }
     }
     return _tableview;
 }
 
-
-
+#pragma mark --UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return self.dataArray.count;
@@ -68,25 +78,32 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*! code*/
-     KalenTableViewCellCode *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];
-    /*! xib
-    FD_Masonry_CellXib *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];*/
     
-    cell.dataModel = self.dataArray[indexPath.row];
-    
-    return cell;
+    if (self.isXib) {
+        /*! xib*/
+        FD_Masonry_CellXib *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];
+         cell.dataModel = self.dataArray[indexPath.row];
+        return cell;
+    }else {
+        /*! code*/
+        KalenTableViewCellCode *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentinfier];
+        cell.dataModel = self.dataArray[indexPath.row];
+        return cell;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGFloat height = [tableView fd_heightForCellWithIdentifier:@"CELL" cacheByIndexPath:indexPath configuration:^(id cell) {
-        /*! xib
-        FD_Masonry_CellXib *tbCell = (FD_Masonry_CellXib *)cell;*/
-        
-        /*! code*/
-         KalenTableViewCellCode *tbCell = (KalenTableViewCellCode *)cell;
-        tbCell.dataModel = self.dataArray[indexPath.row];
+    CGFloat height = [tableView fd_heightForCellWithIdentifier:self.cellIdentinfier cacheByIndexPath:indexPath configuration:^(id cell) {
+        if (self.isXib) {
+            /*! xib*/
+            FD_Masonry_CellXib *tbCell = (FD_Masonry_CellXib *)cell;
+            tbCell.dataModel = self.dataArray[indexPath.row];
+        }else {
+            /*! code*/
+            KalenTableViewCellCode *tbCell = (KalenTableViewCellCode *)cell;
+            tbCell.dataModel = self.dataArray[indexPath.row];
+        }
     }];
     return height;
 }
@@ -102,7 +119,6 @@
     }
     [self.tableview.header endRefreshing];
 }
-
 
 //底部上拉加载新数据
 - (void)endFooterFresh {
