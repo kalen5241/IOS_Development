@@ -58,9 +58,6 @@
 		F486AA091CE57A5800EC910A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA081CE57A5800EC910A /* Foundation.framework */; };
 		F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */; };
 		F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */; };
-		F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */; };
-		F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CF51C895BD600E07927 /* CustomElementVC.m */; };
-		F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */ = {isa = PBXBuildFile; fileRef = F4966CFB1C89661D00E07927 /* CustomCell8.m */; };
 		F49C0AEF1CBFC46D0041A265 /* cube.html in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AEE1CBFC46D0041A265 /* cube.html */; };
 		F49C0AF61CBFD0D70041A265 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF01CBFD0D70041A265 /* 1.jpg */; };
 		F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF11CBFD0D70041A265 /* 2.jpg */; };
@@ -137,6 +134,14 @@
 		F4B7F9A01C102D1C000BAF87 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99D1C102D1C000BAF87 /* DataUtil.m */; };
 		F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC4C1CF2F0A7002520AA /* DBTool.m */; };
 		F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC511CF3058C002520AA /* DBTestVC.m */; };
+		F4B9CC571CF30893002520AA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC561CF30893002520AA /* BaseVC.m */; };
+		F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC591CF308DA002520AA /* BaseTableVC.m */; };
+		F4B9CC851CF58CF8002520AA /* CbuttonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9CC7E1CF58CF8002520AA /* CbuttonView.xib */; };
+		F4B9CC861CF58CF8002520AA /* Cbuttton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC801CF58CF8002520AA /* Cbuttton.m */; };
+		F4B9CC871CF58CF8002520AA /* CodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC821CF58CF8002520AA /* CodeButton.m */; };
+		F4B9CC881CF58CF8002520AA /* CustomElementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC841CF58CF8002520AA /* CustomElementVC.m */; };
+		F4B9CC8D1CF590A9002520AA /* BaseTableTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC8B1CF590A9002520AA /* BaseTableTestVC.m */; };
+		F4B9CC8E1CF590A9002520AA /* StaticDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9CC8C1CF590A9002520AA /* StaticDemo.m */; };
 		F4BC577E1BF9701B003944F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */; };
 		F4BC57801BF971F8003944F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC577F1BF971F8003944F3 /* Security.framework */; };
 		F4BC57821BF97208003944F3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57811BF97208003944F3 /* libiconv.tbd */; };
@@ -286,12 +291,6 @@
 		F48B54EC1C4F78C40065F35B /* OpenOtherAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppVC.h; sourceTree = "<group>"; };
 		F48B54ED1C4F78C40065F35B /* OpenOtherAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppVC.m; sourceTree = "<group>"; };
 		F48B54EE1C4F78C40065F35B /* OpenOtherAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenOtherAppVC.xib; sourceTree = "<group>"; };
-		F4966CEE1C89370000E07927 /* CustomTextFieldByCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextFieldByCode.h; sourceTree = "<group>"; };
-		F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextFieldByCode.m; sourceTree = "<group>"; };
-		F4966CF41C895BD600E07927 /* CustomElementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomElementVC.h; sourceTree = "<group>"; };
-		F4966CF51C895BD600E07927 /* CustomElementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomElementVC.m; sourceTree = "<group>"; };
-		F4966CFA1C89661D00E07927 /* CustomCell8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell8.h; sourceTree = "<group>"; };
-		F4966CFB1C89661D00E07927 /* CustomCell8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell8.m; sourceTree = "<group>"; };
 		F49C0AEE1CBFC46D0041A265 /* cube.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cube.html; sourceTree = "<group>"; };
 		F49C0AF01CBFD0D70041A265 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F49C0AF11CBFD0D70041A265 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -418,6 +417,21 @@
 		F4B9CC4C1CF2F0A7002520AA /* DBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
 		F4B9CC511CF3058C002520AA /* DBTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTestVC.m; sourceTree = "<group>"; };
 		F4B9CC521CF3058C002520AA /* DBTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTestVC.h; sourceTree = "<group>"; };
+		F4B9CC551CF30893002520AA /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		F4B9CC561CF30893002520AA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		F4B9CC581CF308DA002520AA /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
+		F4B9CC591CF308DA002520AA /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
+		F4B9CC7E1CF58CF8002520AA /* CbuttonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CbuttonView.xib; sourceTree = "<group>"; };
+		F4B9CC7F1CF58CF8002520AA /* Cbuttton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cbuttton.h; sourceTree = "<group>"; };
+		F4B9CC801CF58CF8002520AA /* Cbuttton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cbuttton.m; sourceTree = "<group>"; };
+		F4B9CC811CF58CF8002520AA /* CodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeButton.h; sourceTree = "<group>"; };
+		F4B9CC821CF58CF8002520AA /* CodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeButton.m; sourceTree = "<group>"; };
+		F4B9CC831CF58CF8002520AA /* CustomElementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomElementVC.h; sourceTree = "<group>"; };
+		F4B9CC841CF58CF8002520AA /* CustomElementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomElementVC.m; sourceTree = "<group>"; };
+		F4B9CC891CF590A9002520AA /* BaseTableTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableTestVC.h; sourceTree = "<group>"; };
+		F4B9CC8A1CF590A9002520AA /* StaticDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticDemo.h; sourceTree = "<group>"; };
+		F4B9CC8B1CF590A9002520AA /* BaseTableTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableTestVC.m; sourceTree = "<group>"; };
+		F4B9CC8C1CF590A9002520AA /* StaticDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticDemo.m; sourceTree = "<group>"; };
 		F4BC577D1BF9701B003944F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F4BC577F1BF971F8003944F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4BC57811BF97208003944F3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -619,7 +633,6 @@
 				F48B54EB1C4F78560065F35B /* OpenOtherApp */,
 				F4586FD31C43506400ED7432 /* AutoLayout */,
 				F4AFEE011CE1EEC8005E94C5 /* MultipleThread */,
-				F4966CEA1C892D8F00E07927 /* CustomTextField */,
 			);
 			path = OldVersion;
 			sourceTree = "<group>";
@@ -839,20 +852,6 @@
 			path = ../OpenOtherApp;
 			sourceTree = "<group>";
 		};
-		F4966CEA1C892D8F00E07927 /* CustomTextField */ = {
-			isa = PBXGroup;
-			children = (
-				F4966CEE1C89370000E07927 /* CustomTextFieldByCode.h */,
-				F4966CEF1C89370000E07927 /* CustomTextFieldByCode.m */,
-				F4966CF41C895BD600E07927 /* CustomElementVC.h */,
-				F4966CF51C895BD600E07927 /* CustomElementVC.m */,
-				F4966CFA1C89661D00E07927 /* CustomCell8.h */,
-				F4966CFB1C89661D00E07927 /* CustomCell8.m */,
-			);
-			name = CustomTextField;
-			path = ../CustomTextField;
-			sourceTree = "<group>";
-		};
 		F4AFEDDF1CDEA76B005E94C5 /* PassValue */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +898,8 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4B9CC7D1CF58CF8002520AA /* CustomElement */,
+				F4B9CC541CF30800002520AA /* BaseController */,
 				F4B9CC4A1CF2EEDF002520AA /* DB */,
 				F40B05391CF01CB4002AD0AF /* OldVersion */,
 				F40B05331CF008BA002AD0AF /* UtilChecker */,
@@ -1163,6 +1164,35 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		F4B9CC541CF30800002520AA /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B9CC891CF590A9002520AA /* BaseTableTestVC.h */,
+				F4B9CC8A1CF590A9002520AA /* StaticDemo.h */,
+				F4B9CC8B1CF590A9002520AA /* BaseTableTestVC.m */,
+				F4B9CC8C1CF590A9002520AA /* StaticDemo.m */,
+				F4B9CC551CF30893002520AA /* BaseVC.h */,
+				F4B9CC561CF30893002520AA /* BaseVC.m */,
+				F4B9CC581CF308DA002520AA /* BaseTableVC.h */,
+				F4B9CC591CF308DA002520AA /* BaseTableVC.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		F4B9CC7D1CF58CF8002520AA /* CustomElement */ = {
+			isa = PBXGroup;
+			children = (
+				F4B9CC7E1CF58CF8002520AA /* CbuttonView.xib */,
+				F4B9CC7F1CF58CF8002520AA /* Cbuttton.h */,
+				F4B9CC801CF58CF8002520AA /* Cbuttton.m */,
+				F4B9CC811CF58CF8002520AA /* CodeButton.h */,
+				F4B9CC821CF58CF8002520AA /* CodeButton.m */,
+				F4B9CC831CF58CF8002520AA /* CustomElementVC.h */,
+				F4B9CC841CF58CF8002520AA /* CustomElementVC.m */,
+			);
+			path = CustomElement;
+			sourceTree = "<group>";
+		};
 		F4C447E51CEF5310002C8097 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1407,6 +1437,7 @@
 				F4B7F9871C102CE5000BAF87 /* UMSocialLocalizable.strings in Resources */,
 				F45932EB1C10370E00AD965E /* taocan.png in Resources */,
 				F4B7F9961C102CE5000BAF87 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				F4B9CC851CF58CF8002520AA /* CbuttonView.xib in Resources */,
 				F45C627A1C30DD6E0045D0DD /* ChartVC.xib in Resources */,
 				F4ECCF2A1C880A2F003A0961 /* normalize.css in Resources */,
 				F4B7F8BB1C102A8D000BAF87 /* UITestingVC.xib in Resources */,
@@ -1571,6 +1602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B9CC861CF58CF8002520AA /* Cbuttton.m in Sources */,
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
 				F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */,
 				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
@@ -1588,8 +1620,8 @@
 				F4CC218C1C16B93600DB49DA /* RATreeNodeInfo+Private.m in Sources */,
 				F45C628A1C30DEAF0045D0DD /* UUChart.m in Sources */,
 				F4CC21931C16B93600DB49DA /* RATreeView.m in Sources */,
+				F4B9CC871CF58CF8002520AA /* CodeButton.m in Sources */,
 				F4CC21901C16B93600DB49DA /* RATreeView+TableViewDataSource.m in Sources */,
-				F4966CF01C89370000E07927 /* CustomTextFieldByCode.m in Sources */,
 				F4B616B71CEAFD3D0076A4EF /* UIImage+Additions.m in Sources */,
 				F432FD761C49EF6E00D0E628 /* CellItems.m in Sources */,
 				F45C628C1C30DEAF0045D0DD /* UUColor.m in Sources */,
@@ -1608,7 +1640,6 @@
 				F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */,
-				F4966CFC1C89661D00E07927 /* CustomCell8.m in Sources */,
 				F4C447FB1CEF54ED002C8097 /* TableViewCellCode.m in Sources */,
 				F4C448011CEF6282002C8097 /* KalenDataModel.m in Sources */,
 				F43E75FA1CEFE1900070BF86 /* FD_Masonry_CellXib.m in Sources */,
@@ -1632,13 +1663,16 @@
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
 				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
 				F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */,
+				F4B9CC571CF30893002520AA /* BaseVC.m in Sources */,
 				F4B7F8EF1C102B16000BAF87 /* AutoResizeCellHeightVC.m in Sources */,
 				F4B7F9501C102C0F000BAF87 /* CustomCellOne.m in Sources */,
 				F40B052F1CF006D0002AD0AF /* NSMutableDictionary+JudgeNull.m in Sources */,
 				F4C447F41CEF5367002C8097 /* DataModel.m in Sources */,
 				F4B7F94E1C102C0F000BAF87 /* After.m in Sources */,
 				F45C628B1C30DEAF0045D0DD /* UUChartLabel.m in Sources */,
-				F4966CF61C895BD600E07927 /* CustomElementVC.m in Sources */,
+				F4B9CC8D1CF590A9002520AA /* BaseTableTestVC.m in Sources */,
+				F4B9CC5A1CF308DA002520AA /* BaseTableVC.m in Sources */,
+				F4B9CC881CF58CF8002520AA /* CustomElementVC.m in Sources */,
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,
 				F4CC212D1C167BB400DB49DA /* CellTreeVC.m in Sources */,
 				F4CC218F1C16B93600DB49DA /* RATreeView+Private.m in Sources */,
@@ -1652,6 +1686,7 @@
 				F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */,
 				F4B7F93D1C102B85000BAF87 /* AnimalC.m in Sources */,
 				F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */,
+				F4B9CC8E1CF590A9002520AA /* StaticDemo.m in Sources */,
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
 				F45C628D1C30DEAF0045D0DD /* UULineChart.m in Sources */,
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,
