@@ -8,7 +8,7 @@
 
 #import "After.h"
 #import "CustomCellTwo.h"
-#import "CustomCell8.h"
+
 
 @implementation After
 
@@ -20,21 +20,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    CustomCellTwo *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    
-//    if (!cell) {
-//        cell = (CustomCellTwo *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCellTwo" owner:nil options:nil]lastObject];
-//    }
-//
-    CustomCell8 *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL"];
-    
-    
+    CustomCellTwo *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
-        cell = [[CustomCell8 alloc]init];
+        cell = (CustomCellTwo *)[[[NSBundle mainBundle] loadNibNamed:@"CustomCellTwo" owner:nil options:nil]lastObject];
     }
-    
-    
-    
     return cell;
 }
 
