@@ -22,9 +22,9 @@
 }
 
 
-- (IBAction)cClick:(UIButton *)sender {
+
+- (IBAction)click:(UIButton *)sender {
     
-    NSLog(@"dddddddddddddd");
-    
+    NSLog(@"KKKKKKKKKK");
 }
 @end

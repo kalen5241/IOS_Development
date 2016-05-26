@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Cbuttton : UIButton
-@property (weak, nonatomic) IBOutlet UIButton *b1;
-- (IBAction)cClick:(UIButton *)sender;
+- (IBAction)click:(UIButton *)sender;
+
 
 @end
