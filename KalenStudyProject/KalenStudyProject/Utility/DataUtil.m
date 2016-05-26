@@ -39,6 +39,10 @@
 #import "DBTestVC.h"
 #import "BaseTableTestVC.h"
 #import "StaticDemo.h"
+#import "VMVCViewController.h"
+#import "VC1.h"
+#import "VC2.h"
+#import "WMPageController.h"
 
 @implementation DataUtil
 
@@ -201,7 +205,18 @@
         item31.destVC = [[StaticDemo alloc]init];
         item31.detail = @"静态表格基类测试－UtilCheckerVC";
         
-        _guideArray = @[item31,item30,item29,item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
+        GuideDataItem *item32 = [[GuideDataItem alloc]init];
+        item32.title = @"VMPage";
+        WMPageController * temp = [[WMPageController alloc]initWithViewControllerClasses: @[[VC1 class],[VC2 class],[VC1 class],[VC2 class],[VC1 class],[VC2 class],[VC1 class],[VC2 class]] andTheirTitles: @[@"高端进口",@"国产精品",@"高端进口",@"国产精品",@"高端进口",@"国产精品",@"高端进口",@"国产精品"]];
+        temp.menuBGColor = [UIColor redColor];
+        temp.titleSizeSelected = 15;
+        temp.titleSizeNormal = 13;
+        temp.menuViewStyle = WMMenuViewStyleLine;
+        item32.destVC = temp;
+    
+        item32.detail = @"VMPage－VMVCViewController";
+        
+        _guideArray = @[item32,item31,item30,item29,item28,item27,item26,item25,item24,item23,item22,item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21];
     }
     return _guideArray;
 }

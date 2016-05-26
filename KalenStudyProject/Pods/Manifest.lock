@@ -45,6 +45,7 @@ PODS:
     - MMDrawerController/Core
   - MMPlaceHolder (1.8)
   - UITableView+FDTemplateLayoutCell (1.3)
+  - WMPageController (1.4.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - MMDrawerController (~> 0.6.0)
   - MMPlaceHolder (~> 1.8)
   - UITableView+FDTemplateLayoutCell (~> 1.3)
+  - WMPageController (~> 1.4.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -71,5 +73,6 @@ SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   MMPlaceHolder: 6dbbd7d0dbaaa556eefbc75b8039fcd9f9cd576a
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
+  WMPageController: bb5599fd01fe80d6a87076927826451481c447dd
 
 COCOAPODS: 0.39.0

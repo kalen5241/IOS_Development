@@ -20,6 +20,8 @@ pod 'UITableView+FDTemplateLayoutCell', '~> 1.3'
 pod 'MMDrawerController', '~> 0.6.0'
 pod 'FMDB', '~> 2.5'
 pod 'Masonry', '~> 0.6.2'
+pod 'WMPageController', '~> 1.4.5'
+
 end
 
 target 'KalenStudyProjectTests' do

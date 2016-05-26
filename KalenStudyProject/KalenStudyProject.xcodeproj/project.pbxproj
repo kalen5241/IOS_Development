@@ -65,6 +65,11 @@
 		F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF31CBFD0D70041A265 /* 4.jpg */; };
 		F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF41CBFD0D70041A265 /* 5.jpg */; };
 		F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49C0AF51CBFD0D70041A265 /* 6.jpg */; };
+		F49DA1021CF68A080012C35F /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = F49DA1001CF68A080012C35F /* VC1.m */; };
+		F49DA1031CF68A080012C35F /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49DA1011CF68A080012C35F /* VC1.xib */; };
+		F49DA10A1CF68A2D0012C35F /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = F49DA1081CF68A2D0012C35F /* VC2.m */; };
+		F49DA10B1CF68A2D0012C35F /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49DA1091CF68A2D0012C35F /* VC2.xib */; };
+		F49DA10E1CF68AB10012C35F /* VMVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49DA10D1CF68AB10012C35F /* VMVCViewController.m */; };
 		F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */; };
 		F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */; };
 		F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */; };
@@ -298,6 +303,14 @@
 		F49C0AF31CBFD0D70041A265 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		F49C0AF41CBFD0D70041A265 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		F49C0AF51CBFD0D70041A265 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		F49DA0FF1CF68A080012C35F /* VC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
+		F49DA1001CF68A080012C35F /* VC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
+		F49DA1011CF68A080012C35F /* VC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
+		F49DA1071CF68A2D0012C35F /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
+		F49DA1081CF68A2D0012C35F /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
+		F49DA1091CF68A2D0012C35F /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
+		F49DA10C1CF68AB10012C35F /* VMVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMVCViewController.h; sourceTree = "<group>"; };
+		F49DA10D1CF68AB10012C35F /* VMVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMVCViewController.m; sourceTree = "<group>"; };
 		F4AFEDE01CDEA7B3005E94C5 /* PassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueVC.h; sourceTree = "<group>"; };
 		F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueVC.m; sourceTree = "<group>"; };
 		F4AFEDE31CDEADE1005E94C5 /* DelePassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueVC.h; sourceTree = "<group>"; };
@@ -852,6 +865,21 @@
 			path = ../OpenOtherApp;
 			sourceTree = "<group>";
 		};
+		F49DA0FE1CF6899A0012C35F /* WMPageController */ = {
+			isa = PBXGroup;
+			children = (
+				F49DA0FF1CF68A080012C35F /* VC1.h */,
+				F49DA1001CF68A080012C35F /* VC1.m */,
+				F49DA1011CF68A080012C35F /* VC1.xib */,
+				F49DA1071CF68A2D0012C35F /* VC2.h */,
+				F49DA1081CF68A2D0012C35F /* VC2.m */,
+				F49DA1091CF68A2D0012C35F /* VC2.xib */,
+				F49DA10C1CF68AB10012C35F /* VMVCViewController.h */,
+				F49DA10D1CF68AB10012C35F /* VMVCViewController.m */,
+			);
+			path = WMPageController;
+			sourceTree = "<group>";
+		};
 		F4AFEDDF1CDEA76B005E94C5 /* PassValue */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,6 +926,7 @@
 		F4B7F8B51C102995000BAF87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F49DA0FE1CF6899A0012C35F /* WMPageController */,
 				F4B9CC7D1CF58CF8002520AA /* CustomElement */,
 				F4B9CC541CF30800002520AA /* BaseController */,
 				F4B9CC4A1CF2EEDF002520AA /* DB */,
@@ -1446,6 +1475,7 @@
 				F4B7F8CB1C102AB7000BAF87 /* BasicCell.xib in Resources */,
 				F486AA031CE578EE00EC910A /* BlueToothVC.xib in Resources */,
 				F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */,
+				F49DA1031CF68A080012C35F /* VC1.xib in Resources */,
 				F40B05381CF00974002AD0AF /* UtilCheckerVC.xib in Resources */,
 				F49C0AFA1CBFD0D70041A265 /* 5.jpg in Resources */,
 				F4B7F98C1C102CE5000BAF87 /* UMSCommentInputControlleriPad.xib in Resources */,
@@ -1477,6 +1507,7 @@
 				F4ED59B71C112CAE00B36AD2 /* DrawPic.xib in Resources */,
 				F4B7F9551C102C0F000BAF87 /* MutilDataSource.xib in Resources */,
 				F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */,
+				F49DA10B1CF68A2D0012C35F /* VC2.xib in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
 				F4B616BD1CEAFD510076A4EF /* 3.JPG in Resources */,
 				F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */,
@@ -1614,9 +1645,11 @@
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
 				F40B05371CF00974002AD0AF /* UtilCheckerVC.m in Sources */,
 				F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */,
+				F49DA1021CF68A080012C35F /* VC1.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,
 				F4CC21911C16B93600DB49DA /* RATreeView+TableViewDelegate.m in Sources */,
+				F49DA10E1CF68AB10012C35F /* VMVCViewController.m in Sources */,
 				F4CC218C1C16B93600DB49DA /* RATreeNodeInfo+Private.m in Sources */,
 				F45C628A1C30DEAF0045D0DD /* UUChart.m in Sources */,
 				F4CC21931C16B93600DB49DA /* RATreeView.m in Sources */,
@@ -1638,6 +1671,7 @@
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
 				F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */,
 				F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */,
+				F49DA10A1CF68A2D0012C35F /* VC2.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */,
 				F4C447FB1CEF54ED002C8097 /* TableViewCellCode.m in Sources */,
