@@ -19,6 +19,16 @@
 		F40B05381CF00974002AD0AF /* UtilCheckerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40B05361CF00974002AD0AF /* UtilCheckerVC.xib */; };
 		F40CA2181C8FBB16006B03D6 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA2171C8FBB16006B03D6 /* TestCell.m */; };
 		F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */; };
+		F41785821D055B7A00AECE30 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41785801D055B7A00AECE30 /* cityGroups.plist */; };
+		F41785831D055B7A00AECE30 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41785811D055B7A00AECE30 /* cities.plist */; };
+		F42D49F11D12389E00B0CF04 /* DelePassValueOtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D49E51D12389E00B0CF04 /* DelePassValueOtherVC.m */; };
+		F42D49F21D12389E00B0CF04 /* DelePassValueOtherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42D49E61D12389E00B0CF04 /* DelePassValueOtherVC.xib */; };
+		F42D49F31D12389E00B0CF04 /* DelePassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D49E81D12389E00B0CF04 /* DelePassValueVC.m */; };
+		F42D49F41D12389E00B0CF04 /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D49EA1D12389E00B0CF04 /* NotificationVC.m */; };
+		F42D49F51D12389E00B0CF04 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42D49EB1D12389E00B0CF04 /* NotificationVC.xib */; };
+		F42D49F61D12389E00B0CF04 /* PassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D49ED1D12389E00B0CF04 /* PassValueVC.m */; };
+		F42D49F71D12389E00B0CF04 /* ThreedPassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D49EF1D12389E00B0CF04 /* ThreedPassVC.m */; };
+		F42D49F81D12389E00B0CF04 /* ThreedPassVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42D49F01D12389E00B0CF04 /* ThreedPassVC.xib */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
 		F432FD661C473E3F00D0E628 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD651C473E3F00D0E628 /* Block.m */; };
 		F432FD701C49EEE300D0E628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F432FD6F1C49EEE300D0E628 /* ViewController.m */; };
@@ -70,16 +80,8 @@
 		F49DA10A1CF68A2D0012C35F /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = F49DA1081CF68A2D0012C35F /* VC2.m */; };
 		F49DA10B1CF68A2D0012C35F /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49DA1091CF68A2D0012C35F /* VC2.xib */; };
 		F49DA10E1CF68AB10012C35F /* VMVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49DA10D1CF68AB10012C35F /* VMVCViewController.m */; };
-		F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */; };
-		F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */; };
-		F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */; };
-		F4AFEDEA1CDEC19F005E94C5 /* DelePassValueOtherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */; };
 		F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */; };
 		F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */; };
-		F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */; };
-		F4AFEDFB1CE1B04B005E94C5 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */; };
-		F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */; };
-		F4AFEE001CE1B77D005E94C5 /* ThreedPassVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */; };
 		F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */; };
 		F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */; };
 		F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B233C91BFE18DB00C30745 /* Data.plist */; };
@@ -228,6 +230,21 @@
 		F40CA2171C8FBB16006B03D6 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		F40CA2191C8FBB89006B03D6 /* AutoCellHeightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCellHeightVC.h; sourceTree = "<group>"; };
 		F40CA21A1C8FBB89006B03D6 /* AutoCellHeightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCellHeightVC.m; sourceTree = "<group>"; };
+		F41785801D055B7A00AECE30 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		F41785811D055B7A00AECE30 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		F42D49E41D12389E00B0CF04 /* DelePassValueOtherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueOtherVC.h; sourceTree = "<group>"; };
+		F42D49E51D12389E00B0CF04 /* DelePassValueOtherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueOtherVC.m; sourceTree = "<group>"; };
+		F42D49E61D12389E00B0CF04 /* DelePassValueOtherVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelePassValueOtherVC.xib; sourceTree = "<group>"; };
+		F42D49E71D12389E00B0CF04 /* DelePassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueVC.h; sourceTree = "<group>"; };
+		F42D49E81D12389E00B0CF04 /* DelePassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueVC.m; sourceTree = "<group>"; };
+		F42D49E91D12389E00B0CF04 /* NotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
+		F42D49EA1D12389E00B0CF04 /* NotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationVC.m; sourceTree = "<group>"; };
+		F42D49EB1D12389E00B0CF04 /* NotificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		F42D49EC1D12389E00B0CF04 /* PassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueVC.h; sourceTree = "<group>"; };
+		F42D49ED1D12389E00B0CF04 /* PassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueVC.m; sourceTree = "<group>"; };
+		F42D49EE1D12389E00B0CF04 /* ThreedPassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreedPassVC.h; sourceTree = "<group>"; };
+		F42D49EF1D12389E00B0CF04 /* ThreedPassVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreedPassVC.m; sourceTree = "<group>"; };
+		F42D49F01D12389E00B0CF04 /* ThreedPassVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreedPassVC.xib; sourceTree = "<group>"; };
 		F4319DD81C17FCD6006761A1 /* kalenPre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kalenPre.pch; sourceTree = "<group>"; };
 		F4319E5E1C18149F006761A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -311,22 +328,9 @@
 		F49DA1091CF68A2D0012C35F /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
 		F49DA10C1CF68AB10012C35F /* VMVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMVCViewController.h; sourceTree = "<group>"; };
 		F49DA10D1CF68AB10012C35F /* VMVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMVCViewController.m; sourceTree = "<group>"; };
-		F4AFEDE01CDEA7B3005E94C5 /* PassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassValueVC.h; sourceTree = "<group>"; };
-		F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassValueVC.m; sourceTree = "<group>"; };
-		F4AFEDE31CDEADE1005E94C5 /* DelePassValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueVC.h; sourceTree = "<group>"; };
-		F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueVC.m; sourceTree = "<group>"; };
-		F4AFEDE61CDEC19F005E94C5 /* DelePassValueOtherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelePassValueOtherVC.h; sourceTree = "<group>"; };
-		F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelePassValueOtherVC.m; sourceTree = "<group>"; };
-		F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelePassValueOtherVC.xib; sourceTree = "<group>"; };
 		F4AFEDEC1CE03BCB005E94C5 /* ReadLocalFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadLocalFile.h; sourceTree = "<group>"; };
 		F4AFEDED1CE03BCB005E94C5 /* ReadLocalFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadLocalFile.m; sourceTree = "<group>"; };
 		F4AFEDEE1CE03BCB005E94C5 /* ReadLocalFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadLocalFile.xib; sourceTree = "<group>"; };
-		F4AFEDF71CE1B04B005E94C5 /* NotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
-		F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationVC.m; sourceTree = "<group>"; };
-		F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
-		F4AFEDFC1CE1B77D005E94C5 /* ThreedPassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreedPassVC.h; sourceTree = "<group>"; };
-		F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreedPassVC.m; sourceTree = "<group>"; };
-		F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreedPassVC.xib; sourceTree = "<group>"; };
 		F4AFEE021CE1EF05005E94C5 /* MutThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutThreadVC.h; sourceTree = "<group>"; };
 		F4AFEE031CE1EF05005E94C5 /* MutThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutThreadVC.m; sourceTree = "<group>"; };
 		F4AFEE041CE1EF05005E94C5 /* MutThreadVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MutThreadVC.xib; sourceTree = "<group>"; };
@@ -624,9 +628,9 @@
 		F40B05391CF01CB4002AD0AF /* OldVersion */ = {
 			isa = PBXGroup;
 			children = (
+				F42D49E31D12389E00B0CF04 /* PassValue */,
 				F486A9FE1CE578C700EC910A /* BlueTooth */,
 				F4AFEDEB1CE03B74005E94C5 /* FileOperation */,
-				F4AFEDDF1CDEA76B005E94C5 /* PassValue */,
 				F4ECCF231C880978003A0961 /* H5VC */,
 				F44658AD1C672EDF0071DE83 /* IOS9TaskManager */,
 				F46E04EB1C58D2C000F5D060 /* ScreenShot */,
@@ -649,6 +653,27 @@
 			);
 			path = OldVersion;
 			sourceTree = "<group>";
+		};
+		F42D49E31D12389E00B0CF04 /* PassValue */ = {
+			isa = PBXGroup;
+			children = (
+				F42D49E41D12389E00B0CF04 /* DelePassValueOtherVC.h */,
+				F42D49E51D12389E00B0CF04 /* DelePassValueOtherVC.m */,
+				F42D49E61D12389E00B0CF04 /* DelePassValueOtherVC.xib */,
+				F42D49E71D12389E00B0CF04 /* DelePassValueVC.h */,
+				F42D49E81D12389E00B0CF04 /* DelePassValueVC.m */,
+				F42D49E91D12389E00B0CF04 /* NotificationVC.h */,
+				F42D49EA1D12389E00B0CF04 /* NotificationVC.m */,
+				F42D49EB1D12389E00B0CF04 /* NotificationVC.xib */,
+				F42D49EC1D12389E00B0CF04 /* PassValueVC.h */,
+				F42D49ED1D12389E00B0CF04 /* PassValueVC.m */,
+				F42D49EE1D12389E00B0CF04 /* ThreedPassVC.h */,
+				F42D49EF1D12389E00B0CF04 /* ThreedPassVC.m */,
+				F42D49F01D12389E00B0CF04 /* ThreedPassVC.xib */,
+			);
+			name = PassValue;
+			path = KalenStudyProject/Modules/PassValue;
+			sourceTree = SOURCE_ROOT;
 		};
 		F432FD631C473DFA00D0E628 /* Block */ = {
 			isa = PBXGroup;
@@ -798,6 +823,8 @@
 				F4ECCF271C880A2F003A0961 /* css */,
 				F4ECCF291C880A2F003A0961 /* index.html */,
 				F4B233C91BFE18DB00C30745 /* Data.plist */,
+				F41785801D055B7A00AECE30 /* cityGroups.plist */,
+				F41785811D055B7A00AECE30 /* cities.plist */,
 				F4680D901BF2F0F500C1EC76 /* LaunchScreen.storyboard */,
 				F4680D8E1BF2F0F500C1EC76 /* Assets.xcassets */,
 				F4680D931BF2F0F500C1EC76 /* Info.plist */,
@@ -878,27 +905,6 @@
 				F49DA10D1CF68AB10012C35F /* VMVCViewController.m */,
 			);
 			path = WMPageController;
-			sourceTree = "<group>";
-		};
-		F4AFEDDF1CDEA76B005E94C5 /* PassValue */ = {
-			isa = PBXGroup;
-			children = (
-				F4AFEDE01CDEA7B3005E94C5 /* PassValueVC.h */,
-				F4AFEDE11CDEA7B3005E94C5 /* PassValueVC.m */,
-				F4AFEDE31CDEADE1005E94C5 /* DelePassValueVC.h */,
-				F4AFEDE41CDEADE2005E94C5 /* DelePassValueVC.m */,
-				F4AFEDF71CE1B04B005E94C5 /* NotificationVC.h */,
-				F4AFEDF81CE1B04B005E94C5 /* NotificationVC.m */,
-				F4AFEDF91CE1B04B005E94C5 /* NotificationVC.xib */,
-				F4AFEDE61CDEC19F005E94C5 /* DelePassValueOtherVC.h */,
-				F4AFEDE71CDEC19F005E94C5 /* DelePassValueOtherVC.m */,
-				F4AFEDE81CDEC19F005E94C5 /* DelePassValueOtherVC.xib */,
-				F4AFEDFC1CE1B77D005E94C5 /* ThreedPassVC.h */,
-				F4AFEDFD1CE1B77D005E94C5 /* ThreedPassVC.m */,
-				F4AFEDFE1CE1B77D005E94C5 /* ThreedPassVC.xib */,
-			);
-			name = PassValue;
-			path = ../PassValue;
 			sourceTree = "<group>";
 		};
 		F4AFEDEB1CE03B74005E94C5 /* FileOperation */ = {
@@ -1466,6 +1472,7 @@
 				F4B7F9871C102CE5000BAF87 /* UMSocialLocalizable.strings in Resources */,
 				F45932EB1C10370E00AD965E /* taocan.png in Resources */,
 				F4B7F9961C102CE5000BAF87 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				F41785821D055B7A00AECE30 /* cityGroups.plist in Resources */,
 				F4B9CC851CF58CF8002520AA /* CbuttonView.xib in Resources */,
 				F45C627A1C30DD6E0045D0DD /* ChartVC.xib in Resources */,
 				F4ECCF2A1C880A2F003A0961 /* normalize.css in Resources */,
@@ -1482,23 +1489,24 @@
 				F4B7F8F01C102B16000BAF87 /* AutoResizeCellHeightVC.xib in Resources */,
 				F4B7F8CF1C102AB7000BAF87 /* GuideViewController.xib in Resources */,
 				F4B616BB1CEAFD510076A4EF /* 1.jpg in Resources */,
+				F41785831D055B7A00AECE30 /* cities.plist in Resources */,
 				F4B616BC1CEAFD510076A4EF /* 2.jpg in Resources */,
 				F4B7F98E1C102CE5000BAF87 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */,
 				F49C0AFB1CBFD0D70041A265 /* 6.jpg in Resources */,
-				F4AFEDEA1CDEC19F005E94C5 /* DelePassValueOtherVC.xib in Resources */,
 				F4B7F9511C102C0F000BAF87 /* CustomCellOne.xib in Resources */,
 				F4B616C21CEB1FD40076A4EF /* bb.png in Resources */,
 				F49C0AF71CBFD0D70041A265 /* 2.jpg in Resources */,
 				F48B54F01C4F78C40065F35B /* OpenOtherAppVC.xib in Resources */,
 				F4AFEDF01CE03BCB005E94C5 /* ReadLocalFile.xib in Resources */,
 				F4B7F8EA1C102B08000BAF87 /* ErrorDepositeViewController.xib in Resources */,
+				F42D49F21D12389E00B0CF04 /* DelePassValueOtherVC.xib in Resources */,
 				F4C447F81CEF5367002C8097 /* TableViewCellXib.xib in Resources */,
-				F4AFEE001CE1B77D005E94C5 /* ThreedPassVC.xib in Resources */,
 				F4B7F9921C102CE5000BAF87 /* ios-social-sdk-shake.html in Resources */,
 				F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */,
 				F45932E81C1034DC00AD965E /* ImageDevVC.xib in Resources */,
 				F49C0AF81CBFD0D70041A265 /* 3.jpg in Resources */,
+				F42D49F51D12389E00B0CF04 /* NotificationVC.xib in Resources */,
 				F49C0AF61CBFD0D70041A265 /* 1.jpg in Resources */,
 				F4B7F93F1C102B85000BAF87 /* ConnectionVC.xib in Resources */,
 				F4B7F98B1C102CE5000BAF87 /* UMSCommentInputController.xib in Resources */,
@@ -1509,10 +1517,10 @@
 				F49C0AF91CBFD0D70041A265 /* 4.jpg in Resources */,
 				F49DA10B1CF68A2D0012C35F /* VC2.xib in Resources */,
 				F4B233CA1BFE18DB00C30745 /* Data.plist in Resources */,
+				F42D49F81D12389E00B0CF04 /* ThreedPassVC.xib in Resources */,
 				F4B616BD1CEAFD510076A4EF /* 3.JPG in Resources */,
 				F4AFEE061CE1EF05005E94C5 /* MutThreadVC.xib in Resources */,
 				F4B7F98A1C102CE5000BAF87 /* UMSCommentDetailController.xib in Resources */,
-				F4AFEDFB1CE1B04B005E94C5 /* NotificationVC.xib in Resources */,
 				F4B7F9531C102C0F000BAF87 /* CustomCellTwo.xib in Resources */,
 				F4CC212E1C167BB400DB49DA /* CellTreeVC.xib in Resources */,
 				F4B7F9901C102CE5000BAF87 /* UMSnsAccountViewController.xib in Resources */,
@@ -1637,14 +1645,12 @@
 				F432FD791C49EFE100D0E628 /* LayoutClass.m in Sources */,
 				F4C447F51CEF5367002C8097 /* FD_Masonry_DemoVC.m in Sources */,
 				F4B616C01CEB039F0076A4EF /* UIImage+Resize.m in Sources */,
-				F4AFEDFA1CE1B04B005E94C5 /* NotificationVC.m in Sources */,
 				F4B9CC531CF3058C002520AA /* DBTestVC.m in Sources */,
 				F40B05301CF006D0002AD0AF /* NSString+Util.m in Sources */,
 				F44658B01C672F620071DE83 /* TaskManagerVC.m in Sources */,
 				F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */,
 				F4CC218E1C16B93600DB49DA /* RATreeView+Enums.m in Sources */,
 				F40B05371CF00974002AD0AF /* UtilCheckerVC.m in Sources */,
-				F4AFEDE21CDEA7B3005E94C5 /* PassValueVC.m in Sources */,
 				F49DA1021CF68A080012C35F /* VC1.m in Sources */,
 				F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */,
 				F4ED59BA1C112D5100B36AD2 /* DisplayView.m in Sources */,
@@ -1660,6 +1666,7 @@
 				F45C628C1C30DEAF0045D0DD /* UUColor.m in Sources */,
 				F4ED59B61C112CAE00B36AD2 /* DrawPic.m in Sources */,
 				F45C62891C30DEAF0045D0DD /* UUBarChart.m in Sources */,
+				F42D49F61D12389E00B0CF04 /* PassValueVC.m in Sources */,
 				F4B7F94F1C102C0F000BAF87 /* Before.m in Sources */,
 				F40B05261CF00463002AD0AF /* NSDictionary+Log.m in Sources */,
 				F4ECCF261C8809D4003A0961 /* H5VC.m in Sources */,
@@ -1670,7 +1677,6 @@
 				F48B54EF1C4F78C40065F35B /* OpenOtherAppVC.m in Sources */,
 				F4B7F8CD1C102AB7000BAF87 /* GuideDataItem.m in Sources */,
 				F4AFEE051CE1EF05005E94C5 /* MutThreadVC.m in Sources */,
-				F4AFEDFF1CE1B77D005E94C5 /* ThreedPassVC.m in Sources */,
 				F49DA10A1CF68A2D0012C35F /* VC2.m in Sources */,
 				F45932E71C1034DC00AD965E /* ImageDevVC.m in Sources */,
 				F486AA021CE578EE00EC910A /* BlueToothVC.m in Sources */,
@@ -1681,7 +1687,6 @@
 				F4B7F8F51C102B2F000BAF87 /* UMengSocialVCViewController.m in Sources */,
 				F4AFEDEF1CE03BCB005E94C5 /* ReadLocalFile.m in Sources */,
 				F40B05321CF006D0002AD0AF /* UIColor+Image.m in Sources */,
-				F4AFEDE91CDEC19F005E94C5 /* DelePassValueOtherVC.m in Sources */,
 				F4B7F8D01C102AB7000BAF87 /* LeftMenuVCViewController.m in Sources */,
 				F4B7F8BA1C102A8D000BAF87 /* UITestingVC.m in Sources */,
 				F45C62951C3138DD0045D0DD /* CodeChartVC.m in Sources */,
@@ -1689,10 +1694,10 @@
 				F4CC21961C16BBBD00DB49DA /* RADataObject.m in Sources */,
 				F46E04EE1C58D32500F5D060 /* ScreenShotVC.m in Sources */,
 				F4B7F9541C102C0F000BAF87 /* MutilDataSource.m in Sources */,
-				F4AFEDE51CDEADE2005E94C5 /* DelePassValueVC.m in Sources */,
 				F4586FD61C4350F500ED7432 /* EqualDivideVC.m in Sources */,
 				F4B7F93E1C102B85000BAF87 /* ConnectionVC.m in Sources */,
 				F4C447F31CEF5367002C8097 /* FD_Masonry_KalenVC.m in Sources */,
+				F42D49F41D12389E00B0CF04 /* NotificationVC.m in Sources */,
 				F4B7F8E91C102B08000BAF87 /* ErrorDepositeViewController.m in Sources */,
 				F45C62881C30DEAF0045D0DD /* UUBar.m in Sources */,
 				F432FD701C49EEE300D0E628 /* ViewController.m in Sources */,
@@ -1717,14 +1722,17 @@
 				F4B7F8E81C102B08000BAF87 /* Animal.m in Sources */,
 				F4CC218A1C16B93600DB49DA /* RATreeNode.m in Sources */,
 				F4CC218D1C16B93600DB49DA /* RATreeNodeInfo.m in Sources */,
+				F42D49F31D12389E00B0CF04 /* DelePassValueVC.m in Sources */,
 				F4B9CC4D1CF2F0A7002520AA /* DBTool.m in Sources */,
 				F4B7F93D1C102B85000BAF87 /* AnimalC.m in Sources */,
 				F40CA21B1C8FBB89006B03D6 /* AutoCellHeightVC.m in Sources */,
 				F4B9CC8E1CF590A9002520AA /* StaticDemo.m in Sources */,
 				F4B7F8CE1C102AB7000BAF87 /* GuideViewController.m in Sources */,
 				F45C628D1C30DEAF0045D0DD /* UULineChart.m in Sources */,
+				F42D49F71D12389E00B0CF04 /* ThreedPassVC.m in Sources */,
 				F4CC218B1C16B93600DB49DA /* RATreeNodeCollectionController.m in Sources */,
 				F432FD661C473E3F00D0E628 /* Block.m in Sources */,
+				F42D49F11D12389E00B0CF04 /* DelePassValueOtherVC.m in Sources */,
 				F4B7F9521C102C0F000BAF87 /* CustomCellTwo.m in Sources */,
 				F4C447FE1CEF5901002C8097 /* KalenTableViewCellCode.m in Sources */,
 				F45C62791C30DD6E0045D0DD /* ChartVC.m in Sources */,

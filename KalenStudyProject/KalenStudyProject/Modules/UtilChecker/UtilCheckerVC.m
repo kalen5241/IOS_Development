@@ -9,7 +9,7 @@
 #import "UtilCheckerVC.h"
 
 
-@interface UtilCheckerVC ()
+@interface UtilCheckerVC ()<UIAlertViewDelegate>
 
 @end
 
@@ -24,9 +24,24 @@
     
     [super viewWillAppear:animated];
     
-    [self checkNSArrayLog];
+//    [self checkNSArrayLog];
+//    [self checkDataFromPlist];
+    
 //    [self checkNSDictionaryLog];
+    
+    UIAlertView* av = [[UIAlertView alloc] initWithTitle:@"test" message:@"hahh" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+    
+    
+    [av show];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    
+    NSLog(@"ssssss");
+    
+}
+
 
 
 #pragma mark --CheckMathod
@@ -48,6 +63,12 @@
                            @"three":@"3"
                            };
     NSLog(@"字典内容为：%@",dict);
+}
+
+- (void)checkDataFromPlist {
+    
+    [DataUtil showJSON];
+
 }
 
 @end

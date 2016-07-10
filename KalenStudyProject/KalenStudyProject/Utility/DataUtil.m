@@ -313,23 +313,25 @@
  */
 + (void)showJSON{
     NSArray *arrayPlists = [[NSBundle mainBundle] pathsForResourcesOfType:@"plist" inDirectory:nil];
-    //    NSLog(@"%@",arrayPlists);
+        NSLog(@"%@",arrayPlists);
     
     NSError *error = nil;
-    for (NSString *path in arrayPlists) {
-        NSArray *array = [[NSArray alloc] initWithContentsOfFile:path];
-        // NSString *jsonString = [array JSONString];
-        
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:array options:NSJSONWritingPrettyPrinted error: &error];
-        
-        
-        NSString *jsonString = [[NSString alloc] initWithData:jsonData
-                                                     encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",jsonString);
-//        CFShow(@"\n\n\n\n\n");
-//        CFShow((__bridge CFTypeRef)(path.lastPathComponent));
-//        CFShow((__bridge CFTypeRef)(jsonString));
-    }
+//    for (NSString *path in arrayPlists) {
+//        NSArray *array = [[NSArray alloc] initWithContentsOfFile:path];
+//        // NSString *jsonString = [array JSONString];
+//        
+//        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:array options:NSJSONWritingPrettyPrinted error: &error];
+//        
+//        
+//        NSString *jsonString = [[NSString alloc] initWithData:jsonData
+//                                                     encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@",jsonString);
+//
+//    }
+    
+     NSArray *array = [[NSArray alloc] initWithContentsOfFile:arrayPlists[1]];
+    
+    NSLog(@"%@",array);
 }
 
 
@@ -412,8 +414,80 @@
     }else {
         return FALSE;
     }
-    
-    
 }
+
+/**
+ *  返回参数视图的所有子视图
+ * @param  aView  目标视图
+ */
+// Return an exhaustive descent of the view’s subviews
++(NSArray *)allSubviews:(UIView *)aView{
+    NSArray *results = [aView subviews];
+    for (UIView *eachView in aView.subviews)
+    {
+        NSArray *subviews =[DataUtil allSubviews:eachView];
+        if (subviews)
+            results = [results arrayByAddingObjectsFromArray:subviews];
+    }
+    return results;
+}
+
+/**
+ *  返回应用所有子视图
+ */
+// Return all views throughout the application
+
++(NSArray *)allApplicationViews {
+    NSArray *results = [UIApplication sharedApplication].windows;
+    for (UIWindow *window in [UIApplication sharedApplication].windows)
+    {
+        NSArray *subviews = [DataUtil allSubviews:window];
+        if (subviews)
+            results = [results arrayByAddingObjectsFromArray:subviews];
+    }
+    return results;
+}
+
+/**
+ *  返回到参数视图的所有父视图
+ * @param  aView  目标视图
+ */
+// Return an array of parent views from the window down to the view
++(NSArray *)pathToView:(UIView *)aView {
+    NSMutableArray *array = [NSMutableArray arrayWithObject:aView];
+    UIView *view = aView;
+    UIWindow *window = aView.window;
+    while (view != window)
+    {
+        view = [view superview];
+        [array insertObject:view atIndex:0];
+    }
+    return array;
+}
+
+
+/**
+ *  输出视图树
+ * @param  aView  目标视图
+ * @param  indent  子视图层级
+ * @param  indent  用于输出的字符串指针
+ *  Recursively travel down the view tree, increasing the indentation level for children
+ */
+
+- (void)dumpView:(UIView *)aView atIndent:(int)indent into:(NSMutableString *)outstring
+{
+    // Add the indentation
+    for (int i = 0; i < indent; i++)
+        [outstring appendString:@"--"];
+    
+    // Add the class description
+    [outstring appendFormat:@"[%2d] %@\n", indent,
+     [[aView class] description]];
+    
+    // Recurse on subviews
+    for (UIView *view in aView.subviews)
+        [self dumpView:view atIndent:indent + 1 into:outstring];
+}
+
 
 @end
