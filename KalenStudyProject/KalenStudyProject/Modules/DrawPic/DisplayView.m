@@ -8,91 +8,82 @@
 
 #import "DisplayView.h"
 #import "Constants.h"
-
+#import "BezierPathTool.h"
 #define SHANGKUANG 30
 #define QUXIAN 270
 
 @interface DisplayView ()
 @end
 
-@implementation DisplayView 
+@implementation DisplayView
 
--(NSArray *)arr {
-    if (!_arr) {
-        _arr = @[@(0.1),@(0.2),@(0.3),@(0.4),@(1)];
+- (instancetype)initWithArray:(NSArray *)array
+{
+    self = [super init];
+    if (self) {
+        self.arr = array;
     }
-    return _arr;
+    return self;
 }
 
--(NSDictionary *)dic {
-    
-    FRAME_LOG(self.frame);
-    BOUNDS_LOG(self.bounds);
-    if (!_dic) {
-        
-        CGFloat x = 0;
-        CGFloat y = 0;
-        
-        
-        NSMutableArray *marr = [NSMutableArray array];
-        y = self.bounds.origin.y + self.bounds.size.height;
-        x = self.bounds.origin.x;
-        CGPoint p = CGPointMake(x, y);
-        
-        for (int i = 1; i < self.arr.count + 1; i ++) {
-            float t = (float) [self.arr[i-1] floatValue];
-            NSLog(@"t is %f",t);
-            
-            CGFloat y = SHANGKUANG + (self.bounds.size.height - SHANGKUANG) * (1 - t);
-            
-            NSLog(@"y is %f",y);
-                CGPoint p1 = CGPointMake(self.bounds.origin.x + self.bounds.size.width/(self.arr.count + 1) * i ,y);
-            [marr addObject:[NSValue valueWithCGPoint:p1]];
-        }
-        
-        y = self.bounds.origin.y + self.bounds.size.height;
-        x = self.bounds.origin.x + self.bounds.size.width;
-        CGPoint p4 = CGPointMake(x, y);
-        
-        [marr addObject:[NSValue valueWithCGPoint:p4]];
-        
-        NSArray *arr = [marr copy];
-        NSDictionary *de = @{
-                             @"startPoint":[NSValue valueWithCGPoint:p],
-                             @"pointList":arr
-                             };
-        _dic = de;
-        
-    }
-    
-    return _dic;
-}
 
 - (void)drawRect:(CGRect)rect {
-    /**
-     *  UIKit绘图
-     */
-    /**/
-    NSValue *s = [self.dic objectForKey:@"startPoint"];
-    NSArray *ar = [self.dic objectForKey:@"pointList"];
     
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:[s CGPointValue]];
+//    [self drawLineChart];
+    [self drawBg];
+//    [self flashPoint];
+//    [self flashPointCenter];
+}
+
+
+
+//渐变背景
+- (void)drawBg {
     
-    CGPoint t = [s CGPointValue];
-    for (NSValue *v in ar) {
-        CGPoint r =  [v CGPointValue];
-        //[path addLineToPoint:r];
-        [path addCurveToPoint:r controlPoint1:CGPointMake(t.x + (r.x - t.x)/2,t.y) controlPoint2:CGPointMake(t.x + (r.x - t.x)/2,r.y)];
-        t = r;
-    }
+    CGContextRef context = UIGraphicsGetCurrentContext();
     
-    [[UIColor redColor] setStroke];
-    [[UIColor greenColor] setFill];
-    path.lineWidth = 5;
-    path.lineCapStyle = kCGLineCapRound;
-    path.lineJoinStyle = kCGLineJoinMiter;
-    [path stroke];
+    BezierPathTool *bT = [[BezierPathTool alloc]init];
+    bT.tBounds = self.bounds;
+    bT.arr = self.arr;
+    CGPathRef path = [[bT fetchDraw1] CGPath];
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGFloat locations[] = {0.2, 1.0};
+    NSArray *colors = @[(__bridge id) ([[UIColor yellowColor] CGColor]), (__bridge id) ([[UIColor whiteColor] CGColor])];
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef) colors, locations);
+    
+    CGRect pathRect = CGPathGetBoundingBox(path);
+    
+    CGPoint startPoint = CGPointMake(CGRectGetMidX(pathRect)-2, CGRectGetMinY(pathRect));
+    CGPoint endPoint = CGPointMake(CGRectGetMidX(pathRect)-2, CGRectGetMaxY(pathRect));
+    CGContextSaveGState(context);
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    CGContextSetAlpha(context, 1.0);
+    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
+    CGContextRestoreGState(context);
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+}
+
+//闪烁点
+
+- (void)flashPoint {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 2);
+    CGContextSetStrokeColorWithColor(context, [[UIColor lightGrayColor] CGColor]);
+    CGContextAddArc(context, self.last.x, self.last.y, 3, 0, 2*M_PI, 1);
+    CGContextStrokePath(context);
+
+}
+
+- (void)flashPointCenter {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetStrokeColorWithColor(context, [[UIColor lightGrayColor] CGColor]);
+    CGContextAddArc(context, self.last.x, self.last.y, 2, 0, 2*M_PI, 1);
+    CGContextSetFillColorWithColor(context, [[UIColor redColor] CGColor]);
+    CGContextFillPath(context);
+    CGContextStrokePath(context);
+ 
 }
 
 @end

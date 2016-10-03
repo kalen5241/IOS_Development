@@ -12,5 +12,11 @@
 
 @property (nonatomic,strong) NSDictionary *dic;
 @property (nonatomic,strong) NSArray *arr;
+@property (nonatomic,assign) CGPoint last;
+@property (nonatomic,assign) CGPoint first;
+- (instancetype)initWithArray:(NSArray *)array;
+
+//- (UIBezierPath *)fetchDraw;
+//- (void)drawLineChart;
 
 @end
