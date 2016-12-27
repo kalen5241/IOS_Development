@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LayoutAnimationVC">
+            <connections>
+                <outlet property="animationView" destination="emT-fg-2lL" id="NGt-AV-jbo"/>
+                <outlet property="bottomSpace" destination="eSQ-6D-ami" id="ikw-Pm-GVb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emT-fg-2lL">
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.72156862749999995" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="2jv-qY-K7e"/>
+                        <constraint firstAttribute="height" constant="100" id="Hkj-TC-ctA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-UZ-hsj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="NSW-QK-Tzs"/>
+                        <constraint firstAttribute="width" constant="86" id="Z3c-eB-JDM"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="7kM-q5-tRq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tlh-UZ-hsj" secondAttribute="bottom" constant="20" id="SLR-LI-Qc5"/>
+                <constraint firstAttribute="bottom" secondItem="emT-fg-2lL" secondAttribute="bottom" constant="20" id="eSQ-6D-ami"/>
+                <constraint firstItem="emT-fg-2lL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hbH-gm-Qpr"/>
+                <constraint firstItem="Tlh-UZ-hsj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="xkH-Oo-VYn"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

@@ -10,6 +10,7 @@
 #import "LeftMenuVCViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import "GuideViewController.h"
+#import "CellTreeVC.h"
 @interface FirstVC ()
 
 @end
@@ -19,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    GuideViewController *centerVC = [[GuideViewController alloc]init];
+//    GuideViewController *centerVC = [[GuideViewController alloc]init];
+    CellTreeVC *centerVC = [[CellTreeVC alloc]init];
+
     
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:centerVC];
     

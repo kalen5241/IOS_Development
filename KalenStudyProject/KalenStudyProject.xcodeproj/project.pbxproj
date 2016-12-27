@@ -27,9 +27,6 @@
 		F417879A1E11FDAA00B04938 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786C81E11FDAA00B04938 /* Block.m */; };
 		F417879B1E11FDAA00B04938 /* BlueToothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786CB1E11FDAA00B04938 /* BlueToothVC.m */; };
 		F417879C1E11FDAA00B04938 /* BlueToothVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41786CC1E11FDAA00B04938 /* BlueToothVC.xib */; };
-		F417879D1E11FDAA00B04938 /* CellTreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786CF1E11FDAA00B04938 /* CellTreeVC.m */; };
-		F417879E1E11FDAA00B04938 /* CellTreeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41786D01E11FDAA00B04938 /* CellTreeVC.xib */; };
-		F417879F1E11FDAA00B04938 /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786D21E11FDAA00B04938 /* RADataObject.m */; };
 		F41787A01E11FDAA00B04938 /* ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786D51E11FDAA00B04938 /* ChartVC.m */; };
 		F41787A11E11FDAA00B04938 /* ChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41786D61E11FDAA00B04938 /* ChartVC.xib */; };
 		F41787A21E11FDAA00B04938 /* CodeChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41786D81E11FDAA00B04938 /* CodeChartVC.m */; };
@@ -111,7 +108,7 @@
 		F41787EE1E11FDAA00B04938 /* RunTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F417876F1E11FDAA00B04938 /* RunTimeVC.xib */; };
 		F41787EF1E11FDAA00B04938 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F41787711E11FDAA00B04938 /* 1.jpg */; };
 		F41787F01E11FDAA00B04938 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F41787721E11FDAA00B04938 /* 2.jpg */; };
-		F41787F11E11FDAA00B04938 /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F41787731E11FDAA00B04938 /* 3.JPG */; };
+		F41787F11E11FDAA00B04938 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F41787731E11FDAA00B04938 /* 8.JPG */; };
 		F41787F21E11FDAA00B04938 /* bb.png in Resources */ = {isa = PBXBuildFile; fileRef = F41787741E11FDAA00B04938 /* bb.png */; };
 		F41787F31E11FDAA00B04938 /* ScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41787761E11FDAA00B04938 /* ScreenShotVC.m */; };
 		F41787F41E11FDAA00B04938 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F41787781E11FDAA00B04938 /* UIImage+Additions.m */; };
@@ -165,7 +162,17 @@
 		F41788921E12088F00B04938 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = F41788871E12088F00B04938 /* normalize.css */; };
 		F41788931E12088F00B04938 /* cube.html in Resources */ = {isa = PBXBuildFile; fileRef = F41788881E12088F00B04938 /* cube.html */; };
 		F41788941E12088F00B04938 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F41788891E12088F00B04938 /* index.html */; };
+		F417889B1E1211FE00B04938 /* CellTreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41788971E1211FE00B04938 /* CellTreeVC.m */; };
+		F417889C1E1211FE00B04938 /* CellTreeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41788981E1211FE00B04938 /* CellTreeVC.xib */; };
+		F417889D1E1211FE00B04938 /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F417889A1E1211FE00B04938 /* RADataObject.m */; };
+		F41788A11E12276F00B04938 /* RotationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F41788A01E12276F00B04938 /* RotationVC.m */; };
 		F4319E5D1C18149F006761A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4319E5F1C18149F006761A1 /* Localizable.strings */; };
+		F44769481E1247EF00D550F4 /* ScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44769471E1247EF00D550F4 /* ScaleVC.m */; };
+		F447694F1E12519000D550F4 /* MoveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F447694E1E12519000D550F4 /* MoveVC.m */; };
+		F44769531E12520B00D550F4 /* OpacityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44769521E12520B00D550F4 /* OpacityVC.m */; };
+		F44769571E12552B00D550F4 /* GroupAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F44769561E12552B00D550F4 /* GroupAnimationVC.m */; };
+		F447695F1E1258B600D550F4 /* LayoutAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F447695D1E1258B600D550F4 /* LayoutAnimationVC.m */; };
+		F44769601E1258B600D550F4 /* LayoutAnimationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F447695E1E1258B600D550F4 /* LayoutAnimationVC.xib */; };
 		F4680D841BF2F0F500C1EC76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4680D831BF2F0F500C1EC76 /* main.m */; };
 		F4680D8F1BF2F0F500C1EC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4680D8E1BF2F0F500C1EC76 /* Assets.xcassets */; };
 		F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4680D901BF2F0F500C1EC76 /* LaunchScreen.storyboard */; };
@@ -175,6 +182,7 @@
 		F486AA051CE57A3700EC910A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA041CE57A3700EC910A /* CoreBluetooth.framework */; };
 		F486AA071CE57A3F00EC910A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA061CE57A3F00EC910A /* UIKit.framework */; };
 		F486AA091CE57A5800EC910A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486AA081CE57A5800EC910A /* Foundation.framework */; };
+		F4A43B551E12B40000FEC5AB /* DirectionTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A43B541E12B40000FEC5AB /* DirectionTransformView.m */; };
 		F4B7F99E1C102D1C000BAF87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F9991C102D1C000BAF87 /* AppDelegate.m */; };
 		F4B7F99F1C102D1C000BAF87 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99B1C102D1C000BAF87 /* Constants.m */; };
 		F4B7F9A01C102D1C000BAF87 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7F99D1C102D1C000BAF87 /* DataUtil.m */; };
@@ -185,6 +193,7 @@
 		F4BC57861BF97225003944F3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57851BF97225003944F3 /* libsqlite3.tbd */; };
 		F4BC57881BF97230003944F3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57871BF97230003944F3 /* CoreTelephony.framework */; };
 		F4BC578A1BF9723D003944F3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57891BF9723D003944F3 /* libstdc++.tbd */; };
+		F4E2F2D01E12704C006C6867 /* DirectionAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F2CF1E12704C006C6867 /* DirectionAnimationVC.m */; };
 		F4F5DFD71BF6BAF500832FB2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F5DFD61BF6BAF500832FB2 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -245,11 +254,6 @@
 		F41786CA1E11FDAA00B04938 /* BlueToothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothVC.h; sourceTree = "<group>"; };
 		F41786CB1E11FDAA00B04938 /* BlueToothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothVC.m; sourceTree = "<group>"; };
 		F41786CC1E11FDAA00B04938 /* BlueToothVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothVC.xib; sourceTree = "<group>"; };
-		F41786CE1E11FDAA00B04938 /* CellTreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTreeVC.h; sourceTree = "<group>"; };
-		F41786CF1E11FDAA00B04938 /* CellTreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTreeVC.m; sourceTree = "<group>"; };
-		F41786D01E11FDAA00B04938 /* CellTreeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTreeVC.xib; sourceTree = "<group>"; };
-		F41786D11E11FDAA00B04938 /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataObject.h; sourceTree = "<group>"; };
-		F41786D21E11FDAA00B04938 /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataObject.m; sourceTree = "<group>"; };
 		F41786D41E11FDAA00B04938 /* ChartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartVC.h; sourceTree = "<group>"; };
 		F41786D51E11FDAA00B04938 /* ChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartVC.m; sourceTree = "<group>"; };
 		F41786D61E11FDAA00B04938 /* ChartVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartVC.xib; sourceTree = "<group>"; };
@@ -388,7 +392,7 @@
 		F417876F1E11FDAA00B04938 /* RunTimeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunTimeVC.xib; sourceTree = "<group>"; };
 		F41787711E11FDAA00B04938 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F41787721E11FDAA00B04938 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		F41787731E11FDAA00B04938 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.JPG; sourceTree = "<group>"; };
+		F41787731E11FDAA00B04938 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
 		F41787741E11FDAA00B04938 /* bb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bb.png; sourceTree = "<group>"; };
 		F41787751E11FDAA00B04938 /* ScreenShotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotVC.h; sourceTree = "<group>"; };
 		F41787761E11FDAA00B04938 /* ScreenShotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVC.m; sourceTree = "<group>"; };
@@ -481,9 +485,27 @@
 		F41788871E12088F00B04938 /* normalize.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = normalize.css; sourceTree = "<group>"; };
 		F41788881E12088F00B04938 /* cube.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cube.html; sourceTree = "<group>"; };
 		F41788891E12088F00B04938 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F41788961E1211FE00B04938 /* CellTreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTreeVC.h; sourceTree = "<group>"; };
+		F41788971E1211FE00B04938 /* CellTreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTreeVC.m; sourceTree = "<group>"; };
+		F41788981E1211FE00B04938 /* CellTreeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTreeVC.xib; sourceTree = "<group>"; };
+		F41788991E1211FE00B04938 /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataObject.h; sourceTree = "<group>"; };
+		F417889A1E1211FE00B04938 /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataObject.m; sourceTree = "<group>"; };
+		F417889F1E12276F00B04938 /* RotationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationVC.h; sourceTree = "<group>"; };
+		F41788A01E12276F00B04938 /* RotationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationVC.m; sourceTree = "<group>"; };
 		F4319DD81C17FCD6006761A1 /* kalenPre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kalenPre.pch; sourceTree = "<group>"; };
 		F4319E5E1C18149F006761A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4319E601C1814A2006761A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F44769461E1247EF00D550F4 /* ScaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleVC.h; sourceTree = "<group>"; };
+		F44769471E1247EF00D550F4 /* ScaleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleVC.m; sourceTree = "<group>"; };
+		F447694D1E12519000D550F4 /* MoveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveVC.h; sourceTree = "<group>"; };
+		F447694E1E12519000D550F4 /* MoveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveVC.m; sourceTree = "<group>"; };
+		F44769511E12520B00D550F4 /* OpacityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpacityVC.h; sourceTree = "<group>"; };
+		F44769521E12520B00D550F4 /* OpacityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpacityVC.m; sourceTree = "<group>"; };
+		F44769551E12552B00D550F4 /* GroupAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationVC.h; sourceTree = "<group>"; };
+		F44769561E12552B00D550F4 /* GroupAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationVC.m; sourceTree = "<group>"; };
+		F447695C1E1258B600D550F4 /* LayoutAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAnimationVC.h; sourceTree = "<group>"; };
+		F447695D1E1258B600D550F4 /* LayoutAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAnimationVC.m; sourceTree = "<group>"; };
+		F447695E1E1258B600D550F4 /* LayoutAnimationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayoutAnimationVC.xib; sourceTree = "<group>"; };
 		F4680D7F1BF2F0F500C1EC76 /* KalenStudyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalenStudyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4680D831BF2F0F500C1EC76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4680D8E1BF2F0F500C1EC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -493,12 +515,14 @@
 		F4680D9C1BF2F0F500C1EC76 /* KalenStudyProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalenStudyProjectTests.m; sourceTree = "<group>"; };
 		F4680D9E1BF2F0F500C1EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4680DA31BF2F0F500C1EC76 /* KalenStudyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalenStudyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalenStudyProjectUITests.m; sourceTree = "<group>"; };
+		F4680DA71BF2F0F500C1EC76 /* KalenStudyProjectUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalenStudyProjectUITests.m; sourceTree = "<group>"; };
 		F4680DA91BF2F0F500C1EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46E04EF1C59C8A100F5D060 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F486AA041CE57A3700EC910A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		F486AA061CE57A3F00EC910A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F486AA081CE57A5800EC910A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4A43B531E12B40000FEC5AB /* DirectionTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionTransformView.h; sourceTree = "<group>"; };
+		F4A43B541E12B40000FEC5AB /* DirectionTransformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionTransformView.m; sourceTree = "<group>"; };
 		F4B7F9981C102D1C000BAF87 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4B7F9991C102D1C000BAF87 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F4B7F99A1C102D1C000BAF87 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -512,6 +536,8 @@
 		F4BC57851BF97225003944F3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F4BC57871BF97230003944F3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F4BC57891BF9723D003944F3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F4E2F2CE1E12704C006C6867 /* DirectionAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionAnimationVC.h; sourceTree = "<group>"; };
+		F4E2F2CF1E12704C006C6867 /* DirectionAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionAnimationVC.m; sourceTree = "<group>"; };
 		F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F5DFD61BF6BAF500832FB2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -622,12 +648,18 @@
 		F41786B11E11FDAA00B04938 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4E2F2CD1E127016006C6867 /* DirectionAnimation */,
+				F44769581E12575E00D550F4 /* LayoutAnimation */,
+				F44769541E1254AF00D550F4 /* GroupAnimation */,
+				F44769501E1251AF00D550F4 /* Opacity */,
+				F44769491E12503A00D550F4 /* Move */,
+				F44769451E1247BF00D550F4 /* Scale */,
+				F417889E1E12254200B04938 /* Rotation */,
 				F41786B21E11FDAA00B04938 /* AutoLayout */,
 				F41786B51E11FDAA00B04938 /* AutoResizeCellHeight */,
 				F41786BD1E11FDAA00B04938 /* BaseController */,
 				F41786C61E11FDAA00B04938 /* Block */,
 				F41786C91E11FDAA00B04938 /* BlueTooth */,
-				F41786CD1E11FDAA00B04938 /* CellTree */,
 				F41786D31E11FDAA00B04938 /* Chart */,
 				F41786E91E11FDAA00B04938 /* Connection */,
 				F41786EF1E11FDAA00B04938 /* CustomElement */,
@@ -710,18 +742,6 @@
 				F41786CC1E11FDAA00B04938 /* BlueToothVC.xib */,
 			);
 			path = BlueTooth;
-			sourceTree = "<group>";
-		};
-		F41786CD1E11FDAA00B04938 /* CellTree */ = {
-			isa = PBXGroup;
-			children = (
-				F41786CE1E11FDAA00B04938 /* CellTreeVC.h */,
-				F41786CF1E11FDAA00B04938 /* CellTreeVC.m */,
-				F41786D01E11FDAA00B04938 /* CellTreeVC.xib */,
-				F41786D11E11FDAA00B04938 /* RADataObject.h */,
-				F41786D21E11FDAA00B04938 /* RADataObject.m */,
-			);
-			path = CellTree;
 			sourceTree = "<group>";
 		};
 		F41786D31E11FDAA00B04938 /* Chart */ = {
@@ -1015,7 +1035,7 @@
 			children = (
 				F41787711E11FDAA00B04938 /* 1.jpg */,
 				F41787721E11FDAA00B04938 /* 2.jpg */,
-				F41787731E11FDAA00B04938 /* 3.JPG */,
+				F41787731E11FDAA00B04938 /* 8.JPG */,
 				F41787741E11FDAA00B04938 /* bb.png */,
 				F41787751E11FDAA00B04938 /* ScreenShotVC.h */,
 				F41787761E11FDAA00B04938 /* ScreenShotVC.m */,
@@ -1263,6 +1283,73 @@
 			path = css;
 			sourceTree = "<group>";
 		};
+		F41788951E1211FE00B04938 /* CellTree */ = {
+			isa = PBXGroup;
+			children = (
+				F41788961E1211FE00B04938 /* CellTreeVC.h */,
+				F41788971E1211FE00B04938 /* CellTreeVC.m */,
+				F41788981E1211FE00B04938 /* CellTreeVC.xib */,
+				F41788991E1211FE00B04938 /* RADataObject.h */,
+				F417889A1E1211FE00B04938 /* RADataObject.m */,
+			);
+			path = CellTree;
+			sourceTree = "<group>";
+		};
+		F417889E1E12254200B04938 /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				F417889F1E12276F00B04938 /* RotationVC.h */,
+				F41788A01E12276F00B04938 /* RotationVC.m */,
+			);
+			path = Rotation;
+			sourceTree = "<group>";
+		};
+		F44769451E1247BF00D550F4 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				F44769461E1247EF00D550F4 /* ScaleVC.h */,
+				F44769471E1247EF00D550F4 /* ScaleVC.m */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		F44769491E12503A00D550F4 /* Move */ = {
+			isa = PBXGroup;
+			children = (
+				F447694D1E12519000D550F4 /* MoveVC.h */,
+				F447694E1E12519000D550F4 /* MoveVC.m */,
+			);
+			path = Move;
+			sourceTree = "<group>";
+		};
+		F44769501E1251AF00D550F4 /* Opacity */ = {
+			isa = PBXGroup;
+			children = (
+				F44769511E12520B00D550F4 /* OpacityVC.h */,
+				F44769521E12520B00D550F4 /* OpacityVC.m */,
+			);
+			path = Opacity;
+			sourceTree = "<group>";
+		};
+		F44769541E1254AF00D550F4 /* GroupAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F44769551E12552B00D550F4 /* GroupAnimationVC.h */,
+				F44769561E12552B00D550F4 /* GroupAnimationVC.m */,
+			);
+			path = GroupAnimation;
+			sourceTree = "<group>";
+		};
+		F44769581E12575E00D550F4 /* LayoutAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F447695C1E1258B600D550F4 /* LayoutAnimationVC.h */,
+				F447695D1E1258B600D550F4 /* LayoutAnimationVC.m */,
+				F447695E1E1258B600D550F4 /* LayoutAnimationVC.xib */,
+			);
+			path = LayoutAnimation;
+			sourceTree = "<group>";
+		};
 		F45932E91C1036D400AD965E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1298,6 +1385,7 @@
 		F4680D811BF2F0F500C1EC76 /* KalenStudyProject */ = {
 			isa = PBXGroup;
 			children = (
+				F41788951E1211FE00B04938 /* CellTree */,
 				F41786B11E11FDAA00B04938 /* Modules */,
 				F4B7F9971C102D1C000BAF87 /* Utility */,
 				F4680D821BF2F0F500C1EC76 /* Supporting Files */,
@@ -1351,6 +1439,17 @@
 				F4319DD81C17FCD6006761A1 /* kalenPre.pch */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		F4E2F2CD1E127016006C6867 /* DirectionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2F2CE1E12704C006C6867 /* DirectionAnimationVC.h */,
+				F4E2F2CF1E12704C006C6867 /* DirectionAnimationVC.m */,
+				F4A43B531E12B40000FEC5AB /* DirectionTransformView.h */,
+				F4A43B541E12B40000FEC5AB /* DirectionTransformView.m */,
+			);
+			path = DirectionAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1479,7 +1578,6 @@
 				F41788921E12088F00B04938 /* normalize.css in Resources */,
 				F41787C41E11FDAA00B04938 /* BasicCell.xib in Resources */,
 				F417879C1E11FDAA00B04938 /* BlueToothVC.xib in Resources */,
-				F417879E1E11FDAA00B04938 /* CellTreeVC.xib in Resources */,
 				F4680D921BF2F0F500C1EC76 /* LaunchScreen.storyboard in Resources */,
 				F41787DE1E11FDAA00B04938 /* CustomCellOne.xib in Resources */,
 				F41787EF1E11FDAA00B04938 /* 1.jpg in Resources */,
@@ -1513,13 +1611,15 @@
 				F41787D51E11FDAA00B04938 /* FD_Masonry_CellXib.xib in Resources */,
 				F41788911E12088F00B04938 /* Data.plist in Resources */,
 				F41788931E12088F00B04938 /* cube.html in Resources */,
-				F41787F11E11FDAA00B04938 /* 3.JPG in Resources */,
+				F44769601E1258B600D550F4 /* LayoutAnimationVC.xib in Resources */,
+				F41787F11E11FDAA00B04938 /* 8.JPG in Resources */,
 				F41787EC1E11FDAA00B04938 /* ThreedPassVC.xib in Resources */,
 				F41787CA1E11FDAA00B04938 /* LeftMenuVCViewController.xib in Resources */,
 				F417888B1E12088F00B04938 /* 2.jpg in Resources */,
 				F41788731E12074A00B04938 /* UMSLoginViewController.xib in Resources */,
 				F41787FC1E11FDAA00B04938 /* UITestingVC.xib in Resources */,
 				F417886F1E12074A00B04938 /* UMSCommentInputController.xib in Resources */,
+				F417889C1E1211FE00B04938 /* CellTreeVC.xib in Resources */,
 				F41787941E11FDAA00B04938 /* AutoResizeCellHeightVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1643,9 +1743,11 @@
 				F41787F61E11FDAA00B04938 /* CellItems.m in Sources */,
 				F41787A01E11FDAA00B04938 /* ChartVC.m in Sources */,
 				F40B05251CF00463002AD0AF /* NSArray+Log.m in Sources */,
+				F44769481E1247EF00D550F4 /* ScaleVC.m in Sources */,
 				F41787B81E11FDAA00B04938 /* BezierPathTool.m in Sources */,
 				F41787A81E11FDAA00B04938 /* UUChartLabel.m in Sources */,
 				F41787FB1E11FDAA00B04938 /* UITestingVC.m in Sources */,
+				F417889B1E1211FE00B04938 /* CellTreeVC.m in Sources */,
 				F41787971E11FDAA00B04938 /* BaseTableVC.m in Sources */,
 				F41787F71E11FDAA00B04938 /* CustomCell.m in Sources */,
 				F41787D61E11FDAA00B04938 /* FD_Masonry_KalenVC.m in Sources */,
@@ -1671,8 +1773,8 @@
 				F41787B91E11FDAA00B04938 /* DisplayView.m in Sources */,
 				F41787C11E11FDAA00B04938 /* ReadLocalFile.m in Sources */,
 				F417879B1E11FDAA00B04938 /* BlueToothVC.m in Sources */,
+				F44769571E12552B00D550F4 /* GroupAnimationVC.m in Sources */,
 				F41787911E11FDAA00B04938 /* EqualDivideVC.m in Sources */,
-				F417879F1E11FDAA00B04938 /* RADataObject.m in Sources */,
 				F41787991E11FDAA00B04938 /* StaticDemo.m in Sources */,
 				F41788661E12074A00B04938 /* RATreeView+TableViewDataSource.m in Sources */,
 				F41787A21E11FDAA00B04938 /* CodeChartVC.m in Sources */,
@@ -1686,12 +1788,15 @@
 				F41787F41E11FDAA00B04938 /* UIImage+Additions.m in Sources */,
 				F41787961E11FDAA00B04938 /* BaseTableTestVC.m in Sources */,
 				F41787B01E11FDAA00B04938 /* CodeButton.m in Sources */,
+				F41788A11E12276F00B04938 /* RotationVC.m in Sources */,
 				F41787B11E11FDAA00B04938 /* CustomElementVC.m in Sources */,
 				F40B05311CF006D0002AD0AF /* UIColor+Hex.m in Sources */,
 				F417879A1E11FDAA00B04938 /* Block.m in Sources */,
+				F44769531E12520B00D550F4 /* OpacityVC.m in Sources */,
 				F41787AC1E11FDAA00B04938 /* ConnectionVC.m in Sources */,
 				F41787B31E11FDAA00B04938 /* CustomTextFieldByCode.m in Sources */,
-				F417879D1E11FDAA00B04938 /* CellTreeVC.m in Sources */,
+				F4E2F2D01E12704C006C6867 /* DirectionAnimationVC.m in Sources */,
+				F417889D1E1211FE00B04938 /* RADataObject.m in Sources */,
 				F41787B61E11FDAA00B04938 /* DBTool.m in Sources */,
 				F41787B71E11FDAA00B04938 /* ArcView.m in Sources */,
 				F41787D21E11FDAA00B04938 /* TableViewCellXib.m in Sources */,
@@ -1723,6 +1828,7 @@
 				F41787A31E11FDAA00B04938 /* TableViewCell.m in Sources */,
 				F41787981E11FDAA00B04938 /* BaseVC.m in Sources */,
 				F41787F91E11FDAA00B04938 /* LayoutClass.m in Sources */,
+				F447694F1E12519000D550F4 /* MoveVC.m in Sources */,
 				F4B7F99F1C102D1C000BAF87 /* Constants.m in Sources */,
 				F41787BC1E11FDAA00B04938 /* wendu_yuan2.m in Sources */,
 				F41787DD1E11FDAA00B04938 /* CustomCellOne.m in Sources */,
@@ -1731,9 +1837,11 @@
 				F41788671E12074A00B04938 /* RATreeView+TableViewDelegate.m in Sources */,
 				F41787E11E11FDAA00B04938 /* MutilDataSource.m in Sources */,
 				F41787A51E11FDAA00B04938 /* UUBar.m in Sources */,
+				F447695F1E1258B600D550F4 /* LayoutAnimationVC.m in Sources */,
 				F41787CF1E11FDAA00B04938 /* DataModel.m in Sources */,
 				F41787931E11FDAA00B04938 /* AutoResizeCellHeightVC.m in Sources */,
 				F41787E31E11FDAA00B04938 /* OpenOtherAppVC.m in Sources */,
+				F4A43B551E12B40000FEC5AB /* DirectionTransformView.m in Sources */,
 				F41788651E12074A00B04938 /* RATreeView+Private.m in Sources */,
 				F41788621E12074A00B04938 /* RATreeNodeInfo+Private.m in Sources */,
 				F41787A61E11FDAA00B04938 /* UUBarChart.m in Sources */,

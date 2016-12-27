@@ -24,9 +24,12 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSArray *children;
+@property (strong, nonatomic) UIViewController *subVC;
 
 - (id)initWithName:(NSString *)name children:(NSArray *)array;
 
 + (id)dataObjectWithName:(NSString *)name children:(NSArray *)children;
+
++ (id)dataObjectWithName:(NSString *)name childrenVC:(UIViewController *)childrenVC;
 
 @end

@@ -9,6 +9,15 @@
 #import "CellTreeVC.h"
 #import "RATreeView.h"
 #import "RADataObject.h"
+#import "GuideDataItem.h"
+#import "GuideViewController.h"
+#import "RotationVC.h"
+#import "ScaleVC.h"
+#import "MoveVC.h"
+#import "OpacityVC.h"
+#import "GroupAnimationVC.h"
+#import "LayoutAnimationVC.h"
+#import "DirectionAnimationVC.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -20,28 +29,41 @@
 
 @implementation CellTreeVC
 
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    if([[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."][0] intValue] >= 7) {
-//        CGRect statusBarViewRect = [[UIApplication sharedApplication] statusBarFrame];
-//        float heightPadding = statusBarViewRect.size.height+self.navigationController.navigationBar.frame.size.height;
-//        self.treeView.contentInset = UIEdgeInsetsMake(heightPadding, 0.0, 0.0, 0.0);
-//        self.treeView.contentOffset = CGPointMake(0.0, -heightPadding);
-//    }
-//    self.treeView.frame = self.view.bounds;
-//}
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if([[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."][0] intValue] >= 7) {
+        CGRect statusBarViewRect = [[UIApplication sharedApplication] statusBarFrame];
+        float heightPadding = statusBarViewRect.size.height+self.navigationController.navigationBar.frame.size.height -66;
+        self.treeView.contentInset = UIEdgeInsetsMake(heightPadding, 0.0, 0.0, 0.0);
+        self.treeView.contentOffset = CGPointMake(0.0, -heightPadding);
+    }
+    self.treeView.frame = self.view.bounds;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RADataObject *phone1 = [RADataObject dataObjectWithName:@"Phone 1" children:nil];
-    RADataObject *phone2 = [RADataObject dataObjectWithName:@"Phone 2" children:nil];
-    RADataObject *phone3 = [RADataObject dataObjectWithName:@"Phone 3" children:nil];
-    RADataObject *phone4 = [RADataObject dataObjectWithName:@"Phone 4" children:nil];
+    self.title = @"知识管理";
     
-    RADataObject *phone = [RADataObject dataObjectWithName:@"Phones"
-                                                  children:[NSArray arrayWithObjects:phone1, phone2, phone3, phone4, nil]];
+    RotationVC *animationTypeOne = [[RotationVC alloc] init];
+    ScaleVC *animationTypeTwo = [[ScaleVC alloc] init];
+    MoveVC *animationTypeThree = [[MoveVC alloc] init];
+    OpacityVC *animationTypeFour = [[OpacityVC alloc] init];
+    GroupAnimationVC *animationTypeFive = [[GroupAnimationVC alloc] init];
+    LayoutAnimationVC *animationTypeSix = [[LayoutAnimationVC alloc] init];
+    DirectionAnimationVC *animationTypeSeven = [[DirectionAnimationVC alloc] init];
+    
+    RADataObject *phone1 = [RADataObject dataObjectWithName:@"旋转" childrenVC:animationTypeOne];
+    RADataObject *phone2 = [RADataObject dataObjectWithName:@"缩放" childrenVC:animationTypeTwo];
+    RADataObject *phone3 = [RADataObject dataObjectWithName:@"移动" childrenVC:animationTypeThree];
+    RADataObject *phone4 = [RADataObject dataObjectWithName:@"透明度" childrenVC:animationTypeFour];
+    RADataObject *phone5 = [RADataObject dataObjectWithName:@"组合" childrenVC:animationTypeFive];
+    RADataObject *phone6 = [RADataObject dataObjectWithName:@"自动布局动画" childrenVC:animationTypeSix];
+    RADataObject *phone7 = [RADataObject dataObjectWithName:@"翻转视图" childrenVC:animationTypeSeven];
+
+    RADataObject *phone = [RADataObject dataObjectWithName:@"动画相关"
+                                                  children:[NSArray arrayWithObjects:phone1, phone2, phone3, phone4, phone5,phone6, phone7,nil]];
     
     RADataObject *notebook1 = [RADataObject dataObjectWithName:@"Notebook 1" children:nil];
     RADataObject *notebook2 = [RADataObject dataObjectWithName:@"Notebook 2" children:nil];
@@ -55,17 +77,9 @@
     RADataObject *computer = [RADataObject dataObjectWithName:@"Computers"
                                                      children:[NSArray arrayWithObjects:computer1, computer2, computer3, nil]];
     RADataObject *car = [RADataObject dataObjectWithName:@"Cars" children:nil];
-    RADataObject *bike = [RADataObject dataObjectWithName:@"Bikes" children:nil];
-    RADataObject *house = [RADataObject dataObjectWithName:@"Houses" children:nil];
-    RADataObject *flats = [RADataObject dataObjectWithName:@"Flats" children:nil];
-    RADataObject *motorbike = [RADataObject dataObjectWithName:@"Motorbikes" children:nil];
-    RADataObject *drinks = [RADataObject dataObjectWithName:@"Drinks" children:nil];
-    RADataObject *food = [RADataObject dataObjectWithName:@"Food" children:nil];
-    RADataObject *sweets = [RADataObject dataObjectWithName:@"Sweets" children:nil];
-    RADataObject *watches = [RADataObject dataObjectWithName:@"Watches" children:nil];
-    RADataObject *walls = [RADataObject dataObjectWithName:@"Walls" children:nil];
     
-    self.data = [NSArray arrayWithObjects:phone, computer, car, bike, house, flats, motorbike, drinks, food, sweets, watches, walls, nil];
+    
+    self.data = [NSArray arrayWithObjects:phone, computer, car, nil];
 
     RATreeView *treeView = [[RATreeView alloc] initWithFrame:self.view.bounds];
     treeView.delegate = self;
@@ -151,4 +165,11 @@
     return 47;
 }
 
+- (void)treeView:(RATreeView *)treeView didSelectRowForItem:(id)item treeNodeInfo:(RATreeNodeInfo *)treeNodeInfo {
+    
+    if (((RADataObject *)item).subVC ) {
+            [self.navigationController pushViewController:((RADataObject *)item).subVC animated:YES];
+    }
+
+}
 @end

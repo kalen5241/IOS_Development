@@ -33,9 +33,24 @@
   return self;
 }
 
+- (id)initWithName:(NSString *)name childrenVC:(UIViewController *)childrenVC
+{
+    self = [super init];
+    if (self) {
+        self.subVC = childrenVC;
+        self.name = name;
+    }
+    return self;
+}
+
 + (id)dataObjectWithName:(NSString *)name children:(NSArray *)children
 {
   return [[self alloc] initWithName:name children:children];
+}
+
++ (id)dataObjectWithName:(NSString *)name childrenVC:(UIViewController *)childrenVC {
+    
+    return [[self alloc] initWithName:name childrenVC:childrenVC];
 }
 
 @end
