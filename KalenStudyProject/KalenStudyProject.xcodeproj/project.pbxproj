@@ -194,6 +194,7 @@
 		F4BC57881BF97230003944F3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57871BF97230003944F3 /* CoreTelephony.framework */; };
 		F4BC578A1BF9723D003944F3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BC57891BF9723D003944F3 /* libstdc++.tbd */; };
 		F4E2F2D01E12704C006C6867 /* DirectionAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2F2CF1E12704C006C6867 /* DirectionAnimationVC.m */; };
+		F4E4C8401E136294005298CF /* ActivityByDBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E4C83F1E136294005298CF /* ActivityByDBVC.m */; };
 		F4F5DFD71BF6BAF500832FB2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F5DFD61BF6BAF500832FB2 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -538,6 +539,8 @@
 		F4BC57891BF9723D003944F3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		F4E2F2CE1E12704C006C6867 /* DirectionAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionAnimationVC.h; sourceTree = "<group>"; };
 		F4E2F2CF1E12704C006C6867 /* DirectionAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionAnimationVC.m; sourceTree = "<group>"; };
+		F4E4C83E1E136294005298CF /* ActivityByDBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityByDBVC.h; sourceTree = "<group>"; };
+		F4E4C83F1E136294005298CF /* ActivityByDBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityByDBVC.m; sourceTree = "<group>"; };
 		F4EA34C4CF6A8EB507C95863 /* libPods-KalenStudyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KalenStudyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F5DFD61BF6BAF500832FB2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -648,6 +651,7 @@
 		F41786B11E11FDAA00B04938 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4E4C83D1E136229005298CF /* ActivityByDB */,
 				F4E2F2CD1E127016006C6867 /* DirectionAnimation */,
 				F44769581E12575E00D550F4 /* LayoutAnimation */,
 				F44769541E1254AF00D550F4 /* GroupAnimation */,
@@ -1452,6 +1456,15 @@
 			path = DirectionAnimation;
 			sourceTree = "<group>";
 		};
+		F4E4C83D1E136229005298CF /* ActivityByDB */ = {
+			isa = PBXGroup;
+			children = (
+				F4E4C83E1E136294005298CF /* ActivityByDBVC.h */,
+				F4E4C83F1E136294005298CF /* ActivityByDBVC.m */,
+			);
+			path = ActivityByDB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1820,6 +1833,7 @@
 				F4680D841BF2F0F500C1EC76 /* main.m in Sources */,
 				F41787F51E11FDAA00B04938 /* UIImage+Resize.m in Sources */,
 				F41787AF1E11FDAA00B04938 /* Cbuttton.m in Sources */,
+				F4E4C8401E136294005298CF /* ActivityByDBVC.m in Sources */,
 				F41787CE1E11FDAA00B04938 /* TaskManagerVC.m in Sources */,
 				F41787D01E11FDAA00B04938 /* FD_Masonry_DemoVC.m in Sources */,
 				F41787E51E11FDAA00B04938 /* DelePassValueOtherVC.m in Sources */,

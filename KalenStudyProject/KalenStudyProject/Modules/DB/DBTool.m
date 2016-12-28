@@ -31,7 +31,7 @@ static DBTool *tool = nil;
 #pragma mark --创建数据库
 -(FMDatabase *)getDBWithDBName:(NSString *)dbName {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *fullPath =  [path stringByAppendingPathComponent:@"CWDB.db"];
+    NSString *fullPath =  [path stringByAppendingPathComponent:dbName];
     NSLog(@"chewen数据库路径：%@", fullPath);
     FMDatabase *db = [FMDatabase databaseWithPath:fullPath];
     if (![db open]) {

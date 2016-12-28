@@ -18,6 +18,8 @@
 #import "GroupAnimationVC.h"
 #import "LayoutAnimationVC.h"
 #import "DirectionAnimationVC.h"
+#import "DBTestVC.h"
+#import "ActivityByDBVC.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -65,16 +67,22 @@
     RADataObject *phone = [RADataObject dataObjectWithName:@"动画相关"
                                                   children:[NSArray arrayWithObjects:phone1, phone2, phone3, phone4, phone5,phone6, phone7,nil]];
     
-    RADataObject *notebook1 = [RADataObject dataObjectWithName:@"Notebook 1" children:nil];
-    RADataObject *notebook2 = [RADataObject dataObjectWithName:@"Notebook 2" children:nil];
+    
+    DBTestVC *DB1 = [[DBTestVC alloc] init];
+    ActivityByDBVC *DB2 = [[ActivityByDBVC alloc] init];
+    
+    RADataObject *notebook1 = [RADataObject dataObjectWithName:@"Notebook 1" childrenVC:DB1];
+    RADataObject *notebook2 = [RADataObject dataObjectWithName:@"Notebook 2" childrenVC:DB2];
     self.expanded = notebook1;
     
-    RADataObject *computer1 = [RADataObject dataObjectWithName:@"Computer 1"
+    RADataObject *computer1 = [RADataObject dataObjectWithName:@"数据库相关1"
+                                                      children:[NSArray arrayWithObjects:notebook1, notebook2, nil]];    
+    RADataObject *computer2 = [RADataObject dataObjectWithName:@"数据库相关1"
                                                       children:[NSArray arrayWithObjects:notebook1, notebook2, nil]];
-    RADataObject *computer2 = [RADataObject dataObjectWithName:@"Computer 2" children:nil];
+    
     RADataObject *computer3 = [RADataObject dataObjectWithName:@"Computer 3" children:nil];
     
-    RADataObject *computer = [RADataObject dataObjectWithName:@"Computers"
+    RADataObject *computer = [RADataObject dataObjectWithName:@"数据库相关"
                                                      children:[NSArray arrayWithObjects:computer1, computer2, computer3, nil]];
     RADataObject *car = [RADataObject dataObjectWithName:@"Cars" children:nil];
     

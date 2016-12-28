@@ -12,7 +12,7 @@
 
 #define DATA_TABLE_OS @"db_obd_os"
 
-typedef NSNumber* (^oneParaBlock)(NSNumber *a,NSArray *arr);
+typedef NSNumber* (^ParaBlock)(NSNumber *a,NSArray *arr);
 
 @interface DBTestVC ()
 @property (nonatomic, strong) NSDictionary *os_dict;
@@ -85,7 +85,7 @@ typedef NSNumber* (^oneParaBlock)(NSNumber *a,NSArray *arr);
 }
 
 //存在记录修改，不存在数据新建记录
--(void)changeAndInsert:(NSDictionary *)selectType andTableName:(NSString *)tableName andData:(NSDictionary *)data andBlock:(oneParaBlock)block {
+-(void)changeAndInsert:(NSDictionary *)selectType andTableName:(NSString *)tableName andData:(NSDictionary *)data andBlock:(ParaBlock)block {
     
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         NSArray  *arr  = [[DBTool tool] DataBase:db
